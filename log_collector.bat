@@ -24,7 +24,7 @@ echo ***************************************************************************
 
 echo "Log_Collect"
 
-set filename=last_log
+set filename=Logs\last_log
 
 echo "mkdir %filename%"
 md %filename%
@@ -74,9 +74,15 @@ echo "screenshot"
 echo "adb pull DB"
 .\adb pull data/system/users/0 %filename%
 
+
+::拉取logcat
+echo "adb logcat"
+.\adb logcat -d -v time > .\Logs\logcat.log
+
 echo **********************************************************************************************
 echo 报告下载完成：
 echo **********************************************************************************************
 
 
+pause
 pause
