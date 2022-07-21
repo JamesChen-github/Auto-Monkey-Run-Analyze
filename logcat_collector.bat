@@ -1,7 +1,10 @@
-::清理现有logcat日志
-echo "adb logcat -c"
-.\adb logcat -c
+@REM ::清理现有logcat日志
+@REM echo "adb logcat -c"
+@REM .\adb logcat -c
 
 ::拉取logcat
 echo "adb logcat"
-.\adb logcat -v time > .\Logs\logcat.log
+.\adb logcat -d -v time > .\Logs\logcat.log
+
+pause
+pause

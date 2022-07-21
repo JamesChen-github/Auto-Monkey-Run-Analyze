@@ -1,3 +1,4 @@
 com.android.car.settings
-com.semidrive.sdcalibrator
 com.google.android.car.kitchensink
+com.semidrive.sdcalibrator
+com.android.car.bugreport
