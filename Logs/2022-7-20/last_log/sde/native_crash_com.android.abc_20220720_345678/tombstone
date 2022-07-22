@@ -1,1 +1,731 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'X9/x9u_ref_a/x9u_ref_a:12/SD1A.210817.037.A1/eng.jenkin.20220721.051236:userdebug/test-keys'
+Revision: '0'
+ABI: 'arm64'
+Timestamp: 2022-07-21 06:20:40.330157261+0800
+Process uptime: 2200s
+Cmdline: /system/bin/carwatchdogd
+pid: 175, tid: 480, name: HwBinder:175_1  >>> /system/bin/carwatchdogd <<<
+uid: 1000
+tagged_addr_ctrl: 0000000000000001
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+Cause: null pointer dereference
+    x0  b400fffe34095dd0  x1  0000fffd73f42250  x2  0000000000000000  x3  0000fffd73f42340
+    x4  0000fffd73f42340  x5  00000000000000c0  x6  0000fffd70b45520  x7  6f732983fefeff6a
+    x8  0000000000000000  x9  00000000000000d0  x10 0000000011500f33  x11 0000000011500f33
+    x12 0000fffd73f421fc  x13 0000000070742a85  x14 0000fffd73f42228  x15 0000000000000004
+    x16 0000ffff8703e8d8  x17 0000ffff86c6acc0  x18 0000fffd704d0000  x19 0000fffd70b45660
+    x20 b400fffdf4095090  x21 0000fffd70b45978  x22 00000000000000d0  x23 0000fffd70b46000
+    x24 0000000000000000  x25 0000000000000002  x26 0000000000000000  x27 0000fffd70b45a60
+    x28 0000fffd70a4d000  x29 0000fffd70b455c0
+    lr  0000ffff87035634  sp  0000fffd70b455c0  pc  0000ffff86ae54ac  pst 0000000060001000
 
+backtrace:
+      #00 pc 00000000000124ac  /system/lib64/libwatchdog_process_service.so (android::automotive::watchdog::WatchdogProcessService::PropertyChangeListener::onPropertyEvent(android::hardware::hidl_vec<android::hardware::automotive::vehicle::V2_0::VehiclePropValue> const&)+84) (BuildId: f0a5ba0f8e77931afe83707ee9bba0a9)
+      #01 pc 0000000000021630  /system/lib64/android.hardware.automotive.vehicle@2.0.so (android::hardware::automotive::vehicle::V2_0::BnHwVehicleCallback::_hidl_onPropertyEvent(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+308) (BuildId: 34d48e5d6d67de4ada960c0101f6a58c)
+      #02 pc 0000000000022050  /system/lib64/android.hardware.automotive.vehicle@2.0.so (android::hardware::automotive::vehicle::V2_0::BnHwVehicleCallback::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+400) (BuildId: 34d48e5d6d67de4ada960c0101f6a58c)
+      #03 pc 0000000000076968  /system/lib64/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+92) (BuildId: 0e8ff0243d9ca9b06f81b05ddb9eb32b)
+      #04 pc 0000000000074f7c  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+1104) (BuildId: 0e8ff0243d9ca9b06f81b05ddb9eb32b)
+      #05 pc 0000000000074a4c  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+96) (BuildId: 0e8ff0243d9ca9b06f81b05ddb9eb32b)
+      #06 pc 00000000000749d8  /system/lib64/libhidlbase.so (android::hardware::PoolThread::threadLoop()+24) (BuildId: 0e8ff0243d9ca9b06f81b05ddb9eb32b)
+      #07 pc 00000000000120ac  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #08 pc 0000000000011964  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+404) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #09 pc 00000000000b1910  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #10 pc 00000000000513f0  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: ba489d4985c0cf173209da67405662f9)
+
+memory near x0 ([anon:scudo:primary]):
+    0000fffe34095db0 0000000000000000 0000000000000000  ................
+    0000fffe34095dc0 c3a700000013810c 0000000000000000  ................
+    0000fffe34095dd0 0000ffff86aeb018 b400fffd940901c0  ................
+    0000fffe34095de0 b400fffe2409be30 b400fffd94090760  0..$....`.......
+    0000fffe34095df0 0000000000000000 0000000000000000  ................
+    0000fffe34095e00 0000000000000000 0000000000000000  ................
+    0000fffe34095e10 0000000000000000 b400fffda408ea10  ................
+    0000fffe34095e20 0000000000000005 b400fffda408e910  ................
+    0000fffe34095e30 0000000000000003 000000003f800000  ...........?....
+    0000fffe34095e40 b400fffda408e510 0000000000000005  ................
+    0000fffe34095e50 b400fffdb4091bf0 0000000000000003  ................
+    0000fffe34095e60 000000003f800000 0000000000000000  ...?............
+    0000fffe34095e70 0000000000000000 0000000000000000  ................
+    0000fffe34095e80 0000000000000000 000000003f800000  ...........?....
+    0000fffe34095e90 b400fffdb4093360 000002d200000001  `3..............
+    0000fffe34095ea0 0000000000000001 b400fffe2409b2f0  ...........$....
+
+memory near x6 ([anon:stack_and_tls:480]):
+    0000fffd70b45500 0000fffd70b45530 0000ffff86e5833c  0U.p....<.......
+    0000fffd70b45510 0000fffd73f42320 0000ffff86e756cc   #.s.....V......
+    0000fffd70b45520 0000fffd73f42340 6a494e731c4e3218  @#.s.....2N.sNIj
+    0000fffd70b45530 0000fffd70b455a0 0000ffff8703a2a4  .U.p............
+    0000fffd70b45540 0000fffd70b46000 6a494e731c4e3218  .`.p.....2N.sNIj
+    0000fffd70b45550 0000fffd73f422e0 0000000000000080  .".s............
+    0000fffd70b45560 0000fffd70b45978 0000000000000001  xY.p............
+    0000fffd70b45570 0000000000000000 0000000000000003  ................
+    0000fffd70b45580 0000000000000000 0000000000000000  ................
+    0000fffd70b45590 0000000000000000 6a494e731c4e3218  .........2N.sNIj
+    0000fffd70b455a0 0000fffd70b456a0 0000ffff870355cc  .V.p.....U......
+    0000fffd70b455b0 0000fffd70b46000 0000ffff87035550  .`.p....PU......
+    0000fffd70b455c0 0000fffd70b456a0 0000ffff87035634  .V.p....4V......
+    0000fffd70b455d0 0000fffd70b458e8 0000ffff870355ec  .X.p.....U......
+    0000fffd70b455e0 0000fffd70b45688 0000000000000000  .V.p............
+    0000fffd70b455f0 0000000000000000 b400fffd940908b0  ................
+
+memory near x16 (/system/lib64/android.hardware.automotive.vehicle@2.0.so):
+    0000ffff8703e8b0 0000ffff840d5c58 0000ffff86e48010  X\..............
+    0000ffff8703e8c0 0000ffff840d5c14 0000ffff841e6ce0  .\.......l......
+    0000ffff8703e8d0 0000ffff86c72588 0000ffff86c6acc0  .%..............
+    0000ffff8703e8e0 0000ffff86c6ad9c 0000ffff87026cc4  .........l......
+    0000ffff8703e8f0 0000ffff86e5c468 0000ffff8411fc7c  h.......|.......
+    0000ffff8703e900 0000ffff86e55ddc 0000ffff86e586a0  .]..............
+    0000ffff8703e910 0000ffff870270a8 0000ffff86c6e3ec  .p..............
+    0000ffff8703e920 0000ffff86e56188 0000ffff86eaaa50  .a......P.......
+    0000ffff8703e930 0000ffff86ea91b8 0000ffff86e48314  ................
+    0000ffff8703e940 0000ffff86c6b230 0000ffff86ea9490  0...............
+    0000ffff8703e950 0000ffff86de4500 0000ffff86eab740  .E......@.......
+    0000ffff8703e960 0000ffff86e7db28 0000ffff86eaaa9c  (...............
+    0000ffff8703e970 0000ffff86e55930 0000ffff86e7320c  0Y.......2......
+    0000ffff8703e980 0000ffff86de4900 0000ffff86e6a1d4  .I..............
+    0000ffff8703e990 0000ffff86de4a38 0000ffff86e7fcb8  8J..............
+    0000ffff8703e9a0 0000ffff86e7f568 0000ffff86e84e34  h.......4N......
+
+memory near x17 (/system/lib64/libutils.so):
+    0000ffff86c6aca0 f9400524aa0803e0 911a512990ffffe9  ....$.@.....)Q..
+    0000ffff86c6acb0 d61f0080aa0903e1 d65f03c01400296a  ........j)...._.
+    0000ffff86c6acc0 91001109f9400408 1100054a885f7d2a  ..@.....*}_.J...
+    0000ffff86c6acd0 35ffffab880b7d2a 1100052a885f7d09  *}.....5.}_.*...
+    0000ffff86c6ace0 35ffffab880b7d0a 6b0a013f52a2000a  .}.....5...R?..k
+    0000ffff86c6acf0 52be000954000141 0b09014a885f7d0a  A..T...R.}_.J...
+    0000ffff86c6ad00 35ffffab880b7d0a f9400008f9400500  .}.....5..@...@.
+    0000ffff86c6ad10 d61f0020f9400901 91001008d65f03c0  ..@. ....._.....
+    0000ffff86c6ad20 11000529885f7d09 35ffffaa880a7d09  .}_.)....}.....5
+    0000ffff86c6ad30 a9bf7bfdd65f03c0 f9400403910003fd  .._..{........@.
+    0000ffff86c6ad40 885f7d0991001068 880a7d0911000529  h....}_.)....}..
+    0000ffff86c6ad50 885f7c6835ffffaa 880a7c6911000509  ...5h|_.....i|..
+    0000ffff86c6ad60 7100051f35ffffaa 52a20009540000cb  ...5...q...T...R
+    0000ffff86c6ad70 540000606b09011f d65f03c0a8c17bfd  ...k`..T.{...._.
+    0000ffff86c6ad80 f0ffffc190ffffe0 9106a00090ffffe2  ................
+    0000ffff86c6ad90 9111044291270821 a9bd7bfd9400296e  !.'.B...n)...{..
+
+memory near x18:
+    0000fffd704d0000 0000000000000000 0000000000000000  ................
+    0000fffd704d0010 0000000000000000 0000000000000000  ................
+    0000fffd704d0020 0000000000000000 0000000000000000  ................
+    0000fffd704d0030 0000000000000000 0000000000000000  ................
+    0000fffd704d0040 0000000000000000 0000000000000000  ................
+    0000fffd704d0050 0000000000000000 0000000000000000  ................
+    0000fffd704d0060 0000000000000000 0000000000000000  ................
+    0000fffd704d0070 0000000000000000 0000000000000000  ................
+    0000fffd704d0080 0000000000000000 0000000000000000  ................
+    0000fffd704d0090 0000000000000000 0000000000000000  ................
+    0000fffd704d00a0 0000000000000000 0000000000000000  ................
+    0000fffd704d00b0 0000000000000000 0000000000000000  ................
+    0000fffd704d00c0 0000000000000000 0000000000000000  ................
+    0000fffd704d00d0 0000000000000000 0000000000000000  ................
+    0000fffd704d00e0 0000000000000000 0000000000000000  ................
+    0000fffd704d00f0 0000000000000000 0000000000000000  ................
+
+memory near x19 ([anon:stack_and_tls:480]):
+    0000fffd70b45640 0000fffd70b456b0 0000ffff841dd2d8  .V.p............
+    0000fffd70b45650 0000fffd70a4d000 00000000000fc000  ...p............
+    0000fffd70b45660 0000000000000000 0000000000000000  ................
+    0000fffd70b45670 0000000000000000 0000000000000000  ................
+    0000fffd70b45680 0000000000000000 0000ffff8426b6c0  ..........&.....
+    0000fffd70b45690 6a494e731c4e3218 0000fffda408e8d0  .2N.sNIj........
+    0000fffd70b456a0 0000fffd70b457f0 0000ffff87036054  .W.p....T`......
+    0000fffd70b456b0 0000fffd70a4d000 0000fffd70b45a60  ...p....`Z.p....
+    0000fffd70b456c0 0000000000000000 0000000000000000  ................
+    0000fffd70b456d0 0000fffd70b46000 0000000000000001  .`.p............
+    0000fffd70b456e0 0000000000000011 b400fffdf4095090  .........P......
+    0000fffd70b456f0 0000fffd70b45978 0000fffd70b458e8  xY.p.....X.p....
+    0000fffd70b45700 0000000000000000 0000ffff8426b6c0  ..........&.....
+    0000fffd70b45710 0000000000000000 0000fffe2409b2f0  ...........$....
+    0000fffd70b45720 0000fffd70b45740 228f0000000d810b  @W.p..........."
+    0000fffd70b45730 0000fffd70b45760 0000ffff86c6ae10  `W.p............
+
+memory near x20 ([anon:scudo:primary]):
+    0000fffdf4095070 0000000000000000 0000000000000000  ................
+    0000fffdf4095080 0f10000000098108 0000000000000000  ................
+    0000fffdf4095090 0000ffff8703d718 0000000000000000  ................
+    0000fffdf40950a0 0000000000000000 0000000000000000  ................
+    0000fffdf40950b0 0000ffff8703d788 0000000000000000  ................
+    0000fffdf40950c0 0000000000000000 0000000000000000  ................
+    0000fffdf40950d0 0000000000000000 0000000000000031  ........1.......
+    0000fffdf40950e0 0000000000000027 b400fffda408e8d0  '...............
+    0000fffdf40950f0 6c63696865564920 6361626c6c614365   IVehicleCallbac
+    0000fffdf4095100 000000000000006b b400fffd940908b0  k...............
+    0000fffdf4095110 b400fffd940908b0 0000ffff8703d7d0  ................
+    0000fffdf4095120 b400fffd940917e0 0000000000000000  ................
+    0000fffdf4095130 1afa000000090008 0000000000000000  ................
+    0000fffdf4095140 b400fffdf4094b10 11c15aa6adbb7317  .K.......s...Z..
+    0000fffdf4095150 0000001400000103 306b6c62636d6d14  .........mmcblk0
+    0000fffdf4095160 0000000000323570 0000000000000000  p52.............
+
+memory near x21 ([anon:stack_and_tls:480]):
+    0000fffd70b45950 0000000000000000 0000000000010001  ................
+    0000fffd70b45960 0000000000000000 0000000000000000  ................
+    0000fffd70b45970 0000000000000000 0000000000000000  ................
+    0000fffd70b45980 0000000000000000 0000000000000000  ................
+    0000fffd70b45990 0000000000000000 0000000000000000  ................
+    0000fffd70b459a0 0000fffd73f42008 000000000000021c  . .s............
+    0000fffd70b459b0 000000000000021c 000000000000021c  ................
+    0000fffd70b459c0 0000fffd73f42228 0000000000000005  (".s............
+    0000fffd70b459d0 0000000000000005 0000000000000005  ................
+    0000fffd70b459e0 0000000000000000 0000000000010001  ................
+    0000fffd70b459f0 0000ffff86e7bbb4 b400fffe5409ca10  ...........T....
+    0000fffd70b45a00 b400fffd940917e0 b400fffdf4095090  .........P......
+    0000fffd70b45a10 0000001100000001 0000041e00000000  ................
+    0000fffd70b45a20 000000000000021c 0000000000000028  ........(.......
+    0000fffd70b45a30 0000fffd73f42008 0000fffd73f42228  . .s....(".s....
+    0000fffd70b45a40 0000000000000000 0000ffff841dd2d8  ................
+
+memory near x23 ([anon:stack_and_tls:480]):
+    0000fffd70b45fe0 0000000000000000 0000000000000000  ................
+    0000fffd70b45ff0 0000000000000000 0000fffd70b46040  ........@`.p....
+    0000fffd70b46000 0000ffff841be2e8 0000fffd70b45cb0  .........\.p....
+    0000fffd70b46010 0000000000000000 0000000000000000  ................
+    0000fffd70b46020 0000000000000000 6a494e731c4e3218  .........2N.sNIj
+    0000fffd70b46030 0000ffff84270800 0000000000000000  ..'.............
+    0000fffd70b46040 0000000000000000 0000000000000000  ................
+    0000fffd70b46050 0000000000000000 0000000000000000  ................
+    0000fffd70b46060 0000000000000001 b400fffe5409ca10  ...........T....
+    0000fffd70b46070 0000000000000000 0000000000000000  ................
+    0000fffd70b46080 0000000000000000 0000000000000000  ................
+    0000fffd70b46090 0000000000000000 0000000000000000  ................
+    0000fffd70b460a0 0000000000000000 0000000000000000  ................
+    0000fffd70b460b0 0000000000000000 0000000000000000  ................
+    0000fffd70b460c0 0000000000000000 0000000000000000  ................
+    0000fffd70b460d0 0000000000000000 0000000000000000  ................
+
+memory near x27 ([anon:stack_and_tls:480]):
+    0000fffd70b45a40 0000000000000000 0000ffff841dd2d8  ................
+    0000fffd70b45a50 0000000000000000 0000000000000000  ................
+    0000fffd70b45a60 0000fffd70b45ff8 0000fffd70b45cb0  ._.p.....\.p....
+    0000fffd70b45a70 0000fffd70b45ae0 0000ffff841dd2d8  .Z.p............
+    0000fffd70b45a80 b400fffda408ebd0 00000000000fc000  ................
+    0000fffd70b45a90 0000fffd70b45ff8 6a494e731c4e3218  ._.p.....2N.sNIj
+    0000fffd70b45aa0 0000000000000000 b400fffd94091ae0  ................
+    0000fffd70b45ab0 0000fffd70b45b10 0000ffff86e76a50  .[.p....Pj......
+    0000fffd70b45ac0 0000fffd70a4d000 00000000000fc000  ...p............
+    0000fffd70b45ad0 0000fffd70b45ff8 0000fffd70b45cb0  ._.p.....\.p....
+    0000fffd70b45ae0 0000fffd70b45cb0 b400fffd94091ae0  .\.p............
+    0000fffd70b45af0 b400fffdf4094900 0000000000000001  .I..............
+    0000fffd70b45b00 b400fffe5409cb40 b400fffe5409ca10  @..T.......T....
+    0000fffd70b45b10 0000fffd70b45b50 0000ffff86e769dc  P[.p.....i......
+    0000fffd70b45b20 0000ffff86c6efa8 b400fffe5409ca10  ...........T....
+    0000fffd70b45b30 0000fffd70b46000 0000000000000000  .`.p............
+
+memory near x28 ([anon:stack_and_tls:480]):
+    0000fffd70a4d000 0000000000000000 0000000000000000  ................
+    0000fffd70a4d010 0000000000000000 0000000000000000  ................
+    0000fffd70a4d020 0000000000000000 0000000000000000  ................
+    0000fffd70a4d030 0000000000000000 0000000000000000  ................
+    0000fffd70a4d040 0000000000000000 0000000000000000  ................
+    0000fffd70a4d050 0000000000000000 0000000000000000  ................
+    0000fffd70a4d060 0000000000000000 0000000000000000  ................
+    0000fffd70a4d070 0000000000000000 0000000000000000  ................
+    0000fffd70a4d080 0000000000000000 0000000000000000  ................
+    0000fffd70a4d090 0000000000000000 0000000000000000  ................
+    0000fffd70a4d0a0 0000000000000000 0000000000000000  ................
+    0000fffd70a4d0b0 0000000000000000 0000000000000000  ................
+    0000fffd70a4d0c0 0000000000000000 0000000000000000  ................
+    0000fffd70a4d0d0 0000000000000000 0000000000000000  ................
+    0000fffd70a4d0e0 0000000000000000 0000000000000000  ................
+    0000fffd70a4d0f0 0000000000000000 0000000000000000  ................
+
+memory near x29 ([anon:stack_and_tls:480]):
+    0000fffd70b455a0 0000fffd70b456a0 0000ffff870355cc  .V.p.....U......
+    0000fffd70b455b0 0000fffd70b46000 0000ffff87035550  .`.p....PU......
+    0000fffd70b455c0 0000fffd70b456a0 0000ffff87035634  .V.p....4V......
+    0000fffd70b455d0 0000fffd70b458e8 0000ffff870355ec  .X.p.....U......
+    0000fffd70b455e0 0000fffd70b45688 0000000000000000  .V.p............
+    0000fffd70b455f0 0000000000000000 b400fffd940908b0  ................
+    0000fffd70b45600 feff2d636468631f 7f7f7f7f7f7f7f7f  .chdc-..........
+    0000fffd70b45610 0000fffd70b45660 0000000000000001  `V.p............
+    0000fffd70b45620 0000000000000000 0000fffd73f42250  ........P".s....
+    0000fffd70b45630 0000fffd70b46000 00000000fffffff7  .`.p............
+    0000fffd70b45640 0000fffd70b456b0 0000ffff841dd2d8  .V.p............
+    0000fffd70b45650 0000fffd70a4d000 00000000000fc000  ...p............
+    0000fffd70b45660 0000000000000000 0000000000000000  ................
+    0000fffd70b45670 0000000000000000 0000000000000000  ................
+    0000fffd70b45680 0000000000000000 0000ffff8426b6c0  ..........&.....
+    0000fffd70b45690 6a494e731c4e3218 0000fffda408e8d0  .2N.sNIj........
+
+memory near lr (/system/lib64/android.hardware.automotive.vehicle@2.0.so):
+    0000ffff87035610 8b090100f85e8129 f9400fe0940015f6  ).^...........@.
+    0000ffff87035620 f9400008f94027e1 d10103a8f9403509  .'@...@..5@.....
+    0000ffff87035630 f9400fe8d63f0120 f9400109b40000c8   .?...@.......@.
+    0000ffff87035640 f85e8129910063e1 940015ed8b090100  .c..).^.........
+    0000ffff87035650 37580da094001624 a901ffff340004d8  $.....X7...4....
+    0000ffff87035660 a942d295f90017ff 54000420eb1402bf  ......B..... ..T
+    0000ffff87035670 f0ffff59f0ffff58 f0ffff5b90ffff7a  X...Y...z...[...
+    0000ffff87035680 912a031852800036 91102f5a91389339  6..R..*.9.8.Z/..
+    0000ffff87035690 910063fc912f537b a93ae3b9b81bc3b6  {S/..c........:.
+    0000ffff870356a0 f9002bfca905ebfb b4000b40f94012a0  .....+....@.@...
+    0000ffff870356b0 d10113a1f9400008 d10163a3d10143a2  ..@......C...c..
+    0000ffff870356c0 910183e4f9401908 910143e6910163e5  ..@......c...C..
+    0000ffff870356d0 9100c2b5d63f0100 54fffde1eb15029f  ..?............T
+    0000ffff870356e0 b4000060f9400fe0 94001571f90013e0  ..@.`.......q...
+    0000ffff870356f0 940016c3d10103a0 940016d5910063e8  .........c......
+    0000ffff87035700 aa1303e1910063e0 394083e8940016d6  .c............@9
+
+memory near sp ([anon:stack_and_tls:480]):
+    0000fffd70b455a0 0000fffd70b456a0 0000ffff870355cc  .V.p.....U......
+    0000fffd70b455b0 0000fffd70b46000 0000ffff87035550  .`.p....PU......
+    0000fffd70b455c0 0000fffd70b456a0 0000ffff87035634  .V.p....4V......
+    0000fffd70b455d0 0000fffd70b458e8 0000ffff870355ec  .X.p.....U......
+    0000fffd70b455e0 0000fffd70b45688 0000000000000000  .V.p............
+    0000fffd70b455f0 0000000000000000 b400fffd940908b0  ................
+    0000fffd70b45600 feff2d636468631f 7f7f7f7f7f7f7f7f  .chdc-..........
+    0000fffd70b45610 0000fffd70b45660 0000000000000001  `V.p............
+    0000fffd70b45620 0000000000000000 0000fffd73f42250  ........P".s....
+    0000fffd70b45630 0000fffd70b46000 00000000fffffff7  .`.p............
+    0000fffd70b45640 0000fffd70b456b0 0000ffff841dd2d8  .V.p............
+    0000fffd70b45650 0000fffd70a4d000 00000000000fc000  ...p............
+    0000fffd70b45660 0000000000000000 0000000000000000  ................
+    0000fffd70b45670 0000000000000000 0000000000000000  ................
+    0000fffd70b45680 0000000000000000 0000ffff8426b6c0  ..........&.....
+    0000fffd70b45690 6a494e731c4e3218 0000fffda408e8d0  .2N.sNIj........
+
+memory near pc (/system/lib64/libwatchdog_process_service.so):
+    0000ffff86ae5480 72a22a0a9100e108 6b0a017fb85d410b  .....*.r.A]....k
+    0000ffff86ae5490 f101a129540000a0 54ffff619101a108  ...T).......a..T
+    0000ffff86ae54a0 f940010814000005 f9400101f9400400  ......@...@...@.
+    0000ffff86ae54b0 6f00e40094001574 ad0002603900827f  t......o...9`...
+    0000ffff86ae54c0 a8c27bfdf9400bf3 6f00e400d65f03c0  ..@..{...._....o
+    0000ffff86ae54d0 ad0001003900811f 6f00e400d65f03c0  ...9......_....o
+    0000ffff86ae54e0 ad0001003900811f f9400429d65f03c0  ...9......_.).@.
+    0000ffff86ae54f0 f9000009aa0003e8 f85e8129f940082a  ........*.@.).^.
+    0000ffff86ae5500 f9400029f829680a f9400c2af9000009  .h).).@.....*.@.
+    0000ffff86ae5510 f829680af85e8129 f8008d00f9400040  ).^..h).@.@.....
+    0000ffff86ae5520 aa0803e1b4000060 d65f03c0140013d6  `............._.
+    0000ffff86ae5530 a9014ff4a9be7bfd aa0003f3910003fd  .{...O..........
+    0000ffff86ae5540 aa0103f491004000 d0000028940013ca  .@..........(...
+    0000ffff86ae5550 91006109f9477108 f90002699101a108  .qG..a......i...
+    0000ffff86ae5560 f9400280f9000a68 b40000a0f8008e60  h.....@.`.......
+    0000ffff86ae5570 a9414ff4aa1303e1 140013c1a8c27bfd  .....OA..{......
+
+memory map (277 entries):
+    0000aaaa'b581d000-0000aaaa'b5820fff r--         0      4000  /system/bin/carwatchdogd (BuildId: 7b43fc11d5af80ca34c4bc4d80d873b6)
+    0000aaaa'b5821000-0000aaaa'b5824fff r-x      4000      4000  /system/bin/carwatchdogd (BuildId: 7b43fc11d5af80ca34c4bc4d80d873b6)
+    0000aaaa'b5825000-0000aaaa'b5825fff r--      8000      1000  /system/bin/carwatchdogd (BuildId: 7b43fc11d5af80ca34c4bc4d80d873b6)
+    0000aaaa'b5826000-0000aaaa'b5826fff rw-      8000      1000  /system/bin/carwatchdogd (BuildId: 7b43fc11d5af80ca34c4bc4d80d873b6)
+    0000fffd'6e94e000-0000fffd'6f70dfff ---         0    dc0000
+    0000fffd'6f70e000-0000fffd'6f70ffff rw-         0      2000
+    0000fffd'6f710000-0000fffd'6f94dfff ---         0    23e000
+    0000fffd'6f94e000-0000fffd'6f94efff ---         0      1000
+    0000fffd'6f94f000-0000fffd'6fa4afff rw-         0     fc000  [anon:stack_and_tls:14964]
+    0000fffd'6fa4b000-0000fffd'6fa4bfff ---         0      1000
+    0000fffd'6fa4c000-0000fffd'704cffff ---         0    a84000
+    0000fffd'704d0000-0000fffd'704d1fff rw-         0      2000
+    0000fffd'704d2000-0000fffd'70a4bfff ---         0    57a000
+    0000fffd'70a4c000-0000fffd'70a4cfff ---         0      1000
+    0000fffd'70a4d000-0000fffd'70b48fff rw-         0     fc000  [anon:stack_and_tls:480]
+    0000fffd'70b49000-0000fffd'70b49fff ---         0      1000
+    0000fffd'70b4a000-0000fffd'716cdfff ---         0    b84000
+    0000fffd'716ce000-0000fffd'716cffff rw-         0      2000
+    0000fffd'716d0000-0000fffd'71b49fff ---         0    47a000
+    0000fffd'71b4a000-0000fffd'71b4afff ---         0      1000
+    0000fffd'71b4b000-0000fffd'71c46fff rw-         0     fc000  [anon:stack_and_tls:214]
+    0000fffd'71c47000-0000fffd'71c47fff ---         0      1000
+    0000fffd'71c48000-0000fffd'71f7bfff ---         0    334000
+    0000fffd'71f7c000-0000fffd'71f7dfff rw-         0      2000
+    0000fffd'71f7e000-0000fffd'72c47fff ---         0    cca000
+    0000fffd'72c48000-0000fffd'72c48fff ---         0      1000
+    0000fffd'72c49000-0000fffd'72d44fff rw-         0     fc000  [anon:stack_and_tls:213]
+    0000fffd'72d45000-0000fffd'72d45fff ---         0      1000
+    0000fffd'72e44000-0000fffd'73051fff ---         0    20e000
+    0000fffd'73052000-0000fffd'73053fff rw-         0      2000
+    0000fffd'73054000-0000fffd'73e43fff ---         0    df0000
+    0000fffd'73e44000-0000fffd'73e44fff ---         0      1000
+    0000fffd'73e45000-0000fffd'73f40fff rw-         0     fc000  [anon:stack_and_tls:212]
+    0000fffd'73f41000-0000fffd'73f41fff ---         0      1000
+    0000fffd'74040000-0000fffd'74041fff r--         0      2000  /system/lib64/libnetd_client.so (BuildId: feafe61984ebf2a76e0deb85416481b0)
+    0000fffd'74042000-0000fffd'74044fff r-x      2000      3000  /system/lib64/libnetd_client.so (BuildId: feafe61984ebf2a76e0deb85416481b0)
+    0000fffd'74045000-0000fffd'74045fff r--      5000      1000  /system/lib64/libnetd_client.so (BuildId: feafe61984ebf2a76e0deb85416481b0)
+    0000fffd'74046000-0000fffd'74046fff rw-      5000      1000  /system/lib64/libnetd_client.so (BuildId: feafe61984ebf2a76e0deb85416481b0)
+    0000fffd'74089000-0000fffd'74092fff ---         0      a000
+    0000fffd'74093000-0000fffd'740d2fff rw-         0     40000  [anon:scudo:primary]
+    0000fffd'740d3000-0000fffd'84094fff ---         0   ffc2000
+    0000fffd'84095000-0000fffd'840d4fff rw-         0     40000  [anon:scudo:primary]
+    0000fffd'840d5000-0000fffd'9408ffff ---         0   ffbb000
+    0000fffd'94090000-0000fffd'940cffff rw-         0     40000  [anon:scudo:primary]
+    0000fffd'940d0000-0000fffd'a408dfff ---         0   ffbe000
+    0000fffd'a408e000-0000fffd'a40cdfff rw-         0     40000  [anon:scudo:primary]
+    0000fffd'a40ce000-0000fffd'b4090fff ---         0   ffc3000
+    0000fffd'b4091000-0000fffd'b40d0fff rw-         0     40000  [anon:scudo:primary]
+    0000fffd'b40d1000-0000fffd'c408afff ---         0   ffba000
+    0000fffd'c408b000-0000fffd'c40cafff rw-         0     40000  [anon:scudo:primary]
+    0000fffd'c40cb000-0000fffd'd408ffff ---         0   ffc5000
+    0000fffd'd4090000-0000fffd'd40cffff rw-         0     40000  [anon:scudo:primary]
+    0000fffd'd40d0000-0000fffd'e4094fff ---         0   ffc5000
+    0000fffd'e4095000-0000fffd'e4194fff rw-         0    100000  [anon:scudo:primary]
+    0000fffd'e4195000-0000fffd'f4093fff ---         0   feff000
+    0000fffd'f4094000-0000fffd'f40d3fff rw-         0     40000  [anon:scudo:primary]
+    0000fffd'f40d4000-0000fffe'04098fff ---         0   ffc5000
+    0000fffe'04099000-0000fffe'040d8fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'040d9000-0000fffe'1408cfff ---         0   ffb4000
+    0000fffe'1408d000-0000fffe'140ccfff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'140cd000-0000fffe'24098fff ---         0   ffcc000
+    0000fffe'24099000-0000fffe'240d8fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'240d9000-0000fffe'34094fff ---         0   ffbc000
+    0000fffe'34095000-0000fffe'340d4fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'340d5000-0000fffe'44089fff ---         0   ffb5000
+    0000fffe'4408a000-0000fffe'440c9fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'440ca000-0000fffe'54097fff ---         0   ffce000
+    0000fffe'54098000-0000fffe'540d7fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'540d8000-0000fffe'64098fff ---         0   ffc1000
+    0000fffe'64099000-0000fffe'640d8fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'640d9000-0000fffe'74096fff ---         0   ffbe000
+    0000fffe'74097000-0000fffe'740d6fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'740d7000-0000fffe'8408efff ---         0   ffb8000
+    0000fffe'8408f000-0000fffe'840cefff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'840cf000-0000fffe'9408cfff ---         0   ffbe000
+    0000fffe'9408d000-0000fffe'940ccfff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'940cd000-0000fffe'a4090fff ---         0   ffc4000
+    0000fffe'a4091000-0000fffe'a40d0fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'a40d1000-0000fffe'b408bfff ---         0   ffbb000
+    0000fffe'b408c000-0000fffe'b40cbfff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'b40cc000-0000fffe'c4089fff ---         0   ffbe000
+    0000fffe'c408a000-0000fffe'c40c9fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'c40ca000-0000fffe'd4096fff ---         0   ffcd000
+    0000fffe'd4097000-0000fffe'd40d6fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'd40d7000-0000fffe'e408ffff ---         0   ffb9000
+    0000fffe'e4090000-0000fffe'e40cffff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'e40d0000-0000fffe'f4094fff ---         0   ffc5000
+    0000fffe'f4095000-0000fffe'f40d4fff rw-         0     40000  [anon:scudo:primary]
+    0000fffe'f40d5000-0000ffff'04094fff ---         0   ffc0000
+    0000ffff'04095000-0000ffff'040d4fff rw-         0     40000  [anon:scudo:primary]
+    0000ffff'040d5000-0000ffff'14095fff ---         0   ffc1000
+    0000ffff'14096000-0000ffff'140d5fff rw-         0     40000  [anon:scudo:primary]
+    0000ffff'140d6000-0000ffff'4408afff ---         0  2ffb5000
+    0000ffff'4408b000-0000ffff'440cafff rw-         0     40000  [anon:scudo:primary]
+    0000ffff'440cb000-0000ffff'54090fff ---         0   ffc6000
+    0000ffff'54091000-0000ffff'540d0fff rw-         0     40000  [anon:scudo:primary]
+    0000ffff'540d1000-0000ffff'64095fff ---         0   ffc5000
+    0000ffff'64096000-0000ffff'640d5fff rw-         0     40000  [anon:scudo:primary]
+    0000ffff'640d6000-0000ffff'7408bfff ---         0   ffb6000
+    0000ffff'7408c000-0000ffff'740cbfff rw-         0     40000  [anon:scudo:primary]
+    0000ffff'740cc000-0000ffff'84088fff ---         0   ffbd000
+    0000ffff'84089000-0000ffff'840d1fff r--         0     49000  /system/lib64/libc++.so (BuildId: 04f430f88f01259a1c5ccfc881bc25da)
+    0000ffff'840d2000-0000ffff'8412bfff r-x     49000     5a000  /system/lib64/libc++.so (BuildId: 04f430f88f01259a1c5ccfc881bc25da)
+    0000ffff'8412c000-0000ffff'84132fff r--     a3000      7000  /system/lib64/libc++.so (BuildId: 04f430f88f01259a1c5ccfc881bc25da)
+    0000ffff'84133000-0000ffff'84133fff rw-     a9000      1000  /system/lib64/libc++.so (BuildId: 04f430f88f01259a1c5ccfc881bc25da)
+    0000ffff'84134000-0000ffff'84136fff rw-         0      3000  [anon:.bss]
+    0000ffff'84148000-0000ffff'84151fff r--         0      a000  /system/lib64/android.automotive.watchdog.internal-cpp.so (BuildId: d5824b0a3916551edcc6c4c2a1d0d2a8)
+    0000ffff'84152000-0000ffff'8415afff r-x      a000      9000  /system/lib64/android.automotive.watchdog.internal-cpp.so (BuildId: d5824b0a3916551edcc6c4c2a1d0d2a8)
+    0000ffff'8415b000-0000ffff'8415dfff r--     13000      3000  /system/lib64/android.automotive.watchdog.internal-cpp.so (BuildId: d5824b0a3916551edcc6c4c2a1d0d2a8)
+    0000ffff'8415e000-0000ffff'8415efff rw-     15000      1000  /system/lib64/android.automotive.watchdog.internal-cpp.so (BuildId: d5824b0a3916551edcc6c4c2a1d0d2a8)
+    0000ffff'8419b000-0000ffff'841d6fff r--         0     3c000  /apex/com.android.runtime/lib64/bionic/libc.so (BuildId: ba489d4985c0cf173209da67405662f9)
+    0000ffff'841d7000-0000ffff'84257fff r-x     3c000     81000  /apex/com.android.runtime/lib64/bionic/libc.so (BuildId: ba489d4985c0cf173209da67405662f9)
+    0000ffff'84258000-0000ffff'8425bfff r--     bd000      4000  /apex/com.android.runtime/lib64/bionic/libc.so (BuildId: ba489d4985c0cf173209da67405662f9)
+    0000ffff'8425c000-0000ffff'8425dfff rw-     c0000      2000  /apex/com.android.runtime/lib64/bionic/libc.so (BuildId: ba489d4985c0cf173209da67405662f9)
+    0000ffff'8425e000-0000ffff'84262fff rw-         0      5000  [anon:.bss]
+    0000ffff'84263000-0000ffff'84263fff r--         0      1000  [anon:.bss]
+    0000ffff'84264000-0000ffff'847b8fff rw-         0    555000  [anon:.bss]
+    0000ffff'84800000-0000ffff'869fffff ---         0   2200000
+    0000ffff'86a4b000-0000ffff'86a67fff r--         0     1d000  /system/lib64/libprocessgroup.so (BuildId: 6e1aa06a89bf61363ed8d01e243a2373)
+    0000ffff'86a68000-0000ffff'86a98fff r-x     1d000     31000  /system/lib64/libprocessgroup.so (BuildId: 6e1aa06a89bf61363ed8d01e243a2373)
+    0000ffff'86a99000-0000ffff'86a9afff r--     4e000      2000  /system/lib64/libprocessgroup.so (BuildId: 6e1aa06a89bf61363ed8d01e243a2373)
+    0000ffff'86a9b000-0000ffff'86a9bfff rw-     4f000      1000  /system/lib64/libprocessgroup.so (BuildId: 6e1aa06a89bf61363ed8d01e243a2373)
+    0000ffff'86ad3000-0000ffff'86adefff r--         0      c000  /system/lib64/libwatchdog_process_service.so (BuildId: f0a5ba0f8e77931afe83707ee9bba0a9)
+    0000ffff'86adf000-0000ffff'86aeafff r-x      c000      c000  /system/lib64/libwatchdog_process_service.so (BuildId: f0a5ba0f8e77931afe83707ee9bba0a9)
+    0000ffff'86aeb000-0000ffff'86aecfff r--     18000      2000  /system/lib64/libwatchdog_process_service.so (BuildId: f0a5ba0f8e77931afe83707ee9bba0a9)
+    0000ffff'86aed000-0000ffff'86aedfff rw-     19000      1000  /system/lib64/libwatchdog_process_service.so (BuildId: f0a5ba0f8e77931afe83707ee9bba0a9)
+    0000ffff'86b19000-0000ffff'86b1dfff r--         0      5000  /system/lib64/liblog.so (BuildId: c9ff8e786b88d6738dc7e6abd0a6fc35)
+    0000ffff'86b1e000-0000ffff'86b26fff r-x      5000      9000  /system/lib64/liblog.so (BuildId: c9ff8e786b88d6738dc7e6abd0a6fc35)
+    0000ffff'86b27000-0000ffff'86b27fff r--      e000      1000  /system/lib64/liblog.so (BuildId: c9ff8e786b88d6738dc7e6abd0a6fc35)
+    0000ffff'86b28000-0000ffff'86b28fff rw-      e000      1000  /system/lib64/liblog.so (BuildId: c9ff8e786b88d6738dc7e6abd0a6fc35)
+    0000ffff'86b41000-0000ffff'86b51fff r--         0     11000  /system/lib64/libbase.so (BuildId: 225cc3496ad7ce1867ed9bd3357de134)
+    0000ffff'86b52000-0000ffff'86b79fff r-x     11000     28000  /system/lib64/libbase.so (BuildId: 225cc3496ad7ce1867ed9bd3357de134)
+    0000ffff'86b7a000-0000ffff'86b7afff r--     39000      1000  /system/lib64/libbase.so (BuildId: 225cc3496ad7ce1867ed9bd3357de134)
+    0000ffff'86b7b000-0000ffff'86b7bfff rw-     39000      1000  /system/lib64/libbase.so (BuildId: 225cc3496ad7ce1867ed9bd3357de134)
+    0000ffff'86b92000-0000ffff'86b9cfff r--         0      b000  /system/lib64/android.automotive.watchdog-V3-cpp.so (BuildId: 1fd623edd7755a0e78f6272b58026a39)
+    0000ffff'86b9d000-0000ffff'86ba4fff r-x      b000      8000  /system/lib64/android.automotive.watchdog-V3-cpp.so (BuildId: 1fd623edd7755a0e78f6272b58026a39)
+    0000ffff'86ba5000-0000ffff'86ba8fff r--     13000      4000  /system/lib64/android.automotive.watchdog-V3-cpp.so (BuildId: 1fd623edd7755a0e78f6272b58026a39)
+    0000ffff'86ba9000-0000ffff'86ba9fff rw-     16000      1000  /system/lib64/android.automotive.watchdog-V3-cpp.so (BuildId: 1fd623edd7755a0e78f6272b58026a39)
+    0000ffff'86bc3000-0000ffff'86bc3fff r--         0      1000  /system/lib64/libvndksupport.so (BuildId: e6ccca6c6e4bbd07e712569183b58dfe)
+    0000ffff'86bc4000-0000ffff'86bc4fff r-x      1000      1000  /system/lib64/libvndksupport.so (BuildId: e6ccca6c6e4bbd07e712569183b58dfe)
+    0000ffff'86bc5000-0000ffff'86bc5fff r--      2000      1000  /system/lib64/libvndksupport.so (BuildId: e6ccca6c6e4bbd07e712569183b58dfe)
+    0000ffff'86bc6000-0000ffff'86bc6fff rw-      2000      1000  /system/lib64/libvndksupport.so (BuildId: e6ccca6c6e4bbd07e712569183b58dfe)
+    0000ffff'86bd3000-0000ffff'86c36fff rw-         0     64000  [anon:linker_alloc]
+    0000ffff'86c37000-0000ffff'86c38fff r--         0      2000  /system/lib64/libcgrouprc.so (BuildId: b10ef50399dbb8ab2d8cb1a292fe41ce)
+    0000ffff'86c39000-0000ffff'86c39fff r-x      2000      1000  /system/lib64/libcgrouprc.so (BuildId: b10ef50399dbb8ab2d8cb1a292fe41ce)
+    0000ffff'86c3a000-0000ffff'86c3afff r--      3000      1000  /system/lib64/libcgrouprc.so (BuildId: b10ef50399dbb8ab2d8cb1a292fe41ce)
+    0000ffff'86c3b000-0000ffff'86c3bfff rw-      3000      1000  /system/lib64/libcgrouprc.so (BuildId: b10ef50399dbb8ab2d8cb1a292fe41ce)
+    0000ffff'86c5d000-0000ffff'86c69fff r--         0      d000  /system/lib64/libutils.so (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+    0000ffff'86c6a000-0000ffff'86c75fff r-x      d000      c000  /system/lib64/libutils.so (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+    0000ffff'86c76000-0000ffff'86c76fff r--     19000      1000  /system/lib64/libutils.so (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+    0000ffff'86c77000-0000ffff'86c77fff rw-     19000      1000  /system/lib64/libutils.so (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+    0000ffff'86c98000-0000ffff'86c98fff r--         0      1000  /apex/com.android.runtime/lib64/bionic/libdl_android.so (BuildId: b1ad307c9a73cec9edc2761b6b530396)
+    0000ffff'86c99000-0000ffff'86c99fff r-x      1000      1000  /apex/com.android.runtime/lib64/bionic/libdl_android.so (BuildId: b1ad307c9a73cec9edc2761b6b530396)
+    0000ffff'86c9a000-0000ffff'86c9afff r--      2000      1000  /apex/com.android.runtime/lib64/bionic/libdl_android.so (BuildId: b1ad307c9a73cec9edc2761b6b530396)
+    0000ffff'86cda000-0000ffff'86ce1fff r--         0      8000  /system/lib64/libtinyxml2.so (BuildId: 5bb21cd76239459ed45c191f868e9fe7)
+    0000ffff'86ce2000-0000ffff'86cebfff r-x      8000      a000  /system/lib64/libtinyxml2.so (BuildId: 5bb21cd76239459ed45c191f868e9fe7)
+    0000ffff'86cec000-0000ffff'86cecfff r--     12000      1000  /system/lib64/libtinyxml2.so (BuildId: 5bb21cd76239459ed45c191f868e9fe7)
+    0000ffff'86ced000-0000ffff'86cedfff rw-     12000      1000  /system/lib64/libtinyxml2.so (BuildId: 5bb21cd76239459ed45c191f868e9fe7)
+    0000ffff'86cf9000-0000ffff'86d18fff r--         0     20000  /dev/__properties__/u:object_r:powerctl_prop:s0
+    0000ffff'86d19000-0000ffff'86d54fff r--         0     3c000  /system/lib64/libbinder.so (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+    0000ffff'86d55000-0000ffff'86d9bfff r-x     3c000     47000  /system/lib64/libbinder.so (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+    0000ffff'86d9c000-0000ffff'86da9fff r--     83000      e000  /system/lib64/libbinder.so (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+    0000ffff'86daa000-0000ffff'86daafff rw-     90000      1000  /system/lib64/libbinder.so (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+    0000ffff'86dab000-0000ffff'86dabfff rw-         0      1000  [anon:.bss]
+    0000ffff'86db8000-0000ffff'86dd7fff r--         0     20000  /dev/__properties__/u:object_r:exported_system_prop:s0
+    0000ffff'86dd8000-0000ffff'86ddefff r--         0      7000  /system/lib64/libcutils.so (BuildId: 61f89c169e2e729003d6b9484315c390)
+    0000ffff'86ddf000-0000ffff'86de6fff r-x      7000      8000  /system/lib64/libcutils.so (BuildId: 61f89c169e2e729003d6b9484315c390)
+    0000ffff'86de7000-0000ffff'86de8fff r--      f000      2000  /system/lib64/libcutils.so (BuildId: 61f89c169e2e729003d6b9484315c390)
+    0000ffff'86de9000-0000ffff'86de9fff rw-     10000      1000  /system/lib64/libcutils.so (BuildId: 61f89c169e2e729003d6b9484315c390)
+    0000ffff'86e02000-0000ffff'86e47fff r--         0     46000  /system/lib64/libhidlbase.so (BuildId: 0e8ff0243d9ca9b06f81b05ddb9eb32b)
+    0000ffff'86e48000-0000ffff'86eb0fff r-x     46000     69000  /system/lib64/libhidlbase.so (BuildId: 0e8ff0243d9ca9b06f81b05ddb9eb32b)
+    0000ffff'86eb1000-0000ffff'86ebbfff r--     af000      b000  /system/lib64/libhidlbase.so (BuildId: 0e8ff0243d9ca9b06f81b05ddb9eb32b)
+    0000ffff'86ebc000-0000ffff'86ebcfff rw-     b9000      1000  /system/lib64/libhidlbase.so (BuildId: 0e8ff0243d9ca9b06f81b05ddb9eb32b)
+    0000ffff'86ebd000-0000ffff'86ebdfff rw-         0      1000  [anon:.bss]
+    0000ffff'86ec3000-0000ffff'86ec3fff ---         0      1000
+    0000ffff'86ec4000-0000ffff'86edafff rw-         0     17000  [anon:scudo:secondary]
+    0000ffff'86edb000-0000ffff'86edbfff ---         0      1000
+    0000ffff'86edc000-0000ffff'86ef5fff r--         0     1a000  /system/lib64/libwatchdog_perf_service.so (BuildId: 94328d7bc2432286d55faa10cda2ea54)
+    0000ffff'86ef6000-0000ffff'86f33fff r-x     1a000     3e000  /system/lib64/libwatchdog_perf_service.so (BuildId: 94328d7bc2432286d55faa10cda2ea54)
+    0000ffff'86f34000-0000ffff'86f35fff r--     58000      2000  /system/lib64/libwatchdog_perf_service.so (BuildId: 94328d7bc2432286d55faa10cda2ea54)
+    0000ffff'86f36000-0000ffff'86f36fff rw-     59000      1000  /system/lib64/libwatchdog_perf_service.so (BuildId: 94328d7bc2432286d55faa10cda2ea54)
+    0000ffff'86f42000-0000ffff'86f42fff ---         0      1000
+    0000ffff'86f43000-0000ffff'86f57fff rw-         0     15000  [anon:scudo:secondary]
+    0000ffff'86f58000-0000ffff'86f58fff ---         0      1000
+    0000ffff'86f59000-0000ffff'86f62fff r--         0      a000  /system/lib64/libwatchdog_binder_mediator.so (BuildId: 1418fb6bb0cedc971e57d635d8b4e7c9)
+    0000ffff'86f63000-0000ffff'86f6afff r-x      a000      8000  /system/lib64/libwatchdog_binder_mediator.so (BuildId: 1418fb6bb0cedc971e57d635d8b4e7c9)
+    0000ffff'86f6b000-0000ffff'86f6cfff r--     12000      2000  /system/lib64/libwatchdog_binder_mediator.so (BuildId: 1418fb6bb0cedc971e57d635d8b4e7c9)
+    0000ffff'86f71000-0000ffff'86f90fff r--         0     20000  /dev/__properties__/u:object_r:build_vendor_prop:s0
+    0000ffff'86f91000-0000ffff'86f91fff r--         0      1000  /apex/com.android.runtime/lib64/bionic/libdl.so (BuildId: 7ddd297e172d8189c0473076e7e7cbf5)
+    0000ffff'86f92000-0000ffff'86f92fff r-x      1000      1000  /apex/com.android.runtime/lib64/bionic/libdl.so (BuildId: 7ddd297e172d8189c0473076e7e7cbf5)
+    0000ffff'86f93000-0000ffff'86f93fff r--      2000      1000  /apex/com.android.runtime/lib64/bionic/libdl.so (BuildId: 7ddd297e172d8189c0473076e7e7cbf5)
+    0000ffff'86f94000-0000ffff'86f94fff ---         0      1000
+    0000ffff'86f95000-0000ffff'86f95fff rw-         0      1000  [anon:.bss]
+    0000ffff'86fa1000-0000ffff'86fc0fff r--         0     20000  /dev/__properties__/u:object_r:init_service_status_private_prop:s0
+    0000ffff'86fc1000-0000ffff'86fd2fff r--         0     12000  /apex/com.android.runtime/lib64/bionic/libm.so (BuildId: 56cbd062acc0706a12d10d5eb6d90d29)
+    0000ffff'86fd3000-0000ffff'86ff5fff r-x     12000     23000  /apex/com.android.runtime/lib64/bionic/libm.so (BuildId: 56cbd062acc0706a12d10d5eb6d90d29)
+    0000ffff'86ff6000-0000ffff'86ff6fff r--     35000      1000  /apex/com.android.runtime/lib64/bionic/libm.so (BuildId: 56cbd062acc0706a12d10d5eb6d90d29)
+    0000ffff'86ff7000-0000ffff'86ff7fff rw-     35000      1000  /apex/com.android.runtime/lib64/bionic/libm.so (BuildId: 56cbd062acc0706a12d10d5eb6d90d29)
+    0000ffff'86ffd000-0000ffff'86ffdfff ---         0      1000
+    0000ffff'86ffe000-0000ffff'87012fff rw-         0     15000  [anon:scudo:secondary]
+    0000ffff'87013000-0000ffff'87013fff ---         0      1000
+    0000ffff'87014000-0000ffff'87025fff r--         0     12000  /system/lib64/android.hardware.automotive.vehicle@2.0.so (BuildId: 34d48e5d6d67de4ada960c0101f6a58c)
+    0000ffff'87026000-0000ffff'8703bfff r-x     12000     16000  /system/lib64/android.hardware.automotive.vehicle@2.0.so (BuildId: 34d48e5d6d67de4ada960c0101f6a58c)
+    0000ffff'8703c000-0000ffff'8703efff r--     28000      3000  /system/lib64/android.hardware.automotive.vehicle@2.0.so (BuildId: 34d48e5d6d67de4ada960c0101f6a58c)
+    0000ffff'8703f000-0000ffff'8703ffff rw-     2a000      1000  /system/lib64/android.hardware.automotive.vehicle@2.0.so (BuildId: 34d48e5d6d67de4ada960c0101f6a58c)
+    0000ffff'87051000-0000ffff'87055fff r--         0      5000  /system/lib64/libwatchdog_package_info_resolver.so (BuildId: 3af037e8e918e0ad7e1e47dd6aaa5fb9)
+    0000ffff'87056000-0000ffff'8705afff r-x      5000      5000  /system/lib64/libwatchdog_package_info_resolver.so (BuildId: 3af037e8e918e0ad7e1e47dd6aaa5fb9)
+    0000ffff'8705b000-0000ffff'8705bfff r--      a000      1000  /system/lib64/libwatchdog_package_info_resolver.so (BuildId: 3af037e8e918e0ad7e1e47dd6aaa5fb9)
+    0000ffff'8705c000-0000ffff'8705cfff rw-      a000      1000  /system/lib64/libwatchdog_package_info_resolver.so (BuildId: 3af037e8e918e0ad7e1e47dd6aaa5fb9)
+    0000ffff'87062000-0000ffff'87062fff ---         0      1000
+    0000ffff'87063000-0000ffff'8706afff rw-         0      8000  [anon:thread signal stack]
+    0000ffff'8706b000-0000ffff'8706bfff ---         0      1000
+    0000ffff'8706c000-0000ffff'87073fff rw-         0      8000  [anon:thread signal stack]
+    0000ffff'87074000-0000ffff'87093fff r--         0     20000  /dev/__properties__/u:object_r:default_prop:s0
+    0000ffff'87094000-0000ffff'870b3fff r--         0     20000  /dev/__properties__/u:object_r:build_prop:s0
+    0000ffff'870b4000-0000ffff'870b4fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    0000ffff'870b9000-0000ffff'870d8fff r--         0     20000  /dev/__properties__/u:object_r:log_tag_prop:s0
+    0000ffff'870d9000-0000ffff'870f8fff r--         0     20000  /dev/__properties__/u:object_r:vts_config_prop:s0
+    0000ffff'870f9000-0000ffff'87118fff r--         0     20000  /dev/__properties__/u:object_r:heapprofd_prop:s0
+    0000ffff'87119000-0000ffff'87119fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    0000ffff'8711e000-0000ffff'8711efff ---         0      1000
+    0000ffff'8711f000-0000ffff'87126fff rw-         0      8000  [anon:thread signal stack]
+    0000ffff'87127000-0000ffff'87127fff ---         0      1000
+    0000ffff'87128000-0000ffff'8712ffff rw-         0      8000  [anon:thread signal stack]
+    0000ffff'87130000-0000ffff'87130fff ---         0      1000
+    0000ffff'87131000-0000ffff'87138fff rw-         0      8000  [anon:thread signal stack]
+    0000ffff'87139000-0000ffff'87158fff r--         0     20000  /dev/__properties__/u:object_r:libc_debug_prop:s0
+    0000ffff'87159000-0000ffff'87178fff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    0000ffff'87179000-0000ffff'87198fff r--         0     20000  /dev/__properties__/properties_serial
+    0000ffff'87199000-0000ffff'8719bfff rw-         0      3000  [anon:System property context nodes]
+    0000ffff'8719c000-0000ffff'871abfff r--         0     10000  /dev/__properties__/property_info
+    0000ffff'871ac000-0000ffff'871acfff ---         0      1000
+    0000ffff'871ad000-0000ffff'871b0fff rw-         0      4000  [anon:stack_and_tls:main]
+    0000ffff'871b1000-0000ffff'871b1fff ---         0      1000
+    0000ffff'871b6000-0000ffff'871d5fff r--         0     20000  /dev/__properties__/u:object_r:hal_instrumentation_prop:s0
+    0000ffff'871d6000-0000ffff'871f5fff r--         0     20000  /dev/__properties__/u:object_r:hwservicemanager_prop:s0
+    0000ffff'871f6000-0000ffff'87215fff r--         0     20000  /dev/__properties__/u:object_r:vendor_socket_hook_prop:s0
+    0000ffff'87216000-0000ffff'87279fff r--         0     64000  [anon:linker_alloc]
+    0000ffff'8727a000-0000ffff'8727cfff rw-         0      3000  [anon:bionic_alloc_small_objects]
+    0000ffff'8727d000-0000ffff'872e0fff r--         0     64000  [anon:linker_alloc]
+    0000ffff'872e1000-0000ffff'872edfff rw-         0      d000  [anon:bionic_alloc_small_objects]
+    0000ffff'872ef000-0000ffff'872f3fff rw-         0      5000  [anon:bionic_alloc_small_objects]
+    0000ffff'872f4000-0000ffff'87313fff r--         0     20000  /dev/__properties__/u:object_r:vndk_prop:s0
+    0000ffff'87314000-0000ffff'87315fff rw-         0      2000  [anon:bionic_alloc_small_objects]
+    0000ffff'87316000-0000ffff'87335fff r--         0     20000  /dev/__properties__/u:object_r:arm64_memtag_prop:s0
+    0000ffff'87336000-0000ffff'87399fff r--         0     64000  [anon:linker_alloc]
+    0000ffff'8739a000-0000ffff'8739afff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    0000ffff'8739b000-0000ffff'873bafff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    0000ffff'873bb000-0000ffff'873dafff r--         0     20000  /dev/__properties__/u:object_r:build_prop:s0
+    0000ffff'873db000-0000ffff'873dbfff ---         0      1000
+    0000ffff'873dc000-0000ffff'873e3fff rw-         0      8000
+    0000ffff'873e4000-0000ffff'873e4fff ---         0      1000
+    0000ffff'873e5000-0000ffff'87404fff r--         0     20000  /dev/__properties__/properties_serial
+    0000ffff'87405000-0000ffff'87407fff rw-         0      3000  [anon:System property context nodes]
+    0000ffff'87408000-0000ffff'87417fff r--         0     10000  /dev/__properties__/property_info
+    0000ffff'87418000-0000ffff'8747bfff r--         0     64000  [anon:linker_alloc]
+    0000ffff'8747c000-0000ffff'8747dfff rw-         0      2000  [anon:bionic_alloc_small_objects]
+    0000ffff'8747e000-0000ffff'8747efff r--         0      1000  [anon:atexit handlers]
+    0000ffff'8747f000-0000ffff'8752ffff ---         0     b1000
+    0000ffff'87530000-0000ffff'87531fff rw-         0      2000
+    0000ffff'87532000-0000ffff'8847efff ---         0    f4d000
+    0000ffff'8847f000-0000ffff'8847ffff ---         0      1000
+    0000ffff'88480000-0000ffff'88487fff rw-         0      8000  [anon:thread signal stack]
+    0000ffff'88488000-0000ffff'88488fff rw-         0      1000  [anon:arc4random data]
+    0000ffff'88489000-0000ffff'88489fff r--         0      1000  /dev/cgroup_info/cgroup.rc
+    0000ffff'8848a000-0000ffff'8848afff r--         0      1000  [anon:atexit handlers]
+    0000ffff'8848b000-0000ffff'8848bfff rw-         0      1000  [anon:arc4random data]
+    0000ffff'8848c000-0000ffff'8848dfff r--         0      2000  [vvar]
+    0000ffff'8848e000-0000ffff'8848efff r-x         0      1000  [vdso]
+    0000ffff'8848f000-0000ffff'884c5fff r--         0     37000  /apex/com.android.runtime/bin/linker64 (BuildId: 444e967e1c2bf1340d13ce4549eeef06)
+    0000ffff'884c6000-0000ffff'885a8fff r-x     37000     e3000  /apex/com.android.runtime/bin/linker64 (BuildId: 444e967e1c2bf1340d13ce4549eeef06)
+    0000ffff'885a9000-0000ffff'885b0fff r--    11a000      8000  /apex/com.android.runtime/bin/linker64 (BuildId: 444e967e1c2bf1340d13ce4549eeef06)
+    0000ffff'885b1000-0000ffff'885b2fff rw-    121000      2000  /apex/com.android.runtime/bin/linker64 (BuildId: 444e967e1c2bf1340d13ce4549eeef06)
+    0000ffff'885b3000-0000ffff'885b6fff rw-         0      4000  [anon:.bss]
+    0000ffff'885b7000-0000ffff'885b7fff r--         0      1000  [anon:.bss]
+    0000ffff'885b8000-0000ffff'885bdfff rw-         0      6000  [anon:.bss]
+    0000ffff'dfc90000-0000ffff'dfcb0fff rw-         0     21000  [stack]
+--------- tail end of log main
+07-21 06:20:36.536   175   175 W carwatchdogd: VHAL failed to update heart beat within timeout. Terminating VHAL...
+07-21 06:20:40.121   175   214 I carwatchdogd: Process(pid: 217) has been dumped and killed
+07-21 06:20:40.129   175   480 W carwatchdogd: VHAL has died.
+07-21 06:20:40.159   175   214 W carwatchdogd: Car watchdog service had died.
+07-21 06:20:40.301   175   175 I carwatchdogd: Successfully connected to VHAL.
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Cmdline: /system/bin/carwatchdogd
+pid: 175, tid: 175, name: Binder:175_2  >>> /system/bin/carwatchdogd <<<
+uid: 1000
+tagged_addr_ctrl: 0000000000000001
+    x0  fffffffffffffffc  x1  0000ffffdfcb0150  x2  0000000000000010  x3  0000000000000139
+    x4  0000000000000000  x5  0000000000000008  x6  b400fffe5409d100  x7  0000ffffdfcafb09
+    x8  0000000000000016  x9  00000000000f4240  x10 000000003b9aca00  x11 0000ffff8848c038
+    x12 0000ffff8848c030  x13 000000007fffffff  x14 00000000000e5804  x15 000000018b84dcdc
+    x16 0000ffff86c76d40  x17 0000ffff841fb080  x18 0000ffff87530000  x19 b400fffe2409be30
+    x20 b400fffe2409bed8  x21 0000000000000139  x22 b400fffe2409be30  x23 00000000ffffffff
+    x24 0000000000000000  x25 0000ffff871ae000  x26 0000000000000000  x27 0000000000000000
+    x28 0000000000000000  x29 0000ffffdfcb0260
+    lr  0000ffff86c73644  sp  0000ffffdfcb0110  pc  0000ffff84239598  pst 00000000a0001000
+
+backtrace:
+      #00 pc 000000000009e598  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #01 pc 0000000000016640  /system/lib64/libutils.so (android::Looper::pollInner(int)+180) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #02 pc 0000000000016e88  /system/lib64/libutils.so (android::Looper::pollAll(int, int*, int*, void**)+400) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #03 pc 00000000000042d0  /system/bin/carwatchdogd (main+636) (BuildId: 7b43fc11d5af80ca34c4bc4d80d873b6)
+      #04 pc 00000000000488c8  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+96) (BuildId: ba489d4985c0cf173209da67405662f9)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Cmdline: /system/bin/carwatchdogd
+pid: 175, tid: 212, name: WatchdogPerfSvc  >>> /system/bin/carwatchdogd <<<
+uid: 1000
+tagged_addr_ctrl: 0000000000000001
+    x0  fffffffffffffffc  x1  0000fffd73f3da30  x2  0000000000000010  x3  0000000000001361
+    x4  0000000000000000  x5  0000000000000008  x6  4014000000000000  x7  0000000000000168
+    x8  0000000000000016  x9  00000000000f4240  x10 000000003b9aca00  x11 0000ffff8848c038
+    x12 0000ffff8848c030  x13 000000007fffffff  x14 00000000000e54ae  x15 000000018ad9562d
+    x16 0000ffff86c76d40  x17 0000ffff841fb080  x18 0000fffd73052000  x19 b400fffe2409c850
+    x20 b400fffe2409c8f8  x21 0000000000001361  x22 b400fffe2409c850  x23 00000000ffffffff
+    x24 0000fffd73f3e000  x25 0000fffd73f3e000  x26 0000fffd73f3dff8  x27 00000000000fc000
+    x28 0000fffd73e45000  x29 0000fffd73f3db40
+    lr  0000ffff86c73644  sp  0000fffd73f3d9f0  pc  0000ffff84239598  pst 00000000a0001000
+
+backtrace:
+      #00 pc 000000000009e598  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #01 pc 0000000000016640  /system/lib64/libutils.so (android::Looper::pollInner(int)+180) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #02 pc 0000000000016e88  /system/lib64/libutils.so (android::Looper::pollAll(int, int*, int*, void**)+400) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #03 pc 0000000000023000  /system/lib64/libwatchdog_perf_service.so (void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, android::automotive::watchdog::WatchdogPerfService::start()::$_0> >(void*)+752) (BuildId: 94328d7bc2432286d55faa10cda2ea54)
+      #04 pc 00000000000b1910  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #05 pc 00000000000513f0  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: ba489d4985c0cf173209da67405662f9)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Cmdline: /system/bin/carwatchdogd
+pid: 175, tid: 213, name: Binder:175_1  >>> /system/bin/carwatchdogd <<<
+uid: 1000
+tagged_addr_ctrl: 0000000000000001
+    x0  fffffffffffffffc  x1  00000000c0306201  x2  0000fffd72d41a68  x3  000000000000720c
+    x4  0000000000000025  x5  0000ffff8424c808  x6  0000fffd71c43cb0  x7  00000000acd979ce
+    x8  000000000000001d  x9  0000fffd72d41a00  x10 0000fffd72d41a00  x11 0000fffd72d419d0
+    x12 ffffff80ffffffd0  x13 0000000000000000  x14 0000000000000010  x15 0000000000000000
+    x16 0000ffff86da8ee0  x17 0000ffff841f435c  x18 0000fffd71f7c000  x19 0000fffd72d42000
+    x20 b400fffe54098010  x21 b400fffe54098130  x22 0000000000000000  x23 00000000fffffff7
+    x24 0000fffd72d42000  x25 0000000000000000  x26 0000fffd72d41ff8  x27 00000000000fc000
+    x28 0000fffd72c49000  x29 0000fffd72d41a30
+    lr  0000ffff841f43f8  sp  0000fffd72d41950  pc  0000ffff842385d8  pst 0000000080001000
+
+backtrace:
+      #00 pc 000000000009d5d8  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #01 pc 00000000000593f4  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+152) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #02 pc 0000000000045724  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+288) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #03 pc 00000000000459fc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #04 pc 00000000000462f4  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+68) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #05 pc 000000000006c164  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #06 pc 00000000000120ac  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #07 pc 0000000000011964  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+404) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #08 pc 00000000000b1910  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #09 pc 00000000000513f0  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: ba489d4985c0cf173209da67405662f9)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Cmdline: /system/bin/carwatchdogd
+pid: 175, tid: 214, name: Binder:175_3  >>> /system/bin/carwatchdogd <<<
+uid: 1000
+tagged_addr_ctrl: 0000000000000001
+    x0  fffffffffffffffc  x1  00000000c0306201  x2  0000fffd71c43a68  x3  0000fffd71c43858
+    x4  0000000000000025  x5  0000ffff8424c808  x6  0000fffd6fa47cb0  x7  00000000acd979ce
+    x8  000000000000001d  x9  0000fffd71c43a00  x10 0000fffd71c43a00  x11 0000fffd71c439d0
+    x12 ffffff80ffffffd0  x13 0000000000000000  x14 0000000000000010  x15 0000000000000000
+    x16 0000ffff86da8ee0  x17 0000ffff841f435c  x18 0000fffd716ce000  x19 0000fffd71c44000
+    x20 b400fffe5409ae50  x21 b400fffe5409af70  x22 0000000000000000  x23 00000000fffffff7
+    x24 0000fffd71c44000  x25 0000000000000000  x26 0000fffd71c43ff8  x27 00000000000fc000
+    x28 0000fffd71b4b000  x29 0000fffd71c43a30
+    lr  0000ffff841f43f8  sp  0000fffd71c43950  pc  0000ffff842385d8  pst 0000000080001000
+
+backtrace:
+      #00 pc 000000000009d5d8  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #01 pc 00000000000593f4  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+152) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #02 pc 0000000000045724  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+288) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #03 pc 00000000000459fc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #04 pc 00000000000462f4  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+68) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #05 pc 000000000006c164  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #06 pc 00000000000120ac  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #07 pc 0000000000011964  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+404) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #08 pc 00000000000b1910  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #09 pc 00000000000513f0  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: ba489d4985c0cf173209da67405662f9)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Cmdline: /system/bin/carwatchdogd
+pid: 175, tid: 14964, name: Binder:175_4  >>> /system/bin/carwatchdogd <<<
+uid: 1000
+tagged_addr_ctrl: 0000000000000001
+    x0  fffffffffffffffc  x1  00000000c0306201  x2  0000fffd6fa47a68  x3  000000000000720c
+    x4  0000000000000000  x5  0000000000000004  x6  0000000036393431  x7  0000000034363934
+    x8  000000000000001d  x9  0000fffd6fa47a00  x10 0000fffd6fa47a00  x11 0000fffd6fa479d0
+    x12 ffffff80ffffffd0  x13 000000002da83ad8  x14 0000000000000000  x15 0000000000000030
+    x16 0000ffff86da8ee0  x17 0000ffff841f435c  x18 0000fffd6f70e000  x19 0000fffd6fa48000
+    x20 b400fffe54098700  x21 b400fffe54098820  x22 0000000000000000  x23 00000000fffffff7
+    x24 0000fffd6fa48000  x25 0000000000000000  x26 0000fffd6fa47ff8  x27 00000000000fc000
+    x28 0000fffd6f94f000  x29 0000fffd6fa47a30
+    lr  0000ffff841f43f8  sp  0000fffd6fa47950  pc  0000ffff842385d8  pst 0000000080001000
+
+backtrace:
+      #00 pc 000000000009d5d8  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #01 pc 00000000000593f4  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+152) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #02 pc 0000000000045724  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+288) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #03 pc 00000000000459fc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #04 pc 00000000000462f4  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+68) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #05 pc 000000000006c164  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24) (BuildId: 1d72f31ac4bbc30f0c0e13a812bb8143)
+      #06 pc 00000000000120ac  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #07 pc 0000000000011964  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+404) (BuildId: a3acb0eba7fd91ea48db6f0befa41c65)
+      #08 pc 00000000000b1910  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: ba489d4985c0cf173209da67405662f9)
+      #09 pc 00000000000513f0  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: ba489d4985c0cf173209da67405662f9)
+
+open files:
+    fd 0: /dev/null (unowned)
+    fd 1: /dev/null (unowned)
+    fd 2: /dev/null (unowned)
+    fd 3: anon_inode:[eventfd] (owned by unique_fd 0xfffe2409be44)
+    fd 4: anon_inode:[eventpoll] (owned by unique_fd 0xfffe2409be9c)
+    fd 5: /dev/hwbinder (unowned)
+    fd 6: socket:[361] (unowned)
+    fd 7: /dev/pmsg0 (unowned)
+    fd 8: /dev/cpuctl/background/tasks (owned by unique_fd 0xfffdd409c050)
+    fd 9: anon_inode:[eventfd] (owned by unique_fd 0xfffe2409c864)
+    fd 10: anon_inode:[eventpoll] (owned by unique_fd 0xfffe2409c8bc)
+    fd 11: /dev/binder (unowned)
+    fd 12: /dev/blkio/background/tasks (owned by unique_fd 0xfffdd409d160)
+--------- log main
+07-21 06:20:36.536   175   175 W carwatchdogd: VHAL failed to update heart beat within timeout. Terminating VHAL...
+07-21 06:20:40.121   175   214 I carwatchdogd: Process(pid: 217) has been dumped and killed
+07-21 06:20:40.129   175   480 W carwatchdogd: VHAL has died.
+07-21 06:20:40.159   175   214 W carwatchdogd: Car watchdog service had died.
+07-21 06:20:40.301   175   175 I carwatchdogd: Successfully connected to VHAL.
