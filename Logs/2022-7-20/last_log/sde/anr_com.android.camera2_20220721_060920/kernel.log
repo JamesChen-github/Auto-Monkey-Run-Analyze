@@ -1,0 +1,1499 @@
+[  972.692321] dp_update_done crtc-0 dp wait update done timeout
+[  972.909381] dp_update_done crtc-0 dp wait update done timeout
+[  973.028632] dp_update_done crtc-1 dp wait update done timeout
+[  974.290572] type=1400 audit(1658354404.800:362): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  974.290755] type=1400 audit(1658354404.800:363): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  974.290826] type=1400 audit(1658354404.800:364): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  983.637022] dp_update_done crtc-1 dp wait update done timeout
+[  983.987160] dp_update_done crtc-1 dp wait update done timeout
+[  985.618560] dp_update_done crtc-0 dp wait update done timeout
+[  985.655907] dp_update_done crtc-0 dp wait update done timeout
+[  985.659112] cam:kstream_set_power: stream 0 on 1
+[  985.659166] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[  986.130388] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[  986.142130] max2008x 0-0028: chan 0x0 set value 0x11
+[  986.142583] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[  986.146031] binder: undelivered transaction 723732, process died.
+[  986.146040] binder: undelivered transaction 723740, process died.
+[  986.146044] binder: undelivered transaction 723752, process died.
+[  986.146274] binder: undelivered transaction 552817, process died.
+[  986.329637] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[  986.329748] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[  986.329754] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[  986.397629] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[  986.397744] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[  986.397749] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[  986.415451] dp_update_done crtc-1 dp wait update done timeout
+[  986.465723] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[  986.465855] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[  986.465862] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[  986.470492] type=1400 audit(1658354416.980:365): avc: denied { getattr } for comm="ssioncontroller" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:permissioncontroller_app:s0:c50,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.permissioncontroller
+[  986.475173] type=1400 audit(1658354416.980:366): avc: denied { read } for comm="ssioncontroller" name="gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:permissioncontroller_app:s0:c50,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.permissioncontroller
+[  986.475256] type=1400 audit(1658354416.980:367): avc: denied { open } for comm="ssioncontroller" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:permissioncontroller_app:s0:c50,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.permissioncontroller
+[  986.475325] type=1400 audit(1658354416.980:368): avc: denied { map } for comm="ssioncontroller" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:permissioncontroller_app:s0:c50,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.permissioncontroller
+[  986.475512] type=1400 audit(1658354416.980:369): avc: denied { execute } for comm="ssioncontroller" path="/vendor/lib64/libdrm.so" dev="mmcblk0p53" ino=713 scontext=u:r:permissioncontroller_app:s0:c50,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.permissioncontroller
+[  986.533762] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[  986.533888] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[  986.533895] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[  986.543410] max96722 0-0029: online bitmap 0x0
+[  986.543995] max96722 0-0029: value 0xf0, enable 0
+[  986.616708] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[  986.616724] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[  986.616730] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[  986.616733] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[  986.616751] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[  986.653322] cam:kstream_set_power: stream 0 on 0
+[  987.381675] cam:kstream_set_power: stream 0 on 1
+[  987.381712] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[  987.890314] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[  987.902076] max2008x 0-0028: chan 0x0 set value 0x11
+[  987.902524] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[  988.093638] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[  988.093761] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[  988.093767] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[  988.161622] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[  988.161727] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[  988.161732] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[  988.233622] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[  988.233727] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[  988.233732] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[  988.301635] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[  988.301741] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[  988.301747] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[  988.311114] max96722 0-0029: online bitmap 0x0
+[  988.311678] max96722 0-0029: value 0xf0, enable 0
+[  988.384703] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[  988.384718] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[  988.384724] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[  988.384727] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[  988.384738] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[  988.398490] cam:kstream_set_power: stream 0 on 0
+[  990.279013] dp_update_done crtc-1 dp wait update done timeout
+[  991.595110] dp_update_done crtc-0 dp wait update done timeout
+[ 1002.725361] cam:kstream_set_power: stream 0 on 1
+[ 1002.725521] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1003.242358] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1003.254076] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1003.254525] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1003.441615] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1003.441712] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1003.441717] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1003.509613] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1003.509703] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1003.509708] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1003.577603] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1003.577688] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1003.577691] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1003.645618] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1003.645731] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1003.645737] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1003.655176] max96722 0-0029: online bitmap 0x0
+[ 1003.655749] max96722 0-0029: value 0xf0, enable 0
+[ 1003.724675] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1003.724685] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1003.724689] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1003.724692] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1003.724702] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1003.739993] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73600000, offset 0x0
+[ 1003.740340] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x75100000, offset 0x0
+[ 1003.740681] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76300000, offset 0x0
+[ 1003.741012] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76f00000, offset 0x0
+[ 1003.741285] csi_register_callback, csi1 img0 done
+[ 1003.741290] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1003.741294] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1003.741296] csi_cfg_field, csi1, img0, field_type 0
+[ 1003.741301] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1003.741303] csi img0 is not stream on
+[ 1003.745093] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1003.745100] csi_img_setup_param, csi1 img0 setup params done
+[ 1003.745113] s_test_cnt 14, skip_frame: 1
+[ 1003.749046] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1003.749049] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1003.749056] csi1 img 0, stream on done
+[ 1003.752826] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1003.754904] mipi_csi2_enable:  1
+[ 1003.786465] max96722 0-0029: value 0xf0, enable 1
+[ 1003.792527] type=1400 audit(1658354434.300:370): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1003.793139] type=1400 audit(1658354434.300:371): avc: denied { ioctl } for comm="HwBinder:321_3" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1004.679200] max96722 0-0029: value 0xf0, enable 0
+[ 1004.683936] mipi_csi2_enable:  0
+[ 1004.687310] csi1 img 0, stream off start
+[ 1004.691293] csi1 img 0, stream off done
+[ 1004.761897] cam:kstream_set_power: stream 0 on 0
+[ 1005.944881] dp_update_done crtc-1 dp wait update done timeout
+[ 1011.025562] dp_update_done crtc-0 dp wait update done timeout
+[ 1012.294248] type=1400 audit(1658354442.804:372): avc: denied { ioctl } for comm="oid.avc.decoder" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1012.294932] type=1400 audit(1658354442.804:373): avc: denied { map } for comm="oid.avc.decoder" path="/dev/dri/renderD128" dev="tmpfs" ino=755 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1012.295877] type=1400 audit(1658354442.804:374): avc: denied { read write } for comm="oid.avc.decoder" path="/dev/dri/renderD128" dev="tmpfs" ino=755 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1012.296011] type=1400 audit(1658354442.804:375): avc: denied { open } for comm="oid.avc.decoder" path="/dev/pvr_sync" dev="tmpfs" ino=753 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1013.556595] dp_update_done crtc-1 dp wait update done timeout
+[ 1015.087718] dp_update_done crtc-0 dp wait update done timeout
+[ 1015.161681] dp_update_done crtc-0 dp wait update done timeout
+[ 1033.460946] dp_update_done crtc-0 dp wait update done timeout
+[ 1034.291238] type=1400 audit(1658354464.800:376): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1034.291398] type=1400 audit(1658354464.800:377): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1034.291469] type=1400 audit(1658354464.800:378): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1036.517252] dp_update_done crtc-0 dp wait update done timeout
+[ 1039.518659] dp_update_done crtc-0 dp wait update done timeout
+[ 1041.188505] cam:kstream_set_power: stream 0 on 1
+[ 1041.188537] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1041.203365] dp_update_done crtc-0 dp wait update done timeout
+[ 1041.203501] dp_update_done crtc-1 dp wait update done timeout
+[ 1041.298556] dp_update_done crtc-0 dp wait update done timeout
+[ 1041.702465] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1041.714374] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1041.714851] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1041.788730] dp_update_done crtc-1 dp wait update done timeout
+[ 1041.901625] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1041.901730] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1041.901735] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1041.969624] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1041.969728] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1041.969734] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1042.037615] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1042.037710] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1042.037715] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1042.105601] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1042.105683] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1042.105687] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1042.114922] max96722 0-0029: online bitmap 0x0
+[ 1042.115493] max96722 0-0029: value 0xf0, enable 0
+[ 1042.184706] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1042.184723] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1042.184729] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1042.184734] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1042.184751] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1042.199079] cam:kstream_set_power: stream 0 on 0
+[ 1042.437363] logd: logdr: UID=1000 GID=1000 PID=5105 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1042.549710] cam:kstream_set_power: stream 0 on 1
+[ 1042.549746] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1042.790352] logd: logdr: UID=1000 GID=1000 PID=5115 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1042.842877] logd: logdr: UID=1000 GID=1000 PID=5118 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1043.046333] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1043.058228] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1043.058705] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1043.249648] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1043.249756] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1043.249761] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1043.317618] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1043.317722] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1043.317727] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1043.390085] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1043.390192] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1043.390201] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1043.457649] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1043.457766] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1043.457771] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1043.467033] max96722 0-0029: online bitmap 0x0
+[ 1043.467598] max96722 0-0029: value 0xf0, enable 0
+[ 1043.536631] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1043.536639] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1043.536643] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1043.536646] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1043.536653] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1043.559055] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77200000, offset 0x0
+[ 1043.559396] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77600000, offset 0x0
+[ 1043.559735] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 1043.560095] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1043.560413] csi_register_callback, csi1 img0 done
+[ 1043.560418] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1043.560423] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1043.560425] csi_cfg_field, csi1, img0, field_type 0
+[ 1043.560430] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1043.560433] csi img0 is not stream on
+[ 1043.564149] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1043.564155] csi_img_setup_param, csi1 img0 setup params done
+[ 1043.564163] s_test_cnt 15, skip_frame: 1
+[ 1043.568104] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1043.568107] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1043.568114] csi1 img 0, stream on done
+[ 1043.572036] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1043.573618] mipi_csi2_enable:  1
+[ 1043.610574] max96722 0-0029: value 0xf0, enable 1
+[ 1043.634623] type=1400 audit(1658354474.144:379): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1043.635433] type=1400 audit(1658354474.144:380): avc: denied { ioctl } for comm="provider@2.4-se" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1044.125441] max96722 0-0029: value 0xf0, enable 0
+[ 1044.129606] mipi_csi2_enable:  0
+[ 1044.132933] csi1 img 0, stream off start
+[ 1044.136898] csi1 img 0, stream off done
+[ 1044.195823] cam:kstream_set_power: stream 0 on 0
+[ 1044.280547] cam:kstream_set_power: stream 0 on 1
+[ 1044.280803] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1044.798322] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1044.810017] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1044.810472] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1044.997647] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1044.997780] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1044.997787] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1045.065612] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1045.065700] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1045.065704] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1045.133622] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1045.133726] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1045.133731] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1045.201604] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1045.201692] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1045.201696] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1045.210970] max96722 0-0029: online bitmap 0x0
+[ 1045.211538] max96722 0-0029: value 0xf0, enable 0
+[ 1045.280637] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1045.280646] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1045.280650] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1045.280653] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1045.280662] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1045.300448] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77200000, offset 0x0
+[ 1045.301056] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77600000, offset 0x0
+[ 1045.301425] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 1045.301873] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1045.302322] csi_register_callback, csi1 img0 done
+[ 1045.302329] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1045.302334] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1045.302337] csi_cfg_field, csi1, img0, field_type 0
+[ 1045.302344] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1045.302347] csi img0 is not stream on
+[ 1045.306073] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1045.306080] csi_img_setup_param, csi1 img0 setup params done
+[ 1045.306086] s_test_cnt 16, skip_frame: 1
+[ 1045.310016] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1045.310019] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1045.310025] csi1 img 0, stream on done
+[ 1045.313799] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1045.315526] mipi_csi2_enable:  1
+[ 1045.346453] max96722 0-0029: value 0xf0, enable 1
+[ 1046.797534] max96722 0-0029: value 0xf0, enable 0
+[ 1046.802609] mipi_csi2_enable:  0
+[ 1046.805900] csi1 img 0, stream off start
+[ 1046.809860] csi1 img 0, stream off done
+[ 1046.869280] cam:kstream_set_power: stream 0 on 0
+[ 1046.962985] cam:kstream_set_power: stream 0 on 1
+[ 1046.963060] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1047.422302] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1047.433987] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1047.434439] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1047.621622] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1047.621726] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1047.621731] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1047.689603] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1047.689690] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1047.689694] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1047.757602] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1047.757687] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1047.757691] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1047.825623] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1047.825733] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1047.825740] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1047.835000] max96722 0-0029: online bitmap 0x0
+[ 1047.835569] max96722 0-0029: value 0xf0, enable 0
+[ 1047.904633] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1047.904642] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1047.904646] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1047.904649] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1047.904660] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1047.924080] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77200000, offset 0x0
+[ 1047.924422] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77600000, offset 0x0
+[ 1047.924751] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 1047.925081] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1047.925378] csi_register_callback, csi1 img0 done
+[ 1047.925382] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1047.925386] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1047.925389] csi_cfg_field, csi1, img0, field_type 0
+[ 1047.925394] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1047.925397] csi img0 is not stream on
+[ 1047.929137] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1047.929144] csi_img_setup_param, csi1 img0 setup params done
+[ 1047.929151] s_test_cnt 17, skip_frame: 1
+[ 1047.933104] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1047.933107] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1047.933113] csi1 img 0, stream on done
+[ 1047.936887] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1047.938955] mipi_csi2_enable:  1
+[ 1047.970513] max96722 0-0029: value 0xf0, enable 1
+[ 1049.143156] dp_update_done crtc-0 dp wait update done timeout
+[ 1049.302104] dp_update_done crtc-0 dp wait update done timeout
+[ 1049.302116] dp_update_done crtc-1 dp wait update done timeout
+[ 1049.501515] max96722 0-0029: value 0xf0, enable 0
+[ 1049.505734] mipi_csi2_enable:  0
+[ 1049.509018] csi1 img 0, stream off start
+[ 1049.512988] csi1 img 0, stream off done
+[ 1049.572338] cam:kstream_set_power: stream 0 on 0
+[ 1049.660601] cam:kstream_set_power: stream 0 on 1
+[ 1049.660633] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1050.146329] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1050.158023] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1050.158474] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1050.345637] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1050.345746] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1050.345751] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1050.413612] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1050.413712] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1050.413717] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1050.481609] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1050.481700] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1050.481705] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1050.549635] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1050.549739] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1050.549743] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1050.559000] max96722 0-0029: online bitmap 0x0
+[ 1050.559570] max96722 0-0029: value 0xf0, enable 0
+[ 1050.628681] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1050.628702] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1050.628708] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1050.628712] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1050.628732] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1050.652539] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77200000, offset 0x0
+[ 1050.652880] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77600000, offset 0x0
+[ 1050.653210] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 1050.653530] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1050.653901] csi_register_callback, csi1 img0 done
+[ 1050.653906] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1050.653909] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1050.653911] csi_cfg_field, csi1, img0, field_type 0
+[ 1050.653915] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1050.653918] csi img0 is not stream on
+[ 1050.657826] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1050.657831] csi_img_setup_param, csi1 img0 setup params done
+[ 1050.657839] s_test_cnt 18, skip_frame: 1
+[ 1050.661901] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1050.661905] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1050.661911] csi1 img 0, stream on done
+[ 1050.665704] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1050.667770] mipi_csi2_enable:  1
+[ 1050.698446] max96722 0-0029: value 0xf0, enable 1
+[ 1051.843214] max96722 0-0029: value 0xf0, enable 0
+[ 1051.847677] mipi_csi2_enable:  0
+[ 1051.850933] csi1 img 0, stream off start
+[ 1051.854974] csi1 img 0, stream off done
+[ 1051.914405] cam:kstream_set_power: stream 0 on 0
+[ 1052.000727] cam:kstream_set_power: stream 0 on 1
+[ 1052.000761] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1052.494321] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1052.506079] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1052.506541] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1052.701629] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1052.701742] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1052.701749] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1052.769614] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1052.769711] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1052.769717] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1052.837619] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1052.837714] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1052.837720] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1052.905626] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1052.905736] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1052.905741] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1052.915119] max96722 0-0029: online bitmap 0x0
+[ 1052.915688] max96722 0-0029: value 0xf0, enable 0
+[ 1052.984648] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1052.984666] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1052.984672] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1052.984676] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1052.984693] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1052.998453] cam:kstream_set_power: stream 0 on 0
+[ 1053.059003] cam:kstream_set_power: stream 0 on 1
+[ 1053.059042] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1053.530342] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1053.542047] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1053.542501] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1053.729625] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1053.729729] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1053.729734] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1053.797604] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1053.797692] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1053.797696] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1053.865609] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1053.865699] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1053.865703] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1053.933623] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1053.933725] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1053.933729] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1053.942983] max96722 0-0029: online bitmap 0x0
+[ 1053.943553] max96722 0-0029: value 0xf0, enable 0
+[ 1054.012627] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1054.012635] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1054.012641] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1054.012645] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1054.012658] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1054.030859] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77200000, offset 0x0
+[ 1054.031223] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77600000, offset 0x0
+[ 1054.031582] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 1054.031928] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1054.032271] csi_register_callback, csi1 img0 done
+[ 1054.032277] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1054.032281] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1054.032284] csi_cfg_field, csi1, img0, field_type 0
+[ 1054.032289] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1054.032292] csi img0 is not stream on
+[ 1054.036019] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1054.036025] csi_img_setup_param, csi1 img0 setup params done
+[ 1054.036034] s_test_cnt 19, skip_frame: 1
+[ 1054.039966] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1054.039969] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1054.039976] csi1 img 0, stream on done
+[ 1054.043758] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1054.045850] mipi_csi2_enable:  1
+[ 1054.074468] max96722 0-0029: value 0xf0, enable 1
+[ 1054.542360] max96722 0-0029: value 0xf0, enable 0
+[ 1054.547458] mipi_csi2_enable:  0
+[ 1054.550824] csi1 img 0, stream off start
+[ 1054.554830] csi1 img 0, stream off done
+[ 1054.615446] cam:kstream_set_power: stream 0 on 0
+[ 1054.701836] cam:kstream_set_power: stream 0 on 1
+[ 1054.701920] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1055.166406] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1055.178172] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1055.178630] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1055.365630] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1055.365738] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1055.365743] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1055.433613] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1055.433713] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1055.433718] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1055.501606] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1055.501694] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1055.501698] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1055.573636] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1055.573762] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1055.573767] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1055.583040] max96722 0-0029: online bitmap 0x0
+[ 1055.583608] max96722 0-0029: value 0xf0, enable 0
+[ 1055.652688] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1055.652704] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1055.652708] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1055.652712] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1055.652726] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1055.666420] cam:kstream_set_power: stream 0 on 0
+[ 1055.689554] cam:kstream_set_power: stream 0 on 1
+[ 1055.689666] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1056.150299] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1056.162179] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1056.162631] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1056.349630] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1056.349737] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1056.349744] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1056.421639] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1056.421767] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1056.421775] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1056.493652] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1056.493764] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1056.493768] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1056.565632] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1056.565764] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1056.565770] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1056.575150] max96722 0-0029: online bitmap 0x0
+[ 1056.575728] max96722 0-0029: value 0xf0, enable 0
+[ 1056.648701] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1056.648717] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1056.648723] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1056.648726] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1056.648742] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1056.662168] cam:kstream_set_power: stream 0 on 0
+[ 1056.729959] cam:kstream_set_power: stream 0 on 1
+[ 1056.729997] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1057.278376] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1057.290237] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1057.290710] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1057.481613] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1057.481718] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1057.481723] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1057.553681] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1057.553817] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1057.553822] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1057.625745] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1057.625923] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1057.625932] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1057.693638] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1057.693743] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1057.693747] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1057.703239] max96722 0-0029: online bitmap 0x0
+[ 1057.703809] max96722 0-0029: value 0xf0, enable 0
+[ 1057.772696] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1057.772712] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1057.772718] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1057.772722] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1057.772737] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1057.797870] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77200000, offset 0x0
+[ 1057.798253] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77600000, offset 0x0
+[ 1057.798688] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 1057.799107] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1057.802096] csi_register_callback, csi1 img0 done
+[ 1057.802114] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1057.802119] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1057.802124] csi_cfg_field, csi1, img0, field_type 0
+[ 1057.802131] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1057.802137] csi img0 is not stream on
+[ 1057.806007] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1057.806011] csi_img_setup_param, csi1 img0 setup params done
+[ 1057.806018] s_test_cnt 20, skip_frame: 1
+[ 1057.809987] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1057.809991] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1057.809997] csi1 img 0, stream on done
+[ 1057.813768] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1057.815849] mipi_csi2_enable:  1
+[ 1057.846491] max96722 0-0029: value 0xf0, enable 1
+[ 1060.931879] max96722 0-0029: value 0xf0, enable 0
+[ 1060.936920] mipi_csi2_enable:  0
+[ 1060.940206] csi1 img 0, stream off start
+[ 1060.944161] csi1 img 0, stream off done
+[ 1061.002486] cam:kstream_set_power: stream 0 on 0
+[ 1061.079083] cam:kstream_set_power: stream 0 on 1
+[ 1061.079142] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1061.538311] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1061.550005] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1061.550457] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1061.737623] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1061.737729] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1061.737733] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1061.805611] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1061.805706] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1061.805710] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1061.873607] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1061.873700] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1061.873705] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1061.941778] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1061.941977] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1061.941990] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1061.951284] max96722 0-0029: online bitmap 0x0
+[ 1061.951858] max96722 0-0029: value 0xf0, enable 0
+[ 1062.020133] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1062.020140] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1062.020144] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1062.020147] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1062.020155] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1062.036712] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77200000, offset 0x0
+[ 1062.037082] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77600000, offset 0x0
+[ 1062.037492] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 1062.037912] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1062.038247] csi_register_callback, csi1 img0 done
+[ 1062.038252] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1062.038256] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1062.038260] csi_cfg_field, csi1, img0, field_type 0
+[ 1062.038264] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1062.038268] csi img0 is not stream on
+[ 1062.041977] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1062.041985] csi_img_setup_param, csi1 img0 setup params done
+[ 1062.041993] s_test_cnt 21, skip_frame: 1
+[ 1062.045963] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1062.045967] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1062.045974] csi1 img 0, stream on done
+[ 1062.049799] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1062.051886] mipi_csi2_enable:  1
+[ 1062.082460] max96722 0-0029: value 0xf0, enable 1
+[ 1078.808711] max96722 0-0029: value 0xf0, enable 0
+[ 1078.813629] mipi_csi2_enable:  0
+[ 1078.817183] csi1 img 0, stream off start
+[ 1078.821162] csi1 img 0, stream off done
+[ 1078.880062] cam:kstream_set_power: stream 0 on 0
+[ 1078.880503] type=1400 audit(1658354509.388:381): avc: denied { ioctl } for comm="HwBinder:321_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1078.881383] type=1400 audit(1658354509.388:382): avc: denied { ioctl } for comm="Binder:417_2" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1079.331563] cam:kstream_set_power: stream 0 on 1
+[ 1079.331596] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1079.852285] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1079.864064] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1079.864541] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1080.057640] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1080.057778] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1080.057786] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1080.125623] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1080.125732] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1080.125738] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1080.193699] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1080.193892] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1080.193901] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1080.261688] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1080.261886] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1080.261898] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1080.271280] max96722 0-0029: online bitmap 0x0
+[ 1080.271855] max96722 0-0029: value 0xf0, enable 0
+[ 1080.340876] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1080.340896] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1080.340903] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1080.340907] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1080.340922] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1080.478965] logd: logdr: UID=1000 GID=1000 PID=5314 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1080.792851] logd: logdr: UID=1000 GID=1000 PID=5367 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1080.830978] logd: logdr: UID=1000 GID=1000 PID=5372 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1080.940610] logd: Skipping entries from slow reader, pid 5372, fd 21, from LogBuffer::Prune()
+[ 1081.411824] logd: logdr: UID=1000 GID=1000 PID=5448 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1081.744016] logd: logdr: UID=1000 GID=1000 PID=5484 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1081.787317] logd: logdr: UID=1000 GID=1000 PID=5488 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1082.299191] logd: logdr: UID=1000 GID=1000 PID=5511 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1083.986644] logd: logdr: UID=1000 GID=1000 PID=5572 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1084.277470] logd: logdr: UID=1000 GID=1000 PID=5592 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1084.312256] logd: logdr: UID=1000 GID=1000 PID=5595 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1084.865063] logd: logdr: UID=1000 GID=1000 PID=5602 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1085.146797] logd: logdr: UID=1000 GID=1000 PID=5622 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1085.189032] logd: logdr: UID=1000 GID=1000 PID=5626 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1085.694752] logd: logdr: UID=1000 GID=1000 PID=5632 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1085.958065] logd: logdr: UID=1000 GID=1000 PID=5652 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1085.989419] logd: logdr: UID=1000 GID=1000 PID=5655 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1086.545252] logd: logdr: UID=1000 GID=1000 PID=5662 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1089.004337] logd: Skipping entries from slow reader, pid 5945, fd 21, from LogBuffer::Prune()
+[ 1089.564151] logd: logdr: UID=1000 GID=1000 PID=6037 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1089.834430] logd: logdr: UID=1000 GID=1000 PID=6088 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1089.868470] logd: logdr: UID=1000 GID=1000 PID=6092 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1092.263514] dp_update_done crtc-0 dp wait update done timeout
+[ 1092.383393] dp_update_done crtc-0 dp wait update done timeout
+[ 1092.436759] cam:kstream_set_power: stream 0 on 0
+[ 1092.444379] cam:kstream_set_power: stream 0 on 1
+[ 1092.444422] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1092.922688] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1092.934446] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1092.934966] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1093.121634] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1093.121746] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1093.121750] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1093.189628] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1093.189737] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1093.189743] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1093.257628] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1093.257743] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1093.257750] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1093.325608] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1093.325698] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1093.325701] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1093.334943] max96722 0-0029: online bitmap 0x0
+[ 1093.335513] max96722 0-0029: value 0xf0, enable 0
+[ 1093.404625] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1093.404631] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1093.404635] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1093.404638] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1093.404646] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1093.425360] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77800000, offset 0x0
+[ 1093.425796] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77c00000, offset 0x0
+[ 1093.426152] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7a000000, offset 0x0
+[ 1093.426486] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7c400000, offset 0x0
+[ 1093.426789] csi_register_callback, csi1 img0 done
+[ 1093.426793] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1093.426796] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1093.426799] csi_cfg_field, csi1, img0, field_type 0
+[ 1093.426803] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1093.426806] csi img0 is not stream on
+[ 1093.430514] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1093.430522] csi_img_setup_param, csi1 img0 setup params done
+[ 1093.430531] s_test_cnt 22, skip_frame: 1
+[ 1093.434463] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1093.434466] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1093.434472] csi1 img 0, stream on done
+[ 1093.438243] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1093.440305] mipi_csi2_enable:  1
+[ 1093.470447] max96722 0-0029: value 0xf0, enable 1
+[ 1093.484531] type=1400 audit(1658354523.992:383): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1093.485336] type=1400 audit(1658354523.992:384): avc: denied { ioctl } for comm="provider@2.4-se" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1094.291801] type=1400 audit(1658354524.800:385): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1094.291966] type=1400 audit(1658354524.800:386): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1094.292036] type=1400 audit(1658354524.800:387): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1095.105064] max96722 0-0029: value 0xf0, enable 0
+[ 1095.109616] mipi_csi2_enable:  0
+[ 1095.113343] csi1 img 0, stream off start
+[ 1095.117330] csi1 img 0, stream off done
+[ 1095.176240] cam:kstream_set_power: stream 0 on 0
+[ 1095.254287] cam:kstream_set_power: stream 0 on 1
+[ 1095.254347] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1095.762513] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1095.774239] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1095.774692] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1095.965619] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1095.965731] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1095.965736] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1096.033764] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1096.033919] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1096.033925] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1096.101743] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1096.101922] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1096.101929] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1096.169641] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1096.169750] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1096.169755] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1096.179043] max96722 0-0029: online bitmap 0x0
+[ 1096.179613] max96722 0-0029: value 0xf0, enable 0
+[ 1096.248661] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1096.248673] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1096.248678] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1096.248681] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1096.248692] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1096.261545] cam:kstream_set_power: stream 0 on 0
+[ 1096.290633] cam:kstream_set_power: stream 0 on 1
+[ 1096.290669] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1096.782563] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1096.794279] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1096.794734] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1096.981635] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1096.981748] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1096.981753] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1097.049617] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1097.049724] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1097.049729] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1097.117678] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1097.117812] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1097.117817] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1097.185652] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1097.185767] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1097.185771] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1097.195656] max96722 0-0029: online bitmap 0x0
+[ 1097.196228] max96722 0-0029: value 0xf0, enable 0
+[ 1097.264641] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1097.264651] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1097.264655] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1097.264659] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1097.264670] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1097.283249] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76300000, offset 0x0
+[ 1097.283605] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76700000, offset 0x0
+[ 1097.283956] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76b00000, offset 0x0
+[ 1097.284371] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77800000, offset 0x0
+[ 1097.284754] csi_register_callback, csi1 img0 done
+[ 1097.284759] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1097.284764] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1097.284768] csi_cfg_field, csi1, img0, field_type 0
+[ 1097.284775] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1097.284779] csi img0 is not stream on
+[ 1097.288627] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1097.288634] csi_img_setup_param, csi1 img0 setup params done
+[ 1097.288648] s_test_cnt 23, skip_frame: 1
+[ 1097.292583] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1097.292587] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1097.292594] csi1 img 0, stream on done
+[ 1097.296568] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1097.298662] mipi_csi2_enable:  1
+[ 1097.334461] max96722 0-0029: value 0xf0, enable 1
+[ 1097.344495] type=1400 audit(1658354527.852:388): avc: denied { ioctl } for comm="HwBinder:321_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1104.712018] dp_update_done crtc-0 dp wait update done timeout
+[ 1104.827022] dp_update_done crtc-1 dp wait update done timeout
+[ 1108.328889] max96722 0-0029: value 0xf0, enable 0
+[ 1108.333637] mipi_csi2_enable:  0
+[ 1108.336909] csi1 img 0, stream off start
+[ 1108.340882] csi1 img 0, stream off done
+[ 1108.399170] cam:kstream_set_power: stream 0 on 0
+[ 1108.438687] cam:kstream_set_power: stream 0 on 1
+[ 1108.438720] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1108.882305] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1108.893998] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1108.894452] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1109.081629] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1109.081726] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1109.081731] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1109.149601] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1109.149685] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1109.149688] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1109.217599] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1109.217683] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1109.217686] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1109.285599] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1109.285682] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1109.285686] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1109.294920] max96722 0-0029: online bitmap 0x0
+[ 1109.295491] max96722 0-0029: value 0xf0, enable 0
+[ 1109.364625] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1109.364633] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1109.364638] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1109.364641] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1109.364651] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1109.412024] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76300000, offset 0x0
+[ 1109.412424] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76700000, offset 0x0
+[ 1109.412782] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76b00000, offset 0x0
+[ 1109.413127] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77800000, offset 0x0
+[ 1109.413429] csi_register_callback, csi1 img0 done
+[ 1109.413433] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1109.413436] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1109.413439] csi_cfg_field, csi1, img0, field_type 0
+[ 1109.413444] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1109.413447] csi img0 is not stream on
+[ 1109.417181] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1109.417188] csi_img_setup_param, csi1 img0 setup params done
+[ 1109.417198] s_test_cnt 24, skip_frame: 1
+[ 1109.421132] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1109.421136] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1109.421142] csi1 img 0, stream on done
+[ 1109.424924] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1109.426987] mipi_csi2_enable:  1
+[ 1109.458497] max96722 0-0029: value 0xf0, enable 1
+[ 1113.909166] dp_update_done crtc-0 dp wait update done timeout
+[ 1114.023035] dp_update_done crtc-1 dp wait update done timeout
+[ 1114.355995] dp_update_done crtc-1 dp wait update done timeout
+[ 1115.571141] max96722 0-0029: value 0xf0, enable 0
+[ 1115.575708] mipi_csi2_enable:  0
+[ 1115.578981] csi1 img 0, stream off start
+[ 1115.583078] csi1 img 0, stream off done
+[ 1115.656653] cam:kstream_set_power: stream 0 on 0
+[ 1131.066031] dp_update_done crtc-0 dp wait update done timeout
+[ 1131.184491] dp_update_done crtc-1 dp wait update done timeout
+[ 1134.927209] dp_update_done crtc-0 dp wait update done timeout
+[ 1138.398700] dp_update_done crtc-0 dp wait update done timeout
+[ 1139.063052] dp_update_done crtc-1 dp wait update done timeout
+[ 1149.181730] logd: logdr: UID=1000 GID=1000 PID=6293 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1149.635702] logd: logdr: UID=1000 GID=1000 PID=6299 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1149.717070] logd: logdr: UID=1000 GID=1000 PID=6302 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1154.292425] type=1400 audit(1658354584.800:389): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1154.292631] type=1400 audit(1658354584.800:390): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1154.292727] type=1400 audit(1658354584.800:391): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1155.969140] dp_update_done crtc-0 dp wait update done timeout
+[ 1171.711194] dp_update_done crtc-1 dp wait update done timeout
+[ 1171.711206] dp_update_done crtc-0 dp wait update done timeout
+[ 1200.799498] logd: logdr: UID=1000 GID=1000 PID=6350 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1201.072496] logd: logdr: UID=1000 GID=1000 PID=6405 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1201.109516] logd: logdr: UID=1000 GID=1000 PID=6409 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1201.184839] logd: Skipping entries from slow reader, pid 6409, fd 21, from LogBuffer::Prune()
+[ 1201.706786] logd: logdr: UID=1000 GID=1000 PID=6516 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1201.969773] logd: logdr: UID=1000 GID=1000 PID=6536 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1202.002526] logd: logdr: UID=1000 GID=1000 PID=6539 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1202.557219] logd: logdr: UID=1000 GID=1000 PID=6545 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1202.815253] logd: logdr: UID=1000 GID=1000 PID=6564 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1202.848764] logd: logdr: UID=1000 GID=1000 PID=6567 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1205.830083] logd: logdr: UID=1000 GID=1000 PID=6859 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1205.899163] logd: Skipping entries from slow reader, pid 6859, fd 21, from LogBuffer::Prune()
+[ 1206.532377] logd: logdr: UID=1000 GID=1000 PID=6934 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1206.838421] logd: logdr: UID=1000 GID=1000 PID=6971 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1206.882890] logd: logdr: UID=1000 GID=1000 PID=6989 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1207.576721] logd: logdr: UID=1000 GID=1000 PID=7014 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1207.851935] logd: logdr: UID=1000 GID=1000 PID=7066 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1207.893103] logd: logdr: UID=1000 GID=1000 PID=7070 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1208.604025] logd: logdr: UID=1000 GID=1000 PID=7176 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1208.920685] logd: logdr: UID=1000 GID=1000 PID=7215 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1214.293132] type=1400 audit(1658354644.800:392): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1214.293358] type=1400 audit(1658354644.800:393): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1214.293466] type=1400 audit(1658354644.800:394): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1219.650213] dp_update_done crtc-1 dp wait update done timeout
+[ 1222.889117] dp_update_done crtc-1 dp wait update done timeout
+[ 1223.202018] dp_update_done crtc-0 dp wait update done timeout
+[ 1223.296789] cam:kstream_set_power: stream 0 on 1
+[ 1223.296895] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1223.818353] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1223.830086] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1223.830541] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1224.017619] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1224.017716] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1224.017721] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1224.085618] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1224.085704] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1224.085708] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1224.153619] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1224.153714] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1224.153719] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1224.221605] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1224.221690] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1224.221694] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1224.230994] max96722 0-0029: online bitmap 0x0
+[ 1224.231563] max96722 0-0029: value 0xf0, enable 0
+[ 1224.300642] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1224.300649] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1224.300653] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1224.300656] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1224.300666] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1224.321139] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76900000, offset 0x0
+[ 1224.321496] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76d00000, offset 0x0
+[ 1224.321906] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77100000, offset 0x0
+[ 1224.322259] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77500000, offset 0x0
+[ 1224.322678] csi_register_callback, csi1 img0 done
+[ 1224.322686] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1224.322691] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1224.322696] csi_cfg_field, csi1, img0, field_type 0
+[ 1224.322700] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1224.322703] csi img0 is not stream on
+[ 1224.326405] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1224.326412] csi_img_setup_param, csi1 img0 setup params done
+[ 1224.326420] s_test_cnt 25, skip_frame: 1
+[ 1224.330488] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1224.330492] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1224.330499] csi1 img 0, stream on done
+[ 1224.334291] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1224.336138] mipi_csi2_enable:  1
+[ 1224.366463] max96722 0-0029: value 0xf0, enable 1
+[ 1224.373275] type=1400 audit(1658354654.880:395): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1224.374021] type=1400 audit(1658354654.884:396): avc: denied { ioctl } for comm="provider@2.4-se" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1228.480864] logd: logdr: UID=1000 GID=1000 PID=7490 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1228.748973] logd: logdr: UID=1000 GID=1000 PID=7544 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1228.797877] logd: logdr: UID=1000 GID=1000 PID=7549 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1229.390328] logd: logdr: UID=1000 GID=1000 PID=7654 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1229.656133] logd: logdr: UID=1000 GID=1000 PID=7675 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1229.694152] logd: logdr: UID=1000 GID=1000 PID=7678 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1230.240428] logd: logdr: UID=1000 GID=1000 PID=7684 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1230.256845] max96722 0-0029: value 0xf0, enable 0
+[ 1230.261625] mipi_csi2_enable:  0
+[ 1230.265003] csi1 img 0, stream off start
+[ 1230.268983] csi1 img 0, stream off done
+[ 1230.337991] type=1400 audit(1658354660.848:397): avc: denied { ioctl } for comm="Binder:417_6" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1230.342047] cam:kstream_set_power: stream 0 on 0
+[ 1230.342274] type=1400 audit(1658354660.852:398): avc: denied { ioctl } for comm="HwBinder:321_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1230.559785] logd: logdr: UID=1000 GID=1000 PID=7708 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1230.614124] logd: logdr: UID=1000 GID=1000 PID=7711 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1231.208612] logd: logdr: UID=1000 GID=1000 PID=7718 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1231.520098] logd: logdr: UID=1000 GID=1000 PID=7739 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1234.827900] logd: logdr: UID=1000 GID=1000 PID=7836 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1235.103561] logd: logdr: UID=1000 GID=1000 PID=7856 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1235.147553] logd: logdr: UID=1000 GID=1000 PID=7859 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1235.703137] logd: logdr: UID=1000 GID=1000 PID=7865 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1235.958902] logd: logdr: UID=1000 GID=1000 PID=7885 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1235.998606] logd: logdr: UID=1000 GID=1000 PID=7888 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1236.073649] logd: Skipping entries from slow reader, pid 7888, fd 21, from LogBuffer::Prune()
+[ 1236.073969] logd: Skipping entries from slow reader, pid 7888, fd 21, from LogBuffer::Prune()
+[ 1236.544734] logd: logdr: UID=1000 GID=1000 PID=7894 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1236.800112] logd: logdr: UID=1000 GID=1000 PID=7914 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1237.758527] cam:kstream_set_power: stream 0 on 1
+[ 1237.759100] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1238.270671] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1238.282371] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1238.282839] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1238.469708] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1238.469846] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1238.469854] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1238.470343] binder: undelivered transaction 974207, process died.
+[ 1238.479337] binder: undelivered transaction 552807, process died.
+[ 1238.537624] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1238.537739] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1238.537744] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1238.605648] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1238.605777] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1238.605785] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1238.677619] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1238.677725] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1238.677730] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1238.686990] max96722 0-0029: online bitmap 0x0
+[ 1238.687555] max96722 0-0029: value 0xf0, enable 0
+[ 1238.756647] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1238.756657] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1238.756662] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1238.756665] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1238.756675] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1238.770931] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76f00000, offset 0x0
+[ 1238.771301] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77300000, offset 0x0
+[ 1238.771645] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77700000, offset 0x0
+[ 1238.771981] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7be00000, offset 0x0
+[ 1238.772282] csi_register_callback, csi1 img0 done
+[ 1238.772287] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1238.772291] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1238.772294] csi_cfg_field, csi1, img0, field_type 0
+[ 1238.772300] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1238.772303] csi img0 is not stream on
+[ 1238.776031] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1238.776038] csi_img_setup_param, csi1 img0 setup params done
+[ 1238.776049] s_test_cnt 26, skip_frame: 1
+[ 1238.780005] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1238.780008] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1238.780017] csi1 img 0, stream on done
+[ 1238.783815] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1238.785607] mipi_csi2_enable:  1
+[ 1238.814673] max96722 0-0029: value 0xf0, enable 1
+[ 1239.086587] max96722 0-0029: value 0xf0, enable 0
+[ 1239.096854] mipi_csi2_enable:  0
+[ 1239.100247] csi1 img 0, stream off start
+[ 1239.104733] csi1 img 0, stream off done
+[ 1239.185910] cam:kstream_set_power: stream 0 on 0
+[ 1239.855405] logd: logdr: UID=1000 GID=1000 PID=8096 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1240.185362] dp_update_done crtc-1 dp wait update done timeout
+[ 1244.404088] cam:kstream_set_power: stream 0 on 1
+[ 1244.404139] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1244.930403] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1244.942339] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1244.942812] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1245.133629] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1245.133736] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1245.133742] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1245.201606] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1245.201697] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1245.201702] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1245.269612] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1245.269703] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1245.269707] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1245.337653] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1245.337764] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1245.337769] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1245.347061] max96722 0-0029: online bitmap 0x0
+[ 1245.347639] max96722 0-0029: value 0xf0, enable 0
+[ 1245.416695] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1245.416706] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1245.416710] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1245.416713] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1245.416724] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1245.439982] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x76f00000, offset 0x0
+[ 1245.440354] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77300000, offset 0x0
+[ 1245.440697] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77700000, offset 0x0
+[ 1245.441091] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1245.441589] csi_register_callback, csi1 img0 done
+[ 1245.441778] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1245.441786] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1245.441794] csi_cfg_field, csi1, img0, field_type 0
+[ 1245.441802] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1245.441811] csi img0 is not stream on
+[ 1245.445501] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1245.445504] csi_img_setup_param, csi1 img0 setup params done
+[ 1245.445509] s_test_cnt 27, skip_frame: 1
+[ 1245.449490] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1245.449498] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1245.449514] csi1 img 0, stream on done
+[ 1245.453295] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1245.455451] mipi_csi2_enable:  1
+[ 1245.486466] max96722 0-0029: value 0xf0, enable 1
+[ 1245.492088] type=1400 audit(1658354676.000:401): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1245.492626] type=1400 audit(1658354676.000:402): avc: denied { ioctl } for comm="provider@2.4-se" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1247.414762] max96722 0-0029: value 0xf0, enable 0
+[ 1247.419758] mipi_csi2_enable:  0
+[ 1247.423085] csi1 img 0, stream off start
+[ 1247.427060] csi1 img 0, stream off done
+[ 1247.497170] cam:kstream_set_power: stream 0 on 0
+[ 1247.565478] cam:kstream_set_power: stream 0 on 1
+[ 1247.565778] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1248.074489] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1248.086227] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1248.086680] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1248.277631] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1248.277743] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1248.277748] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1248.349734] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1248.349916] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1248.349927] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1248.417658] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1248.417773] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1248.417779] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1248.485622] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1248.485733] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1248.485738] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1248.494988] max96722 0-0029: online bitmap 0x0
+[ 1248.495559] max96722 0-0029: value 0xf0, enable 0
+[ 1248.564631] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1248.564640] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1248.564644] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1248.564648] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1248.564658] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1249.310789] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77700000, offset 0x0
+[ 1249.311220] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 1249.311621] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78f00000, offset 0x0
+[ 1249.312013] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7ab00000, offset 0x0
+[ 1249.312513] csi_register_callback, csi1 img0 done
+[ 1249.312524] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1249.312528] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1249.312531] csi_cfg_field, csi1, img0, field_type 0
+[ 1249.312537] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1249.312541] csi img0 is not stream on
+[ 1249.316471] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1249.316479] csi_img_setup_param, csi1 img0 setup params done
+[ 1249.316496] s_test_cnt 28, skip_frame: 1
+[ 1249.320457] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1249.320463] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1249.320472] csi1 img 0, stream on done
+[ 1249.324315] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1249.325633] mipi_csi2_enable:  1
+[ 1249.358466] max96722 0-0029: value 0xf0, enable 1
+[ 1254.386573] max96722 0-0029: value 0xf0, enable 0
+[ 1254.391642] mipi_csi2_enable:  0
+[ 1254.394900] csi1 img 0, stream off start
+[ 1254.398846] csi1 img 0, stream off done
+[ 1254.468082] cam:kstream_set_power: stream 0 on 0
+[ 1262.671110] dp_update_done crtc-0 dp wait update done timeout
+[ 1262.775222] dp_update_done crtc-0 dp wait update done timeout
+[ 1262.809267] dp_update_done crtc-1 dp wait update done timeout
+[ 1263.206758] dp_update_done crtc-1 dp wait update done timeout
+[ 1269.536631] dp_update_done crtc-0 dp wait update done timeout
+[ 1269.536649] dp_update_done crtc-1 dp wait update done timeout
+[ 1270.218719] dp_update_done crtc-1 dp wait update done timeout
+[ 1271.163458] dp_update_done crtc-1 dp wait update done timeout
+[ 1271.651142] dp_update_done crtc-1 dp wait update done timeout
+[ 1271.968766] dp_update_done crtc-0 dp wait update done timeout
+[ 1272.768186] dp_update_done crtc-1 dp wait update done timeout
+[ 1273.984643] dp_update_done crtc-1 dp wait update done timeout
+[ 1274.293740] type=1400 audit(1658354704.800:403): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1274.293966] type=1400 audit(1658354704.800:404): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1274.294064] type=1400 audit(1658354704.800:405): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1274.321985] dp_update_done crtc-0 dp wait update done timeout
+[ 1274.422779] dp_update_done crtc-0 dp wait update done timeout
+[ 1274.459988] dp_update_done crtc-1 dp wait update done timeout
+[ 1279.629989] type=1400 audit(1658354710.132:406): avc: denied { ioctl } for comm="oid.avc.decoder" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1279.630390] type=1400 audit(1658354710.136:407): avc: denied { map } for comm="oid.avc.decoder" path="/dev/dri/renderD128" dev="tmpfs" ino=755 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1279.630467] type=1400 audit(1658354710.136:408): avc: denied { read write } for comm="oid.avc.decoder" path="/dev/dri/renderD128" dev="tmpfs" ino=755 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1279.630531] type=1400 audit(1658354710.136:409): avc: denied { open } for comm="oid.avc.decoder" path="/dev/pvr_sync" dev="tmpfs" ino=753 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1280.104314] type=1400 audit(1658354710.612:410): avc: denied { ioctl } for comm="oid.avc.decoder" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1280.104318] audit: audit_lost=38 audit_rate_limit=5 audit_backlog_limit=64
+[ 1280.104322] audit: rate limit exceeded
+[ 1293.690033] dp_update_done crtc-1 dp wait update done timeout
+[ 1295.006704] dp_update_done crtc-1 dp wait update done timeout
+[ 1295.811508] dp_update_done crtc-1 dp wait update done timeout
+[ 1319.380608] dp_update_done crtc-1 dp wait update done timeout
+[ 1320.574612] dp_update_done crtc-0 dp wait update done timeout
+[ 1320.574624] dp_update_done crtc-1 dp wait update done timeout
+[ 1321.420973] dp_update_done crtc-0 dp wait update done timeout
+[ 1321.596301] dp_update_done crtc-0 dp wait update done timeout
+[ 1321.793926] dp_update_done crtc-0 dp wait update done timeout
+[ 1321.832032] dp_update_done crtc-1 dp wait update done timeout
+[ 1322.262692] dp_update_done crtc-0 dp wait update done timeout
+[ 1323.037985] type=1400 audit(1658354753.544:414): avc: denied { read } for comm="RenderThread" name="libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1323.038342] type=1400 audit(1658354753.544:415): avc: denied { open } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1323.038434] type=1400 audit(1658354753.544:416): avc: denied { getattr } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1323.038501] type=1400 audit(1658354753.548:417): avc: denied { map } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1323.038562] type=1400 audit(1658354753.548:418): avc: denied { execute } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1323.931597] dp_update_done crtc-1 dp wait update done timeout
+[ 1324.263851] dp_update_done crtc-1 dp wait update done timeout
+[ 1326.143468] dp_update_done crtc-0 dp wait update done timeout
+[ 1327.282237] dp_update_done crtc-1 dp wait update done timeout
+[ 1327.282365] dp_update_done crtc-0 dp wait update done timeout
+[ 1327.831282] dp_update_done crtc-1 dp wait update done timeout
+[ 1328.712841] dp_update_done crtc-1 dp wait update done timeout
+[ 1329.570815] logd: logdr: UID=1000 GID=1000 PID=520 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1329.571619] binder: undelivered transaction 1073716, process died.
+[ 1329.571628] binder: undelivered transaction 1073720, process died.
+[ 1329.571632] binder: undelivered transaction 1073724, process died.
+[ 1329.571699] binder: undelivered transaction 552808, process died.
+[ 1334.294405] type=1400 audit(1658354764.804:419): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1334.294581] type=1400 audit(1658354764.804:420): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1334.294672] type=1400 audit(1658354764.804:421): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1336.460227] dp_update_done crtc-0 dp wait update done timeout
+[ 1337.140882] dp_update_done crtc-1 dp wait update done timeout
+[ 1365.954781] cam:kstream_set_power: stream 0 on 1
+[ 1365.954818] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1366.470568] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1366.482335] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1366.482797] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1366.669634] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1366.669751] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1366.669756] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1366.737607] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1366.737697] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1366.737701] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1366.805600] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1366.805687] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1366.805690] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1366.873600] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1366.873684] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1366.873687] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1366.882932] max96722 0-0029: online bitmap 0x0
+[ 1366.883501] max96722 0-0029: value 0xf0, enable 0
+[ 1366.952623] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1366.952628] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1366.952633] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1366.952636] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1366.952644] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1367.028728] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7b300000, offset 0x0
+[ 1367.029182] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7a500000, offset 0x0
+[ 1367.029551] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7a900000, offset 0x0
+[ 1367.031073] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7d000000, offset 0x0
+[ 1367.031780] csi_register_callback, csi1 img0 done
+[ 1367.031790] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1367.031801] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1367.031806] csi_cfg_field, csi1, img0, field_type 0
+[ 1367.031814] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1367.031822] csi img0 is not stream on
+[ 1367.036636] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1367.036655] csi_img_setup_param, csi1 img0 setup params done
+[ 1367.036672] s_test_cnt 29, skip_frame: 1
+[ 1367.045815] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1367.045826] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1367.045835] csi1 img 0, stream on done
+[ 1367.049659] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1367.051757] mipi_csi2_enable:  1
+[ 1367.086509] max96722 0-0029: value 0xf0, enable 1
+[ 1367.103716] type=1400 audit(1658354797.608:422): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1367.104037] type=1400 audit(1658354797.612:423): avc: denied { ioctl } for comm="provider@2.4-se" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1367.436516] dp_update_done crtc-1 dp wait update done timeout
+[ 1367.532671] dp_update_done crtc-1 dp wait update done timeout
+[ 1368.415173] dp_update_done crtc-1 dp wait update done timeout
+[ 1368.556441] dp_update_done crtc-1 dp wait update done timeout
+[ 1372.071157] max96722 0-0029: value 0xf0, enable 0
+[ 1372.075688] mipi_csi2_enable:  0
+[ 1372.078996] csi1 img 0, stream off start
+[ 1372.082999] csi1 img 0, stream off done
+[ 1372.165781] cam:kstream_set_power: stream 0 on 0
+[ 1372.653185] dp_update_done crtc-0 dp wait update done timeout
+[ 1372.751405] dp_update_done crtc-0 dp wait update done timeout
+[ 1373.182044] dp_update_done crtc-0 dp wait update done timeout
+[ 1377.543398] cam:kstream_set_power: stream 0 on 1
+[ 1377.543430] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1378.042340] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1378.054118] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1378.054569] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1378.241630] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1378.241745] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1378.241751] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1378.313672] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1378.313869] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1378.313879] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1378.381644] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1378.381764] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1378.381771] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1378.449616] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1378.449712] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1378.449716] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1378.458965] max96722 0-0029: online bitmap 0x0
+[ 1378.459535] max96722 0-0029: value 0xf0, enable 0
+[ 1378.528638] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1378.528647] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1378.528652] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1378.528655] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1378.528668] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1378.609680] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77b00000, offset 0x0
+[ 1378.610060] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7b900000, offset 0x0
+[ 1378.610415] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7d000000, offset 0x0
+[ 1378.610887] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7f300000, offset 0x0
+[ 1378.611450] csi_register_callback, csi1 img0 done
+[ 1378.611455] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1378.611459] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1378.611461] csi_cfg_field, csi1, img0, field_type 0
+[ 1378.611465] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1378.611470] csi img0 is not stream on
+[ 1378.615640] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1378.615644] csi_img_setup_param, csi1 img0 setup params done
+[ 1378.615652] s_test_cnt 30, skip_frame: 1
+[ 1378.621560] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1378.621565] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1378.621995] csi1 img 0, stream on done
+[ 1378.625792] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1378.627881] mipi_csi2_enable:  1
+[ 1378.658544] max96722 0-0029: value 0xf0, enable 1
+[ 1381.669144] max96722 0-0029: value 0xf0, enable 0
+[ 1381.673630] mipi_csi2_enable:  0
+[ 1381.676908] csi1 img 0, stream off start
+[ 1381.680874] csi1 img 0, stream off done
+[ 1381.766320] type=1400 audit(1658354812.272:424): avc: denied { ioctl } for comm="Binder:417_2" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1381.771399] cam:kstream_set_power: stream 0 on 0
+[ 1388.637534] dp_update_done crtc-1 dp wait update done timeout
+[ 1388.951939] dp_update_done crtc-0 dp wait update done timeout
+[ 1392.066382] dp_update_done crtc-0 dp wait update done timeout
+[ 1392.497129] dp_update_done crtc-0 dp wait update done timeout
+[ 1393.084556] dp_update_done crtc-1 dp wait update done timeout
+[ 1393.397770] dp_update_done crtc-0 dp wait update done timeout
+[ 1393.440142] dp_update_done crtc-1 dp wait update done timeout
+[ 1393.440153] dp_update_done crtc-0 dp wait update done timeout
+[ 1394.295049] type=1400 audit(1658354824.804:425): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1394.295250] type=1400 audit(1658354824.804:426): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1394.295369] type=1400 audit(1658354824.804:427): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1395.284262] dp_update_done crtc-1 dp wait update done timeout
+[ 1402.732486] dp_update_done crtc-0 dp wait update done timeout
+[ 1403.063221] dp_update_done crtc-1 dp wait update done timeout
+[ 1403.537255] dp_update_done crtc-1 dp wait update done timeout
+[ 1404.183423] dp_update_done crtc-0 dp wait update done timeout
+[ 1404.298322] dp_update_done crtc-1 dp wait update done timeout
+[ 1411.552536] dp_update_done crtc-1 dp wait update done timeout
+[ 1411.676533] dp_update_done crtc-1 dp wait update done timeout
+[ 1412.909576] dp_update_done crtc-1 dp wait update done timeout
+[ 1416.479047] dp_update_done crtc-0 dp wait update done timeout
+[ 1416.574422] dp_update_done crtc-0 dp wait update done timeout
+[ 1420.388857] logd: logdr: UID=1000 GID=1000 PID=8425 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1420.651903] logd: logdr: UID=1000 GID=1000 PID=8478 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1420.694725] logd: logdr: UID=1000 GID=1000 PID=8483 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1421.289337] logd: logdr: UID=1000 GID=1000 PID=8590 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1421.548453] logd: logdr: UID=1000 GID=1000 PID=8609 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1421.588871] logd: logdr: UID=1000 GID=1000 PID=8612 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1422.027523] dp_update_done crtc-1 dp wait update done timeout
+[ 1422.153493] logd: logdr: UID=1000 GID=1000 PID=8619 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1422.431293] logd: logdr: UID=1000 GID=1000 PID=8638 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1422.473069] logd: logdr: UID=1000 GID=1000 PID=8641 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1423.208500] logd: logdr: UID=1000 GID=1000 PID=8648 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1425.786031] logd: logdr: UID=1000 GID=1000 PID=8735 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1426.046462] logd: logdr: UID=1000 GID=1000 PID=8754 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1426.085698] logd: logdr: UID=1000 GID=1000 PID=8757 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1426.641329] logd: logdr: UID=1000 GID=1000 PID=8763 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1426.905422] logd: logdr: UID=1000 GID=1000 PID=8783 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1426.950496] logd: logdr: UID=1000 GID=1000 PID=8786 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1427.526618] logd: logdr: UID=1000 GID=1000 PID=8793 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1427.772857] logd: logdr: UID=1000 GID=1000 PID=8813 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1427.818920] logd: logdr: UID=1000 GID=1000 PID=8816 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1428.550777] logd: logdr: UID=1000 GID=1000 PID=8840 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1430.361903] binder: undelivered transaction 1169136, process died.
+[ 1430.852185] logd: logdr: UID=1000 GID=1000 PID=9137 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1430.905149] logd: logdr: UID=1000 GID=1000 PID=9140 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1432.293173] cam:kstream_set_power: stream 0 on 1
+[ 1432.293235] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1432.782388] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1432.794131] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1432.794613] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1432.804935] type=1400 audit(1658354863.312:428): avc: denied { read } for comm="RenderThread" name="libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1432.805257] type=1400 audit(1658354863.312:429): avc: denied { open } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1432.805389] type=1400 audit(1658354863.312:430): avc: denied { getattr } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1432.805482] type=1400 audit(1658354863.312:431): avc: denied { map } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1432.805675] type=1400 audit(1658354863.312:432): avc: denied { execute } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1432.981627] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1432.981739] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1432.981746] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1433.049625] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1433.049795] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1433.049810] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1433.117618] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1433.117726] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1433.117731] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1433.185784] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1433.185907] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1433.185915] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1433.195304] max96722 0-0029: online bitmap 0x0
+[ 1433.195910] max96722 0-0029: value 0xf0, enable 0
+[ 1433.264654] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1433.264670] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1433.264675] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1433.264679] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1433.264693] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1433.361798] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77b00000, offset 0x0
+[ 1433.362164] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7b900000, offset 0x0
+[ 1433.362506] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7d000000, offset 0x0
+[ 1433.362879] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7e700000, offset 0x0
+[ 1433.363289] csi_register_callback, csi1 img0 done
+[ 1433.363297] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1433.363302] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1433.363305] csi_cfg_field, csi1, img0, field_type 0
+[ 1433.363310] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1433.363313] csi img0 is not stream on
+[ 1433.367175] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1433.367179] csi_img_setup_param, csi1 img0 setup params done
+[ 1433.367184] s_test_cnt 31, skip_frame: 1
+[ 1433.371161] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1433.371165] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1433.371171] csi1 img 0, stream on done
+[ 1433.374995] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1433.377237] mipi_csi2_enable:  1
+[ 1433.406603] max96722 0-0029: value 0xf0, enable 1
+[ 1433.415096] type=1400 audit(1658354863.924:433): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1433.416947] audit: audit_lost=41 audit_rate_limit=5 audit_backlog_limit=64
+[ 1433.416969] audit: rate limit exceeded
+[ 1448.116254] max96722 0-0029: value 0xf0, enable 0
+[ 1448.121331] mipi_csi2_enable:  0
+[ 1448.124904] csi1 img 0, stream off start
+[ 1448.129549] csi1 img 0, stream off done
+[ 1448.214883] cam:kstream_set_power: stream 0 on 0
+[ 1448.215532] type=1400 audit(1658354878.724:435): avc: denied { ioctl } for comm="HwBinder:321_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1449.591732] dp_update_done crtc-1 dp wait update done timeout
+[ 1449.925511] dp_update_done crtc-1 dp wait update done timeout
+[ 1450.361922] dp_update_done crtc-0 dp wait update done timeout
+[ 1450.395634] cam:kstream_set_power: stream 0 on 1
+[ 1450.395673] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1450.878466] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1450.890200] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1450.890652] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1451.081642] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1451.081746] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1451.081751] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1451.153678] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1451.153805] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1451.153817] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1451.221647] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1451.221771] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1451.221777] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1451.293659] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1451.293771] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1451.293776] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1451.303059] max96722 0-0029: online bitmap 0x0
+[ 1451.303630] max96722 0-0029: value 0xf0, enable 0
+[ 1451.372651] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1451.372663] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1451.372668] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1451.372671] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1451.372683] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1454.295466] type=1400 audit(1658354884.804:436): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1454.295625] type=1400 audit(1658354884.804:437): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1454.295723] type=1400 audit(1658354884.804:438): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1464.085038] dp_update_done crtc-0 dp wait update done timeout
+[ 1464.673126] dp_update_done crtc-1 dp wait update done timeout
+[ 1466.321946] dp_update_done crtc-0 dp wait update done timeout
+[ 1469.122195] dp_update_done crtc-1 dp wait update done timeout
+[ 1469.336843] dp_update_done crtc-1 dp wait update done timeout
+[ 1469.536341] dp_update_done crtc-0 dp wait update done timeout
+[ 1470.003100] dp_update_done crtc-1 dp wait update done timeout
+[ 1473.224046] dp_update_done crtc-0 dp wait update done timeout
+[ 1473.224063] dp_update_done crtc-1 dp wait update done timeout
+[ 1473.869915] dp_update_done crtc-0 dp wait update done timeout
+[ 1474.107162] dp_update_done crtc-0 dp wait update done timeout
+[ 1475.898674] logd: logdr: UID=1000 GID=1000 PID=9232 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1476.170396] logd: logdr: UID=1000 GID=1000 PID=9286 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1476.218214] logd: logdr: UID=1000 GID=1000 PID=9291 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1476.821263] logd: logdr: UID=1000 GID=1000 PID=9390 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1477.078630] logd: logdr: UID=1000 GID=1000 PID=9421 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1477.120815] logd: logdr: UID=1000 GID=1000 PID=9424 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1477.678679] logd: logdr: UID=1000 GID=1000 PID=9430 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1477.929341] logd: logdr: UID=1000 GID=1000 PID=9450 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1477.970489] logd: logdr: UID=1000 GID=1000 PID=9453 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1478.520381] logd: logdr: UID=1000 GID=1000 PID=9459 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1478.931923] dp_update_done crtc-1 dp wait update done timeout
+[ 1481.577491] logd: logdr: UID=1000 GID=1000 PID=9701 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1481.958850] logd: logdr: UID=1000 GID=1000 PID=9722 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1482.007703] logd: logdr: UID=1000 GID=1000 PID=9725 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1482.609157] logd: logdr: UID=1000 GID=1000 PID=9731 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1482.873037] logd: logdr: UID=1000 GID=1000 PID=9751 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1482.915908] logd: logdr: UID=1000 GID=1000 PID=9754 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1483.556085] dp_update_done crtc-0 dp wait update done timeout
+[ 1483.638276] logd: logdr: UID=1000 GID=1000 PID=9779 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1483.941217] logd: logdr: UID=1000 GID=1000 PID=9816 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1483.995616] logd: logdr: UID=1000 GID=1000 PID=9834 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 1484.025283] logd: Skipping entries from slow reader, pid 9834, fd 21, from LogBuffer::Prune()
+[ 1485.812896] binder: undelivered transaction 1233020, process died.
+[ 1485.812983] binder: undelivered transaction 1233018, process died.
+[ 1486.165852] dp_update_done crtc-1 dp wait update done timeout
+[ 1488.438775] dp_update_done crtc-1 dp wait update done timeout
+[ 1493.028162] type=1400 audit(1658354923.536:439): avc: denied { search } for comm=50726F66696C65205361766572 name="0" dev="mmcblk0p58" ino=24662 scontext=u:r:carservice_app:s0 tcontext=u:object_r:user_profile_root_file:s0:c512,c768 tclass=dir permissive=1
+[ 1493.123525] type=1400 audit(1658354923.632:440): avc: denied { read } for comm="RenderThread" name="libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1493.123688] type=1400 audit(1658354923.632:441): avc: denied { open } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1493.123782] type=1400 audit(1658354923.632:442): avc: denied { getattr } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1493.123854] type=1400 audit(1658354923.632:443): avc: denied { map } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1493.123915] type=1400 audit(1658354923.632:444): avc: denied { execute } for comm="RenderThread" path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:system_server:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 1514.296252] type=1400 audit(1658354944.804:445): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1514.296533] type=1400 audit(1658354944.804:446): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1514.296664] type=1400 audit(1658354944.804:447): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1518.591446] cam:kstream_set_power: stream 0 on 0
+[ 1518.599119] cam:kstream_set_power: stream 0 on 1
+[ 1518.599162] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 1519.074307] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 1519.086014] max2008x 0-0028: chan 0x0 set value 0x11
+[ 1519.086465] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 1519.273605] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 1519.273692] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1519.273696] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 1519.341601] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 1519.341685] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1519.341690] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 1519.409595] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 1519.409679] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1519.409682] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 1519.477601] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 1519.477686] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 1519.477691] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 1519.486922] max96722 0-0029: online bitmap 0x0
+[ 1519.487492] max96722 0-0029: value 0xf0, enable 0
+[ 1519.556624] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 1519.556630] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1519.556634] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 1519.556638] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 1519.556646] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 1519.631938] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78d00000, offset 0x0
+[ 1519.632318] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x79100000, offset 0x0
+[ 1519.632684] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x79500000, offset 0x0
+[ 1519.633038] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x79900000, offset 0x0
+[ 1519.633381] csi_register_callback, csi1 img0 done
+[ 1519.633386] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 1519.633392] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 1519.633395] csi_cfg_field, csi1, img0, field_type 0
+[ 1519.633402] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 1519.633407] csi img0 is not stream on
+[ 1519.637202] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 1519.637210] csi_img_setup_param, csi1 img0 setup params done
+[ 1519.637222] s_test_cnt 32, skip_frame: 1
+[ 1519.642022] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 1519.642040] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 1519.642060] csi1 img 0, stream on done
+[ 1519.646010] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 1519.648330] mipi_csi2_enable:  1
+[ 1519.679067] max96722 0-0029: value 0xf0, enable 1
+[ 1519.688142] type=1400 audit(1658354950.196:448): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1519.688928] type=1400 audit(1658354950.196:449): avc: denied { ioctl } for comm="HwBinder:321_1" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1520.657552] [VPU-CODA-DRV] coda driver vpu_open
+[ 1520.657814] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 1520.657886] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 1520.657897] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 1520.657941] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 1520.657963] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 1526.337971] type=1400 audit(1658354956.844:450): avc: denied { read } for comm=5369676E616C2043617463686572 name="libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:untrusted_app:s0:c42,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.camera2
+[ 1526.338176] type=1400 audit(1658354956.848:451): avc: denied { open } for comm=5369676E616C2043617463686572 path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:untrusted_app:s0:c42,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.camera2
+[ 1526.338342] type=1400 audit(1658354956.848:452): avc: denied { getattr } for comm=5369676E616C2043617463686572 path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:untrusted_app:s0:c42,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.camera2
+[ 1526.338427] type=1400 audit(1658354956.848:453): avc: denied { map } for comm=5369676E616C2043617463686572 path="/vendor/lib64/libpvrANDROID_WSEGL.so" dev="mmcblk0p53" ino=733 scontext=u:r:untrusted_app:s0:c42,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.camera2
+[ 1527.981171] init: Untracked pid 10122 exited with status 0
+[ 1527.992830] max96722 0-0029: value 0xf0, enable 0
+[ 1527.993352] init: Untracked pid 10124 exited with status 0
+[ 1527.997657] mipi_csi2_enable:  0
+[ 1528.000963] csi1 img 0, stream off start
+[ 1528.005011] csi1 img 0, stream off done
+[ 1528.023180] cam:kstream_set_power: stream 0 on 0
+[ 1528.023418] type=1400 audit(1658354958.532:454): avc: denied { ioctl } for comm="HwBinder:321_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1528.023666] type=1400 audit(1658354958.532:455): avc: denied { ioctl } for comm="Binder:417_2" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 1528.027555] init: Untracked pid 10127 exited with status 0
+[ 1528.028976] init: Untracked pid 10129 exited with status 0
+[ 1528.092569] init: Untracked pid 10133 exited with status 0
+[ 1528.094460] init: Untracked pid 10136 exited with status 0
+[ 1528.188500] init: Untracked pid 10139 exited with status 0
+[ 1528.189875] init: Untracked pid 10141 exited with status 0
+[ 1528.256493] init: Untracked pid 10144 exited with status 0
+[ 1528.258841] init: Untracked pid 10147 exited with status 0
+[ 1528.344108] dp_update_done crtc-1 dp wait update done timeout
+[ 1529.528643] logd: logdr: UID=1000 GID=1000 PID=10184 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 1529.769862] logd: logdr: UID=1000 GID=1000 PID=10190 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 1529.813806] logd: logdr: UID=1000 GID=1000 PID=10193 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns

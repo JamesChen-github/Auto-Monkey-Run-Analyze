@@ -1,0 +1,25 @@
+[s[999C[999B[6n[u[H[J[?25l[H[J[s[999C[999B[6n[uTasks: 23 total,   1 running,  22 sleeping,   0 stopped,   0 zombie
+  Mem:  6441836K total,  5312492K used,  1129344K free,    19348K buffers
+ Swap:        0K total,        0K used,        0K free,  3414848K cached
+600%cpu  38%user   0%nice  81%sys 477%idle   0%iow   4%irq   0%sirq   0%host
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+[1m10198 system       20   0 8.3G 3.2M 2.6M R  3.8   0.0   0:00.02 top -n 1[m
+10197 system       20   0 8.3G 2.8M 2.2M S  0.0   0.0   0:00.00 sh -c top -n 1 +
+ 3016 system       20   0  12G 123M  69M S  0.0   1.9   0:17.64 com.google.andr+
+ 2576 system       20   0  12G  92M  47M S  0.0   1.4   0:02.23 com.android.car+
+ 2500 system       20   0  12G 116M  68M S  0.0   1.8   0:06.22 com.semidrive.d+
+ 2441 system       20   0  12G 114M  65M S  0.0   1.8   0:09.24 com.android.car+
+ 2039 system       20   0  12G 126M  69M S  0.0   2.0   0:25.65 com.google.andr+
+ 1950 system       20   0  12G  73M  32M S  0.0   1.1   0:00.22 com.android.dyn+
+ 1931 system       20   0  12G  71M  30M S  0.0   1.1   0:00.24 com.android.dyn+
+ 1553 system       20   0  12G 115M  61M S  0.0   1.8   0:02.21 com.semidrive.m+
+ 1303 system       20   0  12G  76M  34M S  0.0   1.2   0:00.11 com.android.exp+
+ 1119 system       20   0  12G 113M  60M S  0.0   1.7   0:13.16 com.android.car
+  346 system       20   0 8.3G 3.3M 2.6M S  0.0   0.0   0:00.61 sde
+  331 system       20   0 8.5G  21M  16M S  0.0   0.3   0:00.21 android.hardwar+
+  330 system       20   0 8.3G 4.4M 3.5M S  0.0   0.0   0:00.68 android.hardwar+
+  329 system       20   0 8.3G 4.3M 3.6M S  0.0   0.0   0:00.04 android.hardwar+
+  324 system       20   0 8.4G 5.0M 4.1M S  0.0   0.0   0:00.26 android.hardwar+
+  317 system       20   0 8.3G 4.0M 3.4M S  0.0   0.0   0:00.02 android.hidl.al+
+  239 system       20   0 8.3G 4.3M 3.6M S  0.0   0.0   0:00.05 android.hardwar+
+  231 system       20   0 8.3G 4.3M 3.6M S  0.0   0.0   0:00.02 carpowerpolicyd[?25h[0m[1000;1H[K[?25h[?25h[0m[1000;1H[K

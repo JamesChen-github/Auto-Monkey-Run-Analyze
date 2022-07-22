@@ -1,0 +1,1363 @@
+[ 4981.081611] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 4981.081728] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 4981.081737] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 4981.149625] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 4981.149739] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 4981.149746] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 4981.159021] max96722 0-0029: online bitmap 0x0
+[ 4981.159587] max96722 0-0029: value 0xf0, enable 0
+[ 4981.228636] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 4981.228645] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 4981.228651] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 4981.228654] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 4981.228668] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 4981.293497] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x75700000, offset 0x0
+[ 4981.293916] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7ab00000, offset 0x0
+[ 4981.294261] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7e100000, offset 0x0
+[ 4981.294617] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7e500000, offset 0x0
+[ 4981.297915] csi_register_callback, csi1 img0 done
+[ 4981.297922] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 4981.297926] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 4981.297929] csi_cfg_field, csi1, img0, field_type 0
+[ 4981.297933] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 4981.297937] csi img0 is not stream on
+[ 4981.301666] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 4981.301671] csi_img_setup_param, csi1 img0 setup params done
+[ 4981.301677] s_test_cnt 108, skip_frame: 1
+[ 4981.305751] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 4981.305758] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 4981.305774] csi1 img 0, stream on done
+[ 4981.309546] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 4981.311793] mipi_csi2_enable:  1
+[ 4981.342489] max96722 0-0029: value 0xf0, enable 1
+[ 4981.364228] type=1400 audit(1658358411.872:1098): avc: denied { ioctl } for comm="HwBinder:321_3" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 4988.714073] dp_update_done crtc-0 dp wait update done timeout
+[ 4989.249026] max96722 0-0029: value 0xf0, enable 0
+[ 4989.253614] mipi_csi2_enable:  0
+[ 4989.256872] csi1 img 0, stream off start
+[ 4989.260832] csi1 img 0, stream off done
+[ 4989.336856] cam:kstream_set_power: stream 0 on 0
+[ 4990.064686] dp_update_done crtc-1 dp wait update done timeout
+[ 4990.064701] dp_update_done crtc-0 dp wait update done timeout
+[ 4990.283274] dp_update_done crtc-0 dp wait update done timeout
+[ 4990.320448] dp_update_done crtc-0 dp wait update done timeout
+[ 4992.165036] dp_update_done crtc-1 dp wait update done timeout
+[ 4993.144024] dp_update_done crtc-0 dp wait update done timeout
+[ 4994.918511] type=1400 audit(1658358425.428:1099): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 4994.918728] type=1400 audit(1658358425.428:1100): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 4994.918803] type=1400 audit(1658358425.428:1101): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5004.055193] binder: undelivered transaction 4571671, process died.
+[ 5004.055206] binder: undelivered transaction 4571672, process died.
+[ 5004.055210] binder: undelivered transaction 4571673, process died.
+[ 5004.055274] binder: undelivered transaction 4571649, process died.
+[ 5004.164531] dp_update_done crtc-0 dp wait update done timeout
+[ 5008.102649] cam:kstream_set_power: stream 0 on 1
+[ 5008.102682] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5008.594299] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5008.605979] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5008.606434] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5008.793613] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5008.793700] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5008.793706] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5008.861659] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5008.861801] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5008.861808] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5008.929611] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5008.929703] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5008.929707] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5008.997659] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5008.997781] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5008.997789] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5009.007168] max96722 0-0029: online bitmap 0x0
+[ 5009.007742] max96722 0-0029: value 0xf0, enable 0
+[ 5009.076648] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5009.076660] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5009.076665] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5009.076668] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5009.076680] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5009.174952] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7ab00000, offset 0x0
+[ 5009.175409] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x80200000, offset 0x0
+[ 5009.175822] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x84800000, offset 0x0
+[ 5009.176225] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x86c00000, offset 0x0
+[ 5009.177954] csi_register_callback, csi1 img0 done
+[ 5009.177997] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5009.178002] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5009.178009] csi_cfg_field, csi1, img0, field_type 0
+[ 5009.178014] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5009.178021] csi img0 is not stream on
+[ 5009.181748] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5009.181754] csi_img_setup_param, csi1 img0 setup params done
+[ 5009.181760] s_test_cnt 109, skip_frame: 1
+[ 5009.185879] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5009.185887] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5009.185898] csi1 img 0, stream on done
+[ 5009.189878] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5009.191972] mipi_csi2_enable:  1
+[ 5009.222689] max96722 0-0029: value 0xf0, enable 1
+[ 5009.241888] type=1400 audit(1658358439.748:1102): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5009.242479] type=1400 audit(1658358439.752:1103): avc: denied { ioctl } for comm="HwBinder:321_3" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5015.281362] dp_update_done crtc-0 dp wait update done timeout
+[ 5018.518165] dp_update_done crtc-0 dp wait update done timeout
+[ 5021.543081] max96722 0-0029: value 0xf0, enable 0
+[ 5021.547930] mipi_csi2_enable:  0
+[ 5021.551363] csi1 img 0, stream off start
+[ 5021.556767] csi1 img 0, stream off done
+[ 5021.628159] cam:kstream_set_power: stream 0 on 0
+[ 5021.640682] cam:kstream_set_power: stream 0 on 1
+[ 5021.640737] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5022.134322] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5022.146014] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5022.146466] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5022.333634] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5022.333736] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5022.333743] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5022.401612] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5022.401720] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5022.401725] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5022.469639] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5022.469744] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5022.469749] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5022.537616] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5022.537719] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5022.537723] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5022.546990] max96722 0-0029: online bitmap 0x0
+[ 5022.547561] max96722 0-0029: value 0xf0, enable 0
+[ 5022.616637] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5022.616648] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5022.616652] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5022.616656] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5022.616666] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5022.629873] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5022.630266] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7ab00000, offset 0x0
+[ 5022.630620] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7e100000, offset 0x0
+[ 5022.630979] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7e500000, offset 0x0
+[ 5022.631661] csi_register_callback, csi1 img0 done
+[ 5022.631669] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5022.631674] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5022.631679] csi_cfg_field, csi1, img0, field_type 0
+[ 5022.631687] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5022.631692] csi img0 is not stream on
+[ 5022.635432] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5022.635437] csi_img_setup_param, csi1 img0 setup params done
+[ 5022.635443] s_test_cnt 110, skip_frame: 1
+[ 5022.639483] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5022.639487] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5022.639498] csi1 img 0, stream on done
+[ 5022.643283] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5022.645347] mipi_csi2_enable:  1
+[ 5022.674491] max96722 0-0029: value 0xf0, enable 1
+[ 5025.253919] max96722 0-0029: value 0xf0, enable 0
+[ 5025.258927] mipi_csi2_enable:  0
+[ 5025.262246] csi1 img 0, stream off start
+[ 5025.266216] csi1 img 0, stream off done
+[ 5025.327862] type=1400 audit(1658358455.836:1104): avc: denied { ioctl } for comm="Binder:417_5" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5025.329294] cam:kstream_set_power: stream 0 on 0
+[ 5029.263362] dp_update_done crtc-1 dp wait update done timeout
+[ 5031.311855] type=1400 audit(1658358461.820:1105): avc: denied { write } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5031.312231] type=1400 audit(1658358461.820:1106): avc: denied { read } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5031.323993] [VPU-CODA-DRV] coda driver vpu_open
+[ 5031.324106] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5031.324154] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5031.324164] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5031.324199] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5031.324220] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5031.352873] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5031.353089] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5031.353095] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5031.353142] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5031.353156] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5031.353178] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5031.353184] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5031.353193] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5031.354992] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5031.355135] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5031.355139] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5031.437549] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5032.606762] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5032.880708] [VPU-CODA-DRV] coda driver vpu_open
+[ 5032.880788] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5032.880843] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5032.880853] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5032.880890] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5032.880908] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5032.927538] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5033.907028] dp_update_done crtc-1 dp wait update done timeout
+[ 5033.907041] dp_update_done crtc-0 dp wait update done timeout
+[ 5034.672406] dp_update_done crtc-0 dp wait update done timeout
+[ 5034.672419] dp_update_done crtc-1 dp wait update done timeout
+[ 5034.905989] dp_update_done crtc-1 dp wait update done timeout
+[ 5035.239160] dp_update_done crtc-1 dp wait update done timeout
+[ 5035.737288] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5036.019863] [VPU-CODA-DRV] coda driver vpu_open
+[ 5036.020040] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5036.020114] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5036.020124] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5036.020179] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5036.020207] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5036.136395] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5036.455516] dp_update_done crtc-1 dp wait update done timeout
+[ 5036.864534] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5036.966867] dp_update_done crtc-1 dp wait update done timeout
+[ 5037.026609] dp_update_done crtc-1 dp wait update done timeout
+[ 5037.084544] dp_update_done crtc-0 dp wait update done timeout
+[ 5037.132273] [VPU-CODA-DRV] coda driver vpu_open
+[ 5037.132442] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5037.132539] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5037.132554] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5037.132631] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5037.132667] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5037.183097] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5037.340388] dp_update_done crtc-1 dp wait update done timeout
+[ 5037.340488] dp_update_done crtc-0 dp wait update done timeout
+[ 5037.571906] dp_update_done crtc-1 dp wait update done timeout
+[ 5037.675001] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5037.829930] dp_update_done crtc-1 dp wait update done timeout
+[ 5037.928121] [VPU-CODA-DRV] coda driver vpu_open
+[ 5037.928216] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5037.928294] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5037.928305] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5037.928348] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5037.928369] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5037.968290] dp_update_done crtc-0 dp wait update done timeout
+[ 5038.004437] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5038.240488] dp_update_done crtc-1 dp wait update done timeout
+[ 5038.597217] dp_update_done crtc-1 dp wait update done timeout
+[ 5039.106001] dp_update_done crtc-0 dp wait update done timeout
+[ 5039.611793] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5039.869671] [VPU-CODA-DRV] coda driver vpu_open
+[ 5039.869824] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5039.869921] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5039.869938] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5039.869989] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5039.870032] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5039.957445] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5041.788960] dp_update_done crtc-1 dp wait update done timeout
+[ 5041.907036] dp_update_done crtc-1 dp wait update done timeout
+[ 5042.142280] dp_update_done crtc-1 dp wait update done timeout
+[ 5042.339389] dp_update_done crtc-0 dp wait update done timeout
+[ 5042.907755] dp_update_done crtc-1 dp wait update done timeout
+[ 5042.907777] dp_update_done crtc-0 dp wait update done timeout
+[ 5043.222618] dp_update_done crtc-0 dp wait update done timeout
+[ 5043.339275] dp_update_done crtc-0 dp wait update done timeout
+[ 5044.258858] dp_update_done crtc-1 dp wait update done timeout
+[ 5044.339260] dp_update_done crtc-0 dp wait update done timeout
+[ 5044.450778] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5045.322536] dp_update_done crtc-0 dp wait update done timeout
+[ 5047.445103] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5047.445314] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5047.445339] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5047.445346] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5047.445383] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5047.445391] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5047.445781] type=1400 audit(1658358477.952:1107): avc: denied { write } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5047.445920] type=1400 audit(1658358477.956:1108): avc: denied { read } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5048.205018] dp_update_done crtc-1 dp wait update done timeout
+[ 5054.919017] type=1400 audit(1658358485.428:1109): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5054.919179] type=1400 audit(1658358485.428:1110): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5054.919260] type=1400 audit(1658358485.428:1111): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5061.981091] cam:kstream_set_power: stream 0 on 1
+[ 5061.981124] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5062.458306] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5062.469990] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5062.470441] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5062.657680] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5062.657802] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5062.657808] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5062.725616] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5062.725724] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5062.725730] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5062.793603] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5062.793688] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5062.793692] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5062.861648] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5062.861735] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5062.861739] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5062.870987] max96722 0-0029: online bitmap 0x0
+[ 5062.871557] max96722 0-0029: value 0xf0, enable 0
+[ 5062.940664] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5062.940680] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5062.940687] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5062.940691] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5062.940705] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5062.993938] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73600000, offset 0x0
+[ 5062.994408] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73a00000, offset 0x0
+[ 5062.994817] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73e00000, offset 0x0
+[ 5062.995179] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5062.995548] csi_register_callback, csi1 img0 done
+[ 5062.995555] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5062.995560] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5062.995563] csi_cfg_field, csi1, img0, field_type 0
+[ 5062.995568] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5062.995574] csi img0 is not stream on
+[ 5062.999394] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5062.999400] csi_img_setup_param, csi1 img0 setup params done
+[ 5062.999414] s_test_cnt 111, skip_frame: 1
+[ 5063.003456] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5063.003460] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5063.003474] csi1 img 0, stream on done
+[ 5063.007261] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5063.009347] mipi_csi2_enable:  1
+[ 5063.042558] max96722 0-0029: value 0xf0, enable 1
+[ 5063.049327] type=1400 audit(1658358493.556:1112): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5063.050016] type=1400 audit(1658358493.560:1113): avc: denied { ioctl } for comm="HwBinder:321_1" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5078.156413] max96722 0-0029: value 0xf0, enable 0
+[ 5078.161480] mipi_csi2_enable:  0
+[ 5078.164749] csi1 img 0, stream off start
+[ 5078.168858] csi1 img 0, stream off done
+[ 5078.245890] cam:kstream_set_power: stream 0 on 0
+[ 5078.260803] cam:kstream_set_power: stream 0 on 1
+[ 5078.260841] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5078.722309] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5078.734012] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5078.734460] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5078.921650] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5078.921762] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5078.921768] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5078.989619] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5078.989722] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5078.989727] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5079.058178] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5079.058316] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5079.058324] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5079.125644] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5079.125767] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5079.125774] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5079.135079] max96722 0-0029: online bitmap 0x0
+[ 5079.135647] max96722 0-0029: value 0xf0, enable 0
+[ 5079.204631] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5079.204637] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5079.204641] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5079.204645] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5079.204654] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5079.256520] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73600000, offset 0x0
+[ 5079.256902] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73a00000, offset 0x0
+[ 5079.257268] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73e00000, offset 0x0
+[ 5079.257713] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5079.258196] csi_register_callback, csi1 img0 done
+[ 5079.258205] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5079.258210] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5079.258215] csi_cfg_field, csi1, img0, field_type 0
+[ 5079.258219] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5079.258223] csi img0 is not stream on
+[ 5079.262021] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5079.262028] csi_img_setup_param, csi1 img0 setup params done
+[ 5079.262042] s_test_cnt 112, skip_frame: 1
+[ 5079.266229] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5079.266233] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5079.266239] csi1 img 0, stream on done
+[ 5079.270064] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5079.272144] mipi_csi2_enable:  1
+[ 5079.306628] max96722 0-0029: value 0xf0, enable 1
+[ 5083.213838] max96722 0-0029: value 0xf0, enable 0
+[ 5083.217614] mipi_csi2_enable:  0
+[ 5083.220859] csi1 img 0, stream off start
+[ 5083.224810] csi1 img 0, stream off done
+[ 5083.296622] cam:kstream_set_power: stream 0 on 0
+[ 5083.310521] cam:kstream_set_power: stream 0 on 1
+[ 5083.310552] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5083.782401] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5083.794127] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5083.794578] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5083.981678] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5083.981793] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5083.981799] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5084.049625] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5084.049757] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5084.049763] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5084.117641] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5084.117747] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5084.117753] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5084.185613] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5084.185703] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5084.185707] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5084.194981] max96722 0-0029: online bitmap 0x0
+[ 5084.195547] max96722 0-0029: value 0xf0, enable 0
+[ 5084.264649] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5084.264664] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5084.264670] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5084.264673] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5084.264688] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5084.320400] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73600000, offset 0x0
+[ 5084.320795] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73a00000, offset 0x0
+[ 5084.321170] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73e00000, offset 0x0
+[ 5084.321540] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5084.322780] csi_register_callback, csi1 img0 done
+[ 5084.322792] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5084.322796] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5084.322800] csi_cfg_field, csi1, img0, field_type 0
+[ 5084.322805] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5084.322810] csi img0 is not stream on
+[ 5084.328430] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5084.328523] csi_img_setup_param, csi1 img0 setup params done
+[ 5084.328537] s_test_cnt 113, skip_frame: 1
+[ 5084.332743] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5084.332748] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5084.332767] csi1 img 0, stream on done
+[ 5084.336659] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5084.338757] mipi_csi2_enable:  1
+[ 5084.370502] max96722 0-0029: value 0xf0, enable 1
+[ 5087.456201] max96722 0-0029: value 0xf0, enable 0
+[ 5087.460526] mipi_csi2_enable:  0
+[ 5087.463809] csi1 img 0, stream off start
+[ 5087.467768] csi1 img 0, stream off done
+[ 5087.538526] cam:kstream_set_power: stream 0 on 0
+[ 5087.550575] cam:kstream_set_power: stream 0 on 1
+[ 5087.550607] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5088.006311] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5088.018025] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5088.018477] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5088.205626] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5088.205725] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5088.205730] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5088.273638] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5088.273759] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5088.273766] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5088.341604] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5088.341692] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5088.341696] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5088.409623] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5088.409726] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5088.409731] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5088.418987] max96722 0-0029: online bitmap 0x0
+[ 5088.419555] max96722 0-0029: value 0xf0, enable 0
+[ 5088.488628] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5088.488635] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5088.488640] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5088.488643] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5088.488652] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5088.533299] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73600000, offset 0x0
+[ 5088.533700] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73a00000, offset 0x0
+[ 5088.534048] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73e00000, offset 0x0
+[ 5088.534386] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5088.534696] csi_register_callback, csi1 img0 done
+[ 5088.534700] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5088.534704] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5088.534708] csi_cfg_field, csi1, img0, field_type 0
+[ 5088.534712] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5088.534716] csi img0 is not stream on
+[ 5088.538450] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5088.538459] csi_img_setup_param, csi1 img0 setup params done
+[ 5088.538466] s_test_cnt 114, skip_frame: 1
+[ 5088.542486] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5088.542490] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5088.542497] csi1 img 0, stream on done
+[ 5088.546350] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5088.548422] mipi_csi2_enable:  1
+[ 5088.555121] dp_update_done crtc-0 dp wait update done timeout
+[ 5088.578455] max96722 0-0029: value 0xf0, enable 1
+[ 5088.788627] dp_update_done crtc-1 dp wait update done timeout
+[ 5089.598947] dp_update_done crtc-1 dp wait update done timeout
+[ 5094.991270] dp_update_done crtc-0 dp wait update done timeout
+[ 5114.078399] max96722 0-0029: value 0xf0, enable 0
+[ 5114.083451] mipi_csi2_enable:  0
+[ 5114.086768] csi1 img 0, stream off start
+[ 5114.090774] csi1 img 0, stream off done
+[ 5114.160113] type=1400 audit(1658358544.668:1114): avc: denied { ioctl } for comm="Binder:417_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5114.161215] cam:kstream_set_power: stream 0 on 0
+[ 5114.161404] type=1400 audit(1658358544.668:1115): avc: denied { ioctl } for comm="HwBinder:321_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5114.176113] cam:kstream_set_power: stream 0 on 1
+[ 5114.176169] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5114.686358] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5114.697744] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5114.698194] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5114.885618] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5114.885709] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5114.885714] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5114.919423] type=1400 audit(1658358545.428:1116): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5114.919538] type=1400 audit(1658358545.428:1117): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5114.919631] type=1400 audit(1658358545.428:1118): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5114.953608] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5114.953696] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5114.953699] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5115.021652] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5115.021772] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5115.021778] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5115.089618] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5115.089724] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5115.089730] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5115.098992] max96722 0-0029: online bitmap 0x0
+[ 5115.099561] max96722 0-0029: value 0xf0, enable 0
+[ 5115.168631] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5115.168639] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5115.168644] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5115.168647] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5115.168655] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5115.204562] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73600000, offset 0x0
+[ 5115.204935] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73a00000, offset 0x0
+[ 5115.205285] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x73e00000, offset 0x0
+[ 5115.205704] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5115.206240] csi_register_callback, csi1 img0 done
+[ 5115.206246] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5115.206249] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5115.206252] csi_cfg_field, csi1, img0, field_type 0
+[ 5115.206257] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5115.206261] csi img0 is not stream on
+[ 5115.210538] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5115.210545] csi_img_setup_param, csi1 img0 setup params done
+[ 5115.210562] s_test_cnt 115, skip_frame: 1
+[ 5115.214635] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5115.214638] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5115.214645] csi1 img 0, stream on done
+[ 5115.220977] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5115.223065] mipi_csi2_enable:  1
+[ 5115.254457] max96722 0-0029: value 0xf0, enable 1
+[ 5127.693538] dp_update_done crtc-1 dp wait update done timeout
+[ 5144.060154] logd: logdr: UID=1000 GID=1000 PID=29314 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5144.353467] logd: logdr: UID=1000 GID=1000 PID=29354 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5144.455093] logd: logdr: UID=1000 GID=1000 PID=29374 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 5145.091922] logd: logdr: UID=1000 GID=1000 PID=29467 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5145.383164] logd: logdr: UID=1000 GID=1000 PID=29504 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5145.482504] logd: logdr: UID=1000 GID=1000 PID=29508 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 5146.183618] logd: logdr: UID=1000 GID=1000 PID=29518 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5146.454794] logd: logdr: UID=1000 GID=1000 PID=29538 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5146.541817] logd: logdr: UID=1000 GID=1000 PID=29541 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 5147.094682] logd: logdr: UID=1000 GID=1000 PID=29547 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5149.353852] logd: logdr: UID=1000 GID=1000 PID=29629 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5149.458086] logd: logdr: UID=1000 GID=1000 PID=29632 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 5150.027692] logd: logdr: UID=1000 GID=1000 PID=29638 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5150.271650] logd: logdr: UID=1000 GID=1000 PID=29658 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5150.358044] logd: logdr: UID=1000 GID=1000 PID=29661 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 5150.947392] logd: logdr: UID=1000 GID=1000 PID=29667 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5151.205196] logd: logdr: UID=1000 GID=1000 PID=29686 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5151.295657] logd: logdr: UID=1000 GID=1000 PID=29689 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 5151.830248] logd: logdr: UID=1000 GID=1000 PID=29695 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5152.074600] logd: logdr: UID=1000 GID=1000 PID=29715 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5154.499022] binder: undelivered transaction 4714441, process died.
+[ 5174.920332] type=1400 audit(1658358605.428:1119): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5174.920505] type=1400 audit(1658358605.428:1120): avc: denied { read open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5174.920597] type=1400 audit(1658358605.428:1121): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5180.182119] [VPU-CODA-DRV] coda driver vpu_open
+[ 5180.182220] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5180.182265] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5180.182275] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5180.182313] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5180.182332] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5180.183816] type=1400 audit(1658358610.688:1122): avc: denied { write } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5180.183976] type=1400 audit(1658358610.688:1123): avc: denied { read } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5180.226171] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5180.226253] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5180.226257] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5180.226275] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5180.226280] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5180.226292] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5180.226295] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5180.226300] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5180.233123] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5180.233323] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5180.233330] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5180.322594] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5180.867910] dp_update_done crtc-0 dp wait update done timeout
+[ 5180.867920] dp_update_done crtc-1 dp wait update done timeout
+[ 5181.182084] dp_update_done crtc-0 dp wait update done timeout
+[ 5181.532961] dp_update_done crtc-1 dp wait update done timeout
+[ 5187.201208] dp_update_done crtc-0 dp wait update done timeout
+[ 5187.201220] dp_update_done crtc-1 dp wait update done timeout
+[ 5190.005982] dp_update_done crtc-1 dp wait update done timeout
+[ 5190.437400] dp_update_done crtc-0 dp wait update done timeout
+[ 5190.437412] dp_update_done crtc-1 dp wait update done timeout
+[ 5191.005200] dp_update_done crtc-1 dp wait update done timeout
+[ 5198.337951] dp_update_done crtc-1 dp wait update done timeout
+[ 5203.457693] dp_update_done crtc-0 dp wait update done timeout
+[ 5205.245425] dp_update_done crtc-1 dp wait update done timeout
+[ 5205.245495] dp_update_done crtc-0 dp wait update done timeout
+[ 5205.612861] dp_update_done crtc-1 dp wait update done timeout
+[ 5205.792725] dp_update_done crtc-0 dp wait update done timeout
+[ 5205.792740] dp_update_done crtc-1 dp wait update done timeout
+[ 5206.203629] dp_update_done crtc-0 dp wait update done timeout
+[ 5210.083402] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5210.083594] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5210.083616] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5210.083623] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5210.083654] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5210.083662] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5210.609360] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5210.609425] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5210.609429] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5210.609443] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5210.609448] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5210.609457] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5210.609460] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5210.609463] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5210.617804] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5210.617901] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5210.617906] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5213.069539] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5215.077924] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5215.078144] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5215.078171] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5215.078175] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5215.078189] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5215.078194] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5217.405220] type=1400 audit(1658358647.912:1124): avc: denied { write } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5217.405554] type=1400 audit(1658358647.912:1125): avc: denied { read } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5217.434681] [VPU-CODA-DRV] coda driver vpu_open
+[ 5217.434824] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5217.434867] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5217.434878] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5217.434911] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5217.434930] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5217.448225] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5217.448349] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5217.448353] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5217.448370] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5217.448376] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5217.448387] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5217.448390] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5217.448393] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5217.455072] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5217.455163] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5217.455167] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5217.551521] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5224.967728] dp_update_done crtc-0 dp wait update done timeout
+[ 5225.220759] dp_update_done crtc-1 dp wait update done timeout
+[ 5225.653340] dp_update_done crtc-0 dp wait update done timeout
+[ 5227.343139] dp_update_done crtc-0 dp wait update done timeout
+[ 5227.768447] dp_update_done crtc-1 dp wait update done timeout
+[ 5228.319095] dp_update_done crtc-1 dp wait update done timeout
+[ 5228.319108] dp_update_done crtc-0 dp wait update done timeout
+[ 5228.437294] dp_update_done crtc-0 dp wait update done timeout
+[ 5228.437306] dp_update_done crtc-1 dp wait update done timeout
+[ 5228.635798] dp_update_done crtc-0 dp wait update done timeout
+[ 5229.435230] dp_update_done crtc-1 dp wait update done timeout
+[ 5229.752718] dp_update_done crtc-0 dp wait update done timeout
+[ 5230.753540] dp_update_done crtc-1 dp wait update done timeout
+[ 5231.181212] dp_update_done crtc-1 dp wait update done timeout
+[ 5231.950925] dp_update_done crtc-0 dp wait update done timeout
+[ 5232.434731] max96722 0-0029: value 0xf0, enable 0
+[ 5232.439693] mipi_csi2_enable:  0
+[ 5232.443322] csi1 img 0, stream off start
+[ 5232.447479] csi1 img 0, stream off done
+[ 5232.520079] type=1400 audit(1658358663.028:1126): avc: denied { ioctl } for comm="Binder:417_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5232.521324] cam:kstream_set_power: stream 0 on 0
+[ 5232.521544] type=1400 audit(1658358663.028:1127): avc: denied { ioctl } for comm="provider@2.4-se" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5233.086762] cam:kstream_set_power: stream 0 on 1
+[ 5233.086960] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5233.525181] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5233.525411] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5233.525431] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5233.525439] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5233.525465] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5233.525476] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5233.566320] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5233.578013] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5233.578467] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5233.765850] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5233.766163] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5233.766217] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5233.833817] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5233.834124] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5233.834177] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5233.901848] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5233.902153] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5233.902204] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5233.969632] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5233.969759] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5233.969772] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5233.979121] max96722 0-0029: online bitmap 0x0
+[ 5233.979731] max96722 0-0029: value 0xf0, enable 0
+[ 5234.048755] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5234.048791] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5234.048806] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5234.048820] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5234.048856] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5234.220820] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7a500000, offset 0x0
+[ 5234.221500] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7cf00000, offset 0x0
+[ 5234.222219] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7fc00000, offset 0x0
+[ 5234.222868] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5234.223466] csi_register_callback, csi1 img0 done
+[ 5234.223474] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5234.223480] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5234.223485] csi_cfg_field, csi1, img0, field_type 0
+[ 5234.223492] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5234.223497] csi img0 is not stream on
+[ 5234.230615] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5234.230625] csi_img_setup_param, csi1 img0 setup params done
+[ 5234.230638] s_test_cnt 116, skip_frame: 1
+[ 5234.234958] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5234.234966] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5234.234976] csi1 img 0, stream on done
+[ 5234.239016] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5234.241132] mipi_csi2_enable:  1
+[ 5234.274669] max96722 0-0029: value 0xf0, enable 1
+[ 5234.913338] type=1400 audit(1658358665.420:1128): avc: denied { write } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5234.913681] type=1400 audit(1658358665.420:1129): avc: denied { read } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5234.922043] type=1400 audit(1658358665.428:1130): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5234.922501] type=1400 audit(1658358665.428:1131): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5234.922569] type=1400 audit(1658358665.432:1132): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5234.960918] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5234.961150] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5234.961156] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5234.961206] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5234.961220] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5234.961245] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5234.961254] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5234.961265] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5234.968770] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5234.968969] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5234.968975] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5235.396702] dp_update_done crtc-1 dp wait update done timeout
+[ 5235.655704] dp_update_done crtc-0 dp wait update done timeout
+[ 5237.223747] dp_update_done crtc-0 dp wait update done timeout
+[ 5238.772519] dp_update_done crtc-0 dp wait update done timeout
+[ 5239.989625] dp_update_done crtc-0 dp wait update done timeout
+[ 5240.439563] dp_update_done crtc-0 dp wait update done timeout
+[ 5240.494815] dp_update_done crtc-1 dp wait update done timeout
+[ 5241.440522] dp_update_done crtc-0 dp wait update done timeout
+[ 5248.485203] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5248.599060] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5248.599323] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5248.599333] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5248.599733] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5248.599883] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5248.599888] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5249.866453] dp_update_done crtc-1 dp wait update done timeout
+[ 5251.087357] dp_update_done crtc-0 dp wait update done timeout
+[ 5251.489891] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5251.490081] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5251.490105] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5251.490118] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5251.490146] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5251.490154] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5251.635442] dp_update_done crtc-0 dp wait update done timeout
+[ 5251.754520] dp_update_done crtc-0 dp wait update done timeout
+[ 5255.845364] [VPU-CODA-DRV] coda driver vpu_open
+[ 5255.846813] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5255.846997] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5255.847018] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5255.847124] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5255.847180] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5255.952996] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5255.953221] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5255.953228] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5255.953270] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5255.953284] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5255.953309] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5255.953316] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5255.953325] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5255.956936] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5255.957048] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5255.957055] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5256.126514] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5261.852504] dp_update_done crtc-1 dp wait update done timeout
+[ 5263.179918] rpmsg-bl panel1-backlight: rpmsg_backlight_power_on : screenid[2] brightness[99]
+[ 5263.180517] rpmsg-bl panel0-backlight: rpmsg_backlight_power_on : screenid[1] brightness[99]
+[ 5263.190850] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5263.255638] rpmsg-bl panel1-backlight: rpmsg_backlight_power_on : screenid[2] brightness[100]
+[ 5263.256180] rpmsg-bl panel0-backlight: rpmsg_backlight_power_on : screenid[1] brightness[100]
+[ 5263.633292] [VPU-CODA-DRV] coda driver vpu_open
+[ 5263.633962] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5263.634164] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5263.634186] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5263.634292] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5263.634348] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5263.788399] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5265.696904] dp_update_done crtc-0 dp wait update done timeout
+[ 5267.799147] max96722 0-0029: value 0xf0, enable 0
+[ 5267.802756] mipi_csi2_enable:  0
+[ 5267.806315] csi1 img 0, stream off start
+[ 5267.810395] csi1 img 0, stream off done
+[ 5267.885494] type=1400 audit(1658358698.392:1133): avc: denied { ioctl } for comm="Binder:417_6" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5267.888435] cam:kstream_set_power: stream 0 on 0
+[ 5267.889038] type=1400 audit(1658358698.396:1134): avc: denied { ioctl } for comm="HwBinder:321_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5270.214144] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5270.237379] rpmsg-bl panel1-backlight: rpmsg_backlight_power_on : screenid[2] brightness[99]
+[ 5270.238256] rpmsg-bl panel0-backlight: rpmsg_backlight_power_on : screenid[1] brightness[99]
+[ 5270.318038] rpmsg-bl panel1-backlight: rpmsg_backlight_power_on : screenid[2] brightness[98]
+[ 5270.318842] rpmsg-bl panel0-backlight: rpmsg_backlight_power_on : screenid[1] brightness[98]
+[ 5270.527030] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5270.527237] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5270.527258] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5270.527263] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5270.527277] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5270.527283] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5270.527566] type=1400 audit(1658358701.036:1135): avc: denied { write } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5270.527701] type=1400 audit(1658358701.036:1136): avc: denied { read } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5270.914152] [VPU-CODA-DRV] coda driver vpu_open
+[ 5270.914374] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5270.914567] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5270.914586] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5270.914695] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5270.914738] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5271.032895] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5271.130003] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5271.130205] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5271.130213] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5271.130245] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5271.130251] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5271.130263] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5271.130268] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5271.130274] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5271.138009] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5271.138213] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5271.138219] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5273.302890] dp_update_done crtc-0 dp wait update done timeout
+[ 5275.773432] dp_update_done crtc-0 dp wait update done timeout
+[ 5276.224664] dp_update_done crtc-0 dp wait update done timeout
+[ 5276.772892] dp_update_done crtc-0 dp wait update done timeout
+[ 5277.890746] dp_update_done crtc-1 dp wait update done timeout
+[ 5282.341763] dp_update_done crtc-0 dp wait update done timeout
+[ 5289.814672] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5290.098886] [VPU-CODA-DRV] coda driver vpu_open
+[ 5290.099214] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5290.099400] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5290.099418] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5290.099526] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5290.099579] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5290.292408] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5290.339537] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5290.569975] [VPU-CODA-DRV] coda driver vpu_open
+[ 5290.570067] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5290.570143] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5290.570153] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5290.570197] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5290.570219] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5290.616149] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5290.970391] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5291.240940] [VPU-CODA-DRV] coda driver vpu_open
+[ 5291.241041] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5291.241103] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5291.241114] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5291.241168] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5291.241192] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5291.284346] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5293.095011] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5293.148212] dp_update_done crtc-0 dp wait update done timeout
+[ 5293.343164] [VPU-CODA-DRV] coda driver vpu_open
+[ 5293.343240] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5293.343292] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5293.343323] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5293.343360] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5293.343379] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5293.390214] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5293.499820] dp_update_done crtc-0 dp wait update done timeout
+[ 5294.922728] type=1400 audit(1658358725.432:1137): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5294.922942] type=1400 audit(1658358725.432:1138): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5294.923055] type=1400 audit(1658358725.432:1139): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5299.354727] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5300.439422] dp_update_done crtc-1 dp wait update done timeout
+[ 5301.223741] dp_update_done crtc-1 dp wait update done timeout
+[ 5302.348273] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5302.348482] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5302.348505] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5302.348510] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5302.348522] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5302.348527] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5302.348762] type=1400 audit(1658358732.856:1140): avc: denied { write } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5302.348872] type=1400 audit(1658358732.856:1141): avc: denied { read } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5304.969197] dp_update_done crtc-0 dp wait update done timeout
+[ 5305.101858] dp_update_done crtc-1 dp wait update done timeout
+[ 5306.222962] dp_update_done crtc-1 dp wait update done timeout
+[ 5306.440664] dp_update_done crtc-1 dp wait update done timeout
+[ 5306.844534] [VPU-CODA-DRV] coda driver vpu_open
+[ 5306.844805] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5306.844944] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5306.844965] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5306.845062] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5306.845108] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5307.032381] [VPU-CODA-DRV] VDI_IOCTL_OPEN_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=1, inst_open_count=1
+[ 5309.336892] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5309.336966] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5309.336969] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5309.336985] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5309.336990] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5309.336999] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5309.337003] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5309.337006] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5309.343746] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5309.343808] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5309.343811] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5309.716670] [VPU-CODA-DRV] VDI_IOCTL_CLOSE_INSTANCE core_idx=0, inst_idx=0, vpu_coda_open_ref_count=0, inst_open_count=0
+[ 5310.499120] dp_update_done crtc-0 dp wait update done timeout
+[ 5310.499369] dp_update_done crtc-1 dp wait update done timeout
+[ 5310.578560] dp_update_done crtc-0 dp wait update done timeout
+[ 5311.011076] dp_update_done crtc-0 dp wait update done timeout
+[ 5311.402423] dp_update_done crtc-1 dp wait update done timeout
+[ 5311.885926] dp_update_done crtc-1 dp wait update done timeout
+[ 5312.263902] dp_update_done crtc-1 dp wait update done timeout
+[ 5312.723803] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5312.724000] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5312.724005] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5312.724017] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5312.724023] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5313.910095] dp_update_done crtc-1 dp wait update done timeout
+[ 5314.106565] dp_update_done crtc-0 dp wait update done timeout
+[ 5314.146078] dp_update_done crtc-1 dp wait update done timeout
+[ 5314.223863] dp_update_done crtc-0 dp wait update done timeout
+[ 5314.360129] dp_update_done crtc-1 dp wait update done timeout
+[ 5314.788571] dp_update_done crtc-1 dp wait update done timeout
+[ 5315.242990] dp_update_done crtc-1 dp wait update done timeout
+[ 5316.576536] dp_update_done crtc-0 dp wait update done timeout
+[ 5316.576550] dp_update_done crtc-1 dp wait update done timeout
+[ 5327.038607] binder: undelivered transaction 4926779, process died.
+[ 5327.038635] binder: undelivered transaction 4926798, process died.
+[ 5327.039222] binder: undelivered transaction 4926771, process died.
+[ 5327.306693] logd: logdr: UID=1000 GID=1000 PID=30072 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5327.381062] binder: undelivered transaction 4927521, process died.
+[ 5327.620994] logd: logdr: UID=1000 GID=1000 PID=30087 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5327.709097] logd: logdr: UID=1000 GID=1000 PID=30090 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 5331.742813] type=1400 audit(1658358762.252:1142): avc: denied { getattr } for comm="RenderThread" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:untrusted_app_29:s0:c43,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.gallery3d
+[ 5331.742991] type=1400 audit(1658358762.252:1143): avc: denied { read } for comm="RenderThread" name="gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:untrusted_app_29:s0:c43,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.gallery3d
+[ 5331.743056] type=1400 audit(1658358762.252:1144): avc: denied { open } for comm="RenderThread" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:untrusted_app_29:s0:c43,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.gallery3d
+[ 5331.743281] type=1400 audit(1658358762.252:1145): avc: denied { map } for comm="RenderThread" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:untrusted_app_29:s0:c43,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.gallery3d
+[ 5331.757034] type=1400 audit(1658358762.252:1146): avc: denied { execute } for comm="RenderThread" path="/vendor/lib64/libdrm.so" dev="mmcblk0p53" ino=713 scontext=u:r:untrusted_app_29:s0:c43,c256,c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.gallery3d
+[ 5332.359784] dp_update_done crtc-0 dp wait update done timeout
+[ 5343.772993] rpmsg-bl panel1-backlight: rpmsg_backlight_power_on : screenid[2] brightness[99]
+[ 5343.773414] rpmsg-bl panel0-backlight: rpmsg_backlight_power_on : screenid[1] brightness[99]
+[ 5343.840449] rpmsg-bl panel1-backlight: rpmsg_backlight_power_on : screenid[2] brightness[100]
+[ 5343.841006] rpmsg-bl panel0-backlight: rpmsg_backlight_power_on : screenid[1] brightness[100]
+[ 5344.416217] dp_update_done crtc-1 dp wait update done timeout
+[ 5349.970910] dp_update_done crtc-1 dp wait update done timeout
+[ 5352.664452] logd: logdr: UID=1000 GID=1000 PID=30172 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5352.961888] logd: logdr: UID=1000 GID=1000 PID=30176 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5353.058286] logd: logdr: UID=1000 GID=1000 PID=30179 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns
+[ 5353.931964] type=1400 audit(1658358784.440:1147): avc: denied { getattr } for comm="RenderThread" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.car.radio
+[ 5353.932192] type=1400 audit(1658358784.440:1148): avc: denied { read } for comm="RenderThread" name="gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.car.radio
+[ 5353.932270] type=1400 audit(1658358784.440:1149): avc: denied { open } for comm="RenderThread" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.car.radio
+[ 5353.932879] type=1400 audit(1658358784.440:1150): avc: denied { map } for comm="RenderThread" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.car.radio
+[ 5353.933484] type=1400 audit(1658358784.440:1151): avc: denied { execute } for comm="RenderThread" path="/vendor/lib64/hw/gralloc.x9.so" dev="mmcblk0p53" ino=695 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1 app=com.android.car.radio
+[ 5354.924422] audit: audit_lost=109 audit_rate_limit=5 audit_backlog_limit=64
+[ 5354.924432] audit: rate limit exceeded
+[ 5359.537487] dp_update_done crtc-0 dp wait update done timeout
+[ 5360.752345] dp_update_done crtc-0 dp wait update done timeout
+[ 5360.752360] dp_update_done crtc-1 dp wait update done timeout
+[ 5361.205678] dp_update_done crtc-1 dp wait update done timeout
+[ 5361.774111] dp_update_done crtc-1 dp wait update done timeout
+[ 5361.851117] dp_update_done crtc-0 dp wait update done timeout
+[ 5362.415501] dp_update_done crtc-1 dp wait update done timeout
+[ 5362.849547] dp_update_done crtc-0 dp wait update done timeout
+[ 5363.298266] dp_update_done crtc-1 dp wait update done timeout
+[ 5364.087441] dp_update_done crtc-0 dp wait update done timeout
+[ 5371.754319] dp_update_done crtc-1 dp wait update done timeout
+[ 5373.417144] dp_update_done crtc-0 dp wait update done timeout
+[ 5373.467750] type=1400 audit(1658358803.976:1155): avc: denied { write } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5373.468200] type=1400 audit(1658358803.976:1156): avc: denied { read } for comm="writer" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5373.519216] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5373.519294] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5373.519297] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5373.519316] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5373.519321] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5373.519332] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5373.519336] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5373.519340] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5373.526267] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5373.526467] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5373.526472] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5373.556454] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5373.556655] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5373.556679] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5373.556684] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5373.556695] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5373.556700] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5375.329495] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5375.329715] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5375.329725] SDRV_ALSA: snd_afe_dai_hw_params:692                                                                                                                     
+[ 5375.329747] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 8, sample_size: 16, period_size: 480, stream 0
+[ 5375.329757] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5375.329770] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5375.329775] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5375.329781] DW AXI DMAC dma_chan_config slave id: 56 
+[ 5375.330799] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5375.330906] snd_afe_dai_trigger:787 ---- cmd(1)stream(0)--------------
+[ 5375.330911] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5375.360933] snd_afe_dai_trigger:787 ---- cmd(0)stream(0)--------------
+[ 5375.361156] snd-afe-i2s-sc-i2s 30650000.i2s: i2s sc almost empty! 
+[ 5375.361181] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5375.361187] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5375.361203] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x0(0)
+[ 5375.361209] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x0(0)
+[ 5377.418721] dp_update_done crtc-0 dp wait update done timeout
+[ 5385.852317] dp_update_done crtc-0 dp wait update done timeout
+[ 5385.964448] dp_update_done crtc-1 dp wait update done timeout
+[ 5390.951978] dp_update_done crtc-0 dp wait update done timeout
+[ 5391.380158] dp_update_done crtc-1 dp wait update done timeout
+[ 5391.478076] dp_update_done crtc-0 dp wait update done timeout
+[ 5395.007778] dp_update_done crtc-0 dp wait update done timeout
+[ 5400.086957] type=1400 audit(1658358830.596:1157): avc: denied { read } for comm="Binder:230_1" name="wakeup2" dev="sysfs" ino=25451 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[ 5400.087252] type=1400 audit(1658358830.596:1158): avc: denied { open } for comm="Binder:230_1" path="/sys/devices/platform/soc/31810000.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup2" dev="sysfs" ino=25451 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[ 5400.087364] type=1400 audit(1658358830.596:1159): avc: denied { read } for comm="Binder:230_1" name="event_count" dev="sysfs" ino=25458 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5400.087434] type=1400 audit(1658358830.596:1160): avc: denied { open } for comm="Binder:230_1" path="/sys/devices/platform/soc/31810000.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup2/event_count" dev="sysfs" ino=25458 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5400.087499] type=1400 audit(1658358830.596:1161): avc: denied { getattr } for comm="Binder:230_1" path="/sys/devices/platform/soc/31810000.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup2/event_count" dev="sysfs" ino=25458 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5404.283491] dp_update_done crtc-0 dp wait update done timeout
+[ 5414.929034] type=1400 audit(1658358845.436:1162): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5414.929204] type=1400 audit(1658358845.436:1163): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5414.929302] type=1400 audit(1658358845.436:1164): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5423.770765] dp_update_done crtc-0 dp wait update done timeout
+[ 5431.774411] dp_update_done crtc-0 dp wait update done timeout
+[ 5433.457841] dp_update_done crtc-0 dp wait update done timeout
+[ 5434.141492] dp_update_done crtc-1 dp wait update done timeout
+[ 5434.439603] dp_update_done crtc-0 dp wait update done timeout
+[ 5459.678139] cam:kstream_set_power: stream 0 on 1
+[ 5459.678181] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5460.206309] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5460.218034] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5460.218486] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5460.409652] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5460.409760] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5460.409766] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5460.477685] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5460.477853] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5460.477862] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5460.545618] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5460.545716] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5460.545723] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5460.613735] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5460.613823] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5460.613827] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5460.623126] max96722 0-0029: online bitmap 0x0
+[ 5460.623694] max96722 0-0029: value 0xf0, enable 0
+[ 5460.671722] dp_update_done crtc-1 dp wait update done timeout
+[ 5460.692659] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5460.692688] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5460.692699] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5460.692703] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5460.692734] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5460.706375] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78100000, offset 0x0
+[ 5460.706717] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7b100000, offset 0x0
+[ 5460.707064] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7c900000, offset 0x0
+[ 5460.707407] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7cd00000, offset 0x0
+[ 5460.707713] csi_register_callback, csi1 img0 done
+[ 5460.707719] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5460.707723] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5460.707727] csi_cfg_field, csi1, img0, field_type 0
+[ 5460.707732] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5460.707737] csi img0 is not stream on
+[ 5460.711486] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5460.711489] csi_img_setup_param, csi1 img0 setup params done
+[ 5460.711498] s_test_cnt 117, skip_frame: 1
+[ 5460.715518] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5460.715521] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5460.715528] csi1 img 0, stream on done
+[ 5460.719452] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5460.721522] mipi_csi2_enable:  1
+[ 5460.750454] max96722 0-0029: value 0xf0, enable 1
+[ 5460.756713] type=1400 audit(1658358891.264:1165): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5460.757366] type=1400 audit(1658358891.264:1166): avc: denied { ioctl } for comm="HwBinder:321_3" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5461.161234] max96722 0-0029: value 0xf0, enable 0
+[ 5461.165641] mipi_csi2_enable:  0
+[ 5461.169015] csi1 img 0, stream off start
+[ 5461.173781] csi1 img 0, stream off done
+[ 5461.253880] cam:kstream_set_power: stream 0 on 0
+[ 5461.263248] cam:kstream_set_power: stream 0 on 1
+[ 5461.263287] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5461.537190] dp_update_done crtc-0 dp wait update done timeout
+[ 5461.656812] dp_update_done crtc-1 dp wait update done timeout
+[ 5461.758409] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5461.770172] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5461.770626] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5461.957624] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5461.957735] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5461.957741] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5462.025629] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5462.025743] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5462.025750] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5462.093618] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5462.093720] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5462.093725] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5462.161643] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5462.161747] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5462.161752] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5462.171550] max96722 0-0029: online bitmap 0x0
+[ 5462.172124] max96722 0-0029: value 0xf0, enable 0
+[ 5462.202196] dp_update_done crtc-0 dp wait update done timeout
+[ 5462.202206] dp_update_done crtc-1 dp wait update done timeout
+[ 5462.240705] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5462.240718] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5462.240722] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5462.240725] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5462.240736] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5462.276006] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5462.276359] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7cf00000, offset 0x0
+[ 5462.276698] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7f600000, offset 0x0
+[ 5462.277034] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x80c00000, offset 0x0
+[ 5462.277341] csi_register_callback, csi1 img0 done
+[ 5462.277345] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5462.277349] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5462.277352] csi_cfg_field, csi1, img0, field_type 0
+[ 5462.277356] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5462.277359] csi img0 is not stream on
+[ 5462.281092] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5462.281099] csi_img_setup_param, csi1 img0 setup params done
+[ 5462.281108] s_test_cnt 118, skip_frame: 1
+[ 5462.285164] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5462.285168] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5462.285177] csi1 img 0, stream on done
+[ 5462.288974] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5462.291088] mipi_csi2_enable:  1
+[ 5462.322472] max96722 0-0029: value 0xf0, enable 1
+[ 5462.323035] dp_update_done crtc-1 dp wait update done timeout
+[ 5462.327357] type=1400 audit(1658358892.836:1167): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5462.327980] type=1400 audit(1658358892.836:1168): avc: denied { ioctl } for comm="HwBinder:321_3" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5462.403214] dp_update_done crtc-0 dp wait update done timeout
+[ 5463.315394] max96722 0-0029: value 0xf0, enable 0
+[ 5463.319636] mipi_csi2_enable:  0
+[ 5463.322892] csi1 img 0, stream off start
+[ 5463.326835] csi1 img 0, stream off done
+[ 5463.396603] cam:kstream_set_power: stream 0 on 0
+[ 5463.406539] cam:kstream_set_power: stream 0 on 1
+[ 5463.406565] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5463.885176] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5463.896921] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5463.897380] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5464.085668] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5464.085800] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5464.085808] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5464.153668] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5464.153814] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5464.153820] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5464.221696] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5464.221830] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5464.221836] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5464.289630] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5464.289736] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5464.289741] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5464.299139] max96722 0-0029: online bitmap 0x0
+[ 5464.299709] max96722 0-0029: value 0xf0, enable 0
+[ 5464.368634] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5464.368644] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5464.368650] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5464.368653] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5464.368664] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5464.413960] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x77500000, offset 0x0
+[ 5464.414297] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78700000, offset 0x0
+[ 5464.414623] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78b00000, offset 0x0
+[ 5464.414942] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7cf00000, offset 0x0
+[ 5464.415212] csi_register_callback, csi1 img0 done
+[ 5464.415217] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5464.415220] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5464.415222] csi_cfg_field, csi1, img0, field_type 0
+[ 5464.415226] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5464.415229] csi img0 is not stream on
+[ 5464.418946] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5464.418952] csi_img_setup_param, csi1 img0 setup params done
+[ 5464.418960] s_test_cnt 119, skip_frame: 1
+[ 5464.423037] dp_update_done crtc-0 dp wait update done timeout
+[ 5464.423271] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5464.423275] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5464.423288] csi1 img 0, stream on done
+[ 5464.427071] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5464.429127] mipi_csi2_enable:  1
+[ 5464.458456] max96722 0-0029: value 0xf0, enable 1
+[ 5464.538886] dp_update_done crtc-0 dp wait update done timeout
+[ 5464.748804] dp_update_done crtc-1 dp wait update done timeout
+[ 5465.199559] dp_update_done crtc-1 dp wait update done timeout
+[ 5465.532595] dp_update_done crtc-1 dp wait update done timeout
+[ 5468.418691] dp_update_done crtc-0 dp wait update done timeout
+[ 5468.850781] dp_update_done crtc-0 dp wait update done timeout
+[ 5468.892273] dp_update_done crtc-1 dp wait update done timeout
+[ 5469.532970] dp_update_done crtc-1 dp wait update done timeout
+[ 5474.929482] type=1400 audit(1658358905.440:1169): avc: denied { read } for comm="storaged" name="stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5474.929653] type=1400 audit(1658358905.440:1170): avc: denied { open } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5474.929731] type=1400 audit(1658358905.440:1171): avc: denied { getattr } for comm="storaged" path="/sys/devices/platform/soc/34180000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat" dev="sysfs" ino=28336 scontext=u:r:storaged:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 5491.336708] dp_update_done crtc-1 dp wait update done timeout
+[ 5492.669951] dp_update_done crtc-1 dp wait update done timeout
+[ 5493.555749] dp_update_done crtc-0 dp wait update done timeout
+[ 5494.793349] dp_update_done crtc-1 dp wait update done timeout
+[ 5495.322211] dp_update_done crtc-0 dp wait update done timeout
+[ 5495.362681] dp_update_done crtc-1 dp wait update done timeout
+[ 5496.669940] dp_update_done crtc-1 dp wait update done timeout
+[ 5497.284831] dp_update_done crtc-1 dp wait update done timeout
+[ 5497.672219] dp_update_done crtc-0 dp wait update done timeout
+[ 5497.793077] dp_update_done crtc-1 dp wait update done timeout
+[ 5499.556193] max96722 0-0029: value 0xf0, enable 0
+[ 5499.561240] mipi_csi2_enable:  0
+[ 5499.564543] csi1 img 0, stream off start
+[ 5499.568519] csi1 img 0, stream off done
+[ 5499.649947] cam:kstream_set_power: stream 0 on 0
+[ 5499.912004] dp_update_done crtc-0 dp wait update done timeout
+[ 5501.477389] cam:kstream_set_power: stream 0 on 1
+[ 5501.477559] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5501.651842] rpmsg-bl panel1-backlight: rpmsg_backlight_power_on : screenid[2] brightness[99]
+[ 5501.656099] rpmsg-bl panel0-backlight: rpmsg_backlight_power_on : screenid[1] brightness[99]
+[ 5501.729743] rpmsg-bl panel1-backlight: rpmsg_backlight_power_on : screenid[2] brightness[98]
+[ 5501.730596] rpmsg-bl panel0-backlight: rpmsg_backlight_power_on : screenid[1] brightness[98]
+[ 5501.958529] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5501.970343] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5501.970831] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5502.157642] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5502.157748] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5502.157753] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5502.225619] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5502.225725] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5502.225730] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5502.293651] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5502.293755] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5502.293759] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5502.361619] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5502.361728] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5502.361735] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5502.371252] max96722 0-0029: online bitmap 0x0
+[ 5502.371874] max96722 0-0029: value 0xf0, enable 0
+[ 5502.440665] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5502.440675] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5502.440680] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5502.440683] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5502.440694] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5502.547839] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7a100000, offset 0x0
+[ 5502.548480] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7b100000, offset 0x0
+[ 5502.549094] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7c900000, offset 0x0
+[ 5502.549836] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7cd00000, offset 0x0
+[ 5502.550169] csi_register_callback, csi1 img0 done
+[ 5502.550174] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5502.550177] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5502.550180] csi_cfg_field, csi1, img0, field_type 0
+[ 5502.550184] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5502.550187] csi img0 is not stream on
+[ 5502.557662] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5502.557669] csi_img_setup_param, csi1 img0 setup params done
+[ 5502.557675] s_test_cnt 120, skip_frame: 1
+[ 5502.563997] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5502.564009] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5502.564035] csi1 img 0, stream on done
+[ 5502.568291] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5502.569713] mipi_csi2_enable:  1
+[ 5502.602529] max96722 0-0029: value 0xf0, enable 1
+[ 5502.613999] type=1400 audit(1658358933.124:1172): avc: denied { ioctl } for comm="C3Dev-0-ReqQueu" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:cameraserver:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5502.614808] type=1400 audit(1658358933.124:1173): avc: denied { ioctl } for comm="HwBinder:321_4" path="/dev/dri/renderD128" dev="tmpfs" ino=755 ioctlcmd=0x6440 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[ 5503.529958] max96722 0-0029: value 0xf0, enable 0
+[ 5503.535033] mipi_csi2_enable:  0
+[ 5503.539193] csi1 img 0, stream off start
+[ 5503.543182] csi1 img 0, stream off done
+[ 5503.556587] dp_update_done crtc-0 dp wait update done timeout
+[ 5503.556600] dp_update_done crtc-1 dp wait update done timeout
+[ 5503.609788] cam:kstream_set_power: stream 0 on 0
+[ 5503.657962] dp_update_done crtc-0 dp wait update done timeout
+[ 5504.223693] dp_update_done crtc-0 dp wait update done timeout
+[ 5504.378840] dp_update_done crtc-0 dp wait update done timeout
+[ 5506.654273] dp_update_done crtc-0 dp wait update done timeout
+[ 5507.199011] dp_update_done crtc-1 dp wait update done timeout
+[ 5508.414926] dp_update_done crtc-1 dp wait update done timeout
+[ 5510.617130] cam:kstream_set_power: stream 0 on 1
+[ 5510.617267] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5511.162308] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5511.174021] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5511.174471] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5511.361622] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5511.361722] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5511.361727] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5511.429631] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5511.429748] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5511.429753] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5511.497623] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5511.497727] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5511.497732] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5511.565683] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5511.565826] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5511.565833] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5511.575140] max96722 0-0029: online bitmap 0x0
+[ 5511.575706] max96722 0-0029: value 0xf0, enable 0
+[ 5511.644692] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5511.644704] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5511.644710] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5511.644714] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5511.644725] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5511.670894] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x71e00000, offset 0x0
+[ 5511.671324] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78900000, offset 0x0
+[ 5511.671734] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x79200000, offset 0x0
+[ 5511.672140] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7b100000, offset 0x0
+[ 5511.672798] csi_register_callback, csi1 img0 done
+[ 5511.672813] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5511.672820] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5511.672825] csi_cfg_field, csi1, img0, field_type 0
+[ 5511.672835] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5511.672840] csi img0 is not stream on
+[ 5511.676593] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5511.676598] csi_img_setup_param, csi1 img0 setup params done
+[ 5511.676604] s_test_cnt 121, skip_frame: 1
+[ 5511.680741] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5511.680847] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5511.680854] csi1 img 0, stream on done
+[ 5511.684665] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5511.686743] mipi_csi2_enable:  1
+[ 5511.722454] max96722 0-0029: value 0xf0, enable 1
+[ 5513.220424] max96722 0-0029: value 0xf0, enable 0
+[ 5513.225468] mipi_csi2_enable:  0
+[ 5513.228718] csi1 img 0, stream off start
+[ 5513.232668] csi1 img 0, stream off done
+[ 5513.293524] cam:kstream_set_power: stream 0 on 0
+[ 5514.469837] cam:kstream_set_power: stream 0 on 1
+[ 5514.469872] csi_reset_img, csi1 img0 reset cmd 0x1 done
+[ 5514.954334] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x10
+[ 5514.966042] max2008x 0-0028: chan 0x0 set value 0x11
+[ 5514.966492] max2008x 0-0028: MAX208X_CMD_CONFIG = 0x1f
+[ 5515.157630] max9295 0-0048: max9295_check_chip_id get addr from client 0x40
+[ 5515.157742] max9295 0-0048: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5515.157747] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 0 for 96722
+[ 5515.229622] max9295 0-0049: max9295_check_chip_id get addr from client 0x40
+[ 5515.229727] max9295 0-0049: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5515.229732] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 1 for 96722
+[ 5515.297619] max9295 0-004a: max9295_check_chip_id get addr from client 0x40
+[ 5515.297718] max9295 0-004a: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5515.297723] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 2 for 96722
+[ 5515.369624] max9295 0-004b: max9295_check_chip_id get addr from client 0x40
+[ 5515.369726] max9295 0-004b: max9295_check_chip_id:chip 0x40 error: reg=0x0d ret -121
+[ 5515.369732] max96722 0-0029: max96722_max9295_init_ser: could not find 9295 on channel 3 for 96722
+[ 5515.379024] max96722 0-0029: online bitmap 0x0
+[ 5515.379590] max96722 0-0029: value 0xf0, enable 0
+[ 5515.448692] csi_reset_img, csi1 img0 reset cmd 0x2 done
+[ 5515.448704] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5515.448709] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt1: 0x00000002
+[ 5515.448712] csi_query_outfmts, csi1, img0, bus type 0 bus_fmt 1, outfmt2: 0x00000001
+[ 5515.448724] sdrv-csi 30cd0000.csi: cam_video_init_formats: mbus_code.code=0x2006, mbus_code.index=1
+[ 5515.461444] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x71e00000, offset 0x0
+[ 5515.461890] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x78900000, offset 0x0
+[ 5515.462238] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x79200000, offset 0x0
+[ 5515.462587] sdrv-csi 30cd0000.csi: buf init, i.0, paddr=0x7b100000, offset 0x0
+[ 5515.462910] csi_register_callback, csi1 img0 done
+[ 5515.462916] csi_cfg_bus, csi1, img0, bus type 0 bus_fmt 1, bus_flag 0x0
+[ 5515.462921] csi_cfg_outfmt, csi1, img0, output fmt 1
+[ 5515.462923] csi_cfg_field, csi1, img0, field_type 0
+[ 5515.462928] csi_cfg_size, csi1, img0, size0[ 1920 x 1080 ], size1[ 0 x 0 ]
+[ 5515.462932] csi img0 is not stream on
+[ 5515.466860] csi_img_setup_param, csi1, img0, bus type 0 bus_fmt 1, outfmt: 0x00000001, index 1
+[ 5515.466864] csi_img_setup_param, csi1 img0 setup params done
+[ 5515.466871] s_test_cnt 122, skip_frame: 1
+[ 5515.470952] csi_img_set_channel: pix_fmt: 0x00000001, bus_type 0x1
+[ 5515.470956] plane.0, split= [0, 0, 2, 3], color_depth = [0, 0, 8, 8]
+[ 5515.470962] csi1 img 0, stream on done
+[ 5515.474743] mipi_csi2_set_phy_freq(): phyrate 1496MHz, lanerate=187MHz
+[ 5515.476810] mipi_csi2_enable:  1
+[ 5515.506483] max96722 0-0029: value 0xf0, enable 1
+[ 5518.060500] [VPU-CODA-DRV] coda driver vpu_open
+[ 5518.060607] [VPU-CODA-DRV] VDI_IOCTL_GET_INSTANCE_POOL
+[ 5518.060671] [VPU-CODA-DRV] VDI_IOCTL_GET_REGISTER_INFO s_vpu_register.phys_addr 31430000, s_vpu_register.virt_addr ffff800012958000, s_vpu_register.size 16384
+[ 5518.060680] [VPU-CODA-DRV]s_vpu_register.phys_addr 00000000e9e5872a, vm_pagoff 31430
+[ 5518.060723] [VPU-CODA-DRV] VDI_IOCTL_GET_COMMON_MEMORY
+[ 5518.060745] [VPU-CODA-DRV] vpucoda_device 000000005a87beeb, s_common_memory.phys_addr 000000009ff02c74, dma_addr 000000009ff02c74 ,base 00000000d73278d4,	size 2097152, vm_pagoff fe 
+[ 5518.079702] type=1400 audit(1658358948.588:1174): avc: denied { write } for comm="reader" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5518.079915] type=1400 audit(1658358948.588:1175): avc: denied { read } for comm="reader" path="socket:[32309]" dev="sockfs" ino=32309 scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=rpmsg_socket permissive=1
+[ 5518.121455] SDRV_ALSA: snd_afe_dai_startup:542                                                                                                                     
+[ 5518.121544] SDRV_ALSA: snd_afe_dai_hw_params:689                                                                                                                     
+[ 5518.121548] SDRV_ALSA: snd_afe_dai_hw_params:703                                                                                                                     
+[ 5518.121566] snd-afe-i2s-sc-i2s 30650000.i2s: snd_afe_dai_hw_params clk294911997 srate: 48000, channels: 4, sample_size: 16, period_size: 480, stream 1
+[ 5518.121573] SDRV_ALSA: snd_afe_dai_set_fmt:871                                                                                                                     
+[ 5518.121673] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1228                                                                                                                    
+[ 5518.121677] SDRV_ALSA: sdrv_pcm_prepare_slave_config:1258                                                                                                                    
+[ 5518.121681] DW AXI DMAC dma_chan_config slave id: 55 
+[ 5518.122062] SDRV_ALSA: snd_afe_dai_prepare:777                                                                                                                     
+[ 5518.122122] snd_afe_dai_trigger:787 ---- cmd(1)stream(1)--------------
+[ 5518.122126] SDRV_ALSA: snd_afe_dai_trigger:792                                                                                                                     
+[ 5523.292799] snd_afe_dai_trigger:787 ---- cmd(0)stream(1)--------------
+[ 5523.292885] snd_afe_dai_trigger:817 -----i2s stop----------
+[ 5523.292893] SDRV_ALSA: afe_i2s_sc_stop:393                                                                                                                     
+[ 5523.292913] SDRV_ALSA: snd_afe_dai_hw_free:832                  [substream->stream]:0x1(1)
+[ 5523.292918] SDRV_ALSA: snd_afe_dai_shutdown:842                  [substream->stream]:0x1(1)
+[ 5524.618984] type=1400 audit(1658358955.128:1176): avc: denied { read } for comm=5369676E616C2043617463686572 name="libsrv_um.so" dev="mmcblk0p53" ino=741 scontext=u:r:system_app:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 5524.619143] type=1400 audit(1658358955.128:1177): avc: denied { open } for comm=5369676E616C2043617463686572 path="/vendor/lib64/libsrv_um.so" dev="mmcblk0p53" ino=741 scontext=u:r:system_app:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 5524.619236] type=1400 audit(1658358955.128:1178): avc: denied { getattr } for comm=5369676E616C2043617463686572 path="/vendor/lib64/libsrv_um.so" dev="mmcblk0p53" ino=741 scontext=u:r:system_app:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 5524.619313] type=1400 audit(1658358955.128:1179): avc: denied { map } for comm=5369676E616C2043617463686572 path="/vendor/lib64/libsrv_um.so" dev="mmcblk0p53" ino=741 scontext=u:r:system_app:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[ 5525.714397] dp_update_done crtc-0 dp wait update done timeout
+[ 5525.930915] init: Untracked pid 30472 exited with status 0
+[ 5525.944552] init: Untracked pid 30475 exited with status 0
+[ 5526.016466] init: Untracked pid 30480 exited with status 0
+[ 5526.020966] init: Untracked pid 30482 exited with status 0
+[ 5526.086601] init: Untracked pid 30485 exited with status 0
+[ 5526.088952] init: Untracked pid 30487 exited with status 0
+[ 5526.169047] init: Untracked pid 30490 exited with status 0
+[ 5526.174109] init: Untracked pid 30492 exited with status 0
+[ 5526.274334] init: Untracked pid 30495 exited with status 0
+[ 5526.277481] init: Untracked pid 30498 exited with status 0
+[ 5526.711157] dp_update_done crtc-1 dp wait update done timeout
+[ 5526.929580] dp_update_done crtc-0 dp wait update done timeout
+[ 5527.299438] logd: logdr: UID=1000 GID=1000 PID=30527 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
+[ 5527.544179] logd: logdr: UID=1000 GID=1000 PID=30533 n tail=0 logMask=10 pid=0 start=0ns deadline=0ns
+[ 5527.632899] logd: logdr: UID=1000 GID=1000 PID=30536 n tail=0 logMask=9 pid=0 start=0ns deadline=0ns

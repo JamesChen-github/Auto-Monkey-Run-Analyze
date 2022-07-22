@@ -1,0 +1,25 @@
+[s[999C[999B[6n[u[H[J[?25l[H[J[s[999C[999B[6n[uTasks: 23 total,   1 running,  22 sleeping,   0 stopped,   0 zombie
+  Mem:  6441836K total,  5429328K used,  1012508K free,    21404K buffers
+ Swap:        0K total,        0K used,        0K free,  3284516K cached
+600%cpu  35%user   0%nice  65%sys 496%idle   0%iow   4%irq   0%sirq   0%host
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+[1m30541 system       20   0 8.3G 3.0M 2.4M R  3.8   0.0   0:00.02 top -n 1[m
+30540 system       20   0 8.3G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top -n 1 +
+30048 system       20   0  12G  90M  48M S  0.0   1.4   0:00.30 android:ui
+28730 system       20   0  12G 100M  55M S  0.0   1.5   0:00.33 com.android.ser+
+22735 system       20   0  12G 115M  63M S  0.0   1.8   0:20.67 com.google.andr+
+22307 system       20   0  12G 108M  60M S  0.0   1.7   0:29.75 com.android.car+
+15088 system       20   0  12G  73M  32M S  0.0   1.1   0:00.09 com.android.exp+
+14973 system       20   0 8.4G 8.5M 4.4M S  0.0   0.1   8:35.54 carwatchdogd
+14927 system       20   0  12G 108M  57M S  0.0   1.7   0:28.03 com.android.car
+ 2576 system       20   0  12G  92M  43M S  0.0   1.4   0:05.72 com.android.car+
+ 2500 system       20   0  12G 117M  65M S  0.0   1.8   0:23.08 com.semidrive.d+
+ 2039 system       20   0  12G 120M  65M S  0.0   1.9   1:44.04 com.google.andr+
+ 1553 system       20   0  12G 136M  62M S  0.0   2.1   0:08.50 com.semidrive.m+
+  346 system       20   0 8.3G 3.3M 2.6M S  0.0   0.0   0:02.47 sde
+  331 system       20   0 8.5G  16M  11M S  0.0   0.2   0:00.22 android.hardwar+
+  330 system       20   0 8.3G 4.3M 3.5M S  0.0   0.0   0:01.27 android.hardwar+
+  329 system       20   0 8.3G 4.2M 3.5M S  0.0   0.0   0:00.27 android.hardwar+
+  324 system       20   0 8.4G 4.9M 3.8M S  0.0   0.0   0:00.74 android.hardwar+
+  317 system       20   0 8.3G 3.9M 3.3M S  0.0   0.0   0:00.07 android.hidl.al+
+  239 system       20   0 8.3G 4.3M 3.5M S  0.0   0.0   0:00.05 android.hardwar+[?25h[0m[1000;1H[K[?25h[?25h[0m[1000;1H[K
