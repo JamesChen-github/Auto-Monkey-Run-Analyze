@@ -1,8 +1,6 @@
 version:20220720
 revised by cjh
 
-![image](https://user-images.githubusercontent.com/70957022/180348759-d4f52ed9-92cd-46ca-bdde-687c3b8f668b.png)
-
 使用步骤
 1. 连接设备，试一下adb root和adb remount能否成功
 2. 打开串口并记录数据（与本脚本无关，可选）
