@@ -74,8 +74,8 @@ echo "adb shell sleep 2"
 echo "adb push blacklist.txt /data/local/tmp/"
 .\adb push blacklist.txt /data/local/tmp/
 
-echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v 1080000 1>.\Logs\monkey_info_log.log 2>.\Logs\monkey_error_log.log"
-.\adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v 1080000 1>.\Logs\monkey_info_log.log 2>.\Logs\monkey_error_log.log
+echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v 540000 1>.\Logs\monkey_info_log.log 2>.\Logs\monkey_error_log.log"
+.\adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v 540000 1>.\Logs\monkey_info_log.log 2>.\Logs\monkey_error_log.log
 
 ::echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v 108000 >.\Logs\monkey.log"
 ::.\adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v 108000 >.\Logs\monkey.log
@@ -92,7 +92,7 @@ echo ***************************************************************************
 
 echo "Log_Collect"
 
-set filename=last_log
+set filename=Logs\last_log
 
 echo "mkdir %filename%"
 md %filename%

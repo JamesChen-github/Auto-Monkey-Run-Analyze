@@ -9,8 +9,8 @@ import os
 
 def get_date():
     today = time.strftime('%Y-%m-%d',time.localtime(time.time()))
-    return "2000-01-01"
-    #return today
+    # return "2000-01-01"
+    return today
 
 
 # date_dir_path

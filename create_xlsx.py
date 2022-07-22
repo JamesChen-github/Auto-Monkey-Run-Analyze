@@ -3,8 +3,11 @@ import get_path
 import os
 
 def get_version():
-    with open(get_path.get_version_path(), "r", encoding="UTF_8") as f:
-        version = f.read().replace("\n","  ")
+    if os.path.exists(get_path.get_version_path()):
+        with open(get_path.get_version_path(), "r", encoding="UTF_8") as f:
+            version = f.read().replace("\n","  ")
+    else:
+        version = "unknow"
     return version
 
 

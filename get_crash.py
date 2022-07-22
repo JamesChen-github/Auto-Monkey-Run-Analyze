@@ -29,8 +29,9 @@ def write_crash_key_info(file):
     crash_key = ""
     for line in file:
         if 'FATAL EXCEPTION' in line:
-            crash_content[crash_key] = last_crash
-            #print(crash_content[crash_key])
+            if write == 1:
+                crash_content[crash_key] = last_crash.copy()
+            # print(crash_content[crash_key])
             last_crash.clear()
             continue
         elif 'Process:' in line:
@@ -48,8 +49,9 @@ def write_crash_key_info(file):
             # location = "B" + (str)(count-2)
             # sheet[location].value = line[58:90]
             # sheet[location].font = Font(bold = True)
-    print(crash_content)
-    crash_content[crash_key] = last_crash
+    # print(crash_content)
+    if write == 1:
+        crash_content[crash_key] = last_crash.copy()
     last_crash.clear()
     for key in crash_times:
         sheet.append(["java_crash(发生%d次)" % crash_times[key]])
