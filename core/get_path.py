@@ -21,27 +21,30 @@ def get_date_dir_path():
 # 获取last_log文件夹路径
 def get_last_log_path():
     return os.path.join(get_date_dir_path(), "last_log")
-
-
 # 获取logcat路径
 def get_logcat_path():
     return os.path.join(get_date_dir_path(), "logcat.log")
-
-
 def get_version_path():
     return os.path.join(get_date_dir_path(), "测试版本.txt")
-
-
-# key_info提取到哪个文件夹
-def get_key_info_dir_path():
+# tmp提取到哪个文件夹
+def get_tmp_dir_path():
     return os.path.join(get_date_dir_path(), "tmp")
+# 压测报告存放的地址
+def get_xlsx_path():
+    return os.path.join(get_date_dir_path(), get_date() + "压测报告.xlsx")
+
 
 def get_native_crash_list_path():
-    return os.path.join(get_key_info_dir_path(), "native_crash_list.txt")
+    return os.path.join(get_tmp_dir_path(), "native_crash_list.txt")
 def get_crash_list_path():
-    return os.path.join(get_key_info_dir_path(), "crash_list.txt")
+    return os.path.join(get_tmp_dir_path(), "crash_list.txt")
 def get_anr_list_path():
-    return os.path.join(get_key_info_dir_path(), "anr_list.txt")
+    return os.path.join(get_tmp_dir_path(), "anr_list.txt")
+
+
+# 获取filename_list文件路径，这个文件里面放着sde文件夹下的每个error文件夹的名字
+# def get_errorname_list_path():
+#     return get_tmp_dir_path()+"\\errorname_list.txt"
 
 
 # 获取sde文件夹路径
@@ -49,12 +52,6 @@ def get_sde_path():
     return os.path.join(get_last_log_path(), "sde")
 
 
-# 获取filename_list文件路径，这个文件里面放着sde文件夹下的每个error文件夹的名字
-def get_errorname_list_path():
-    return get_key_info_dir_path()+"\\errorname_list.txt"
-
-def get_xlsx_path():
-    return os.path.join(get_date_dir_path(), get_date() + "压测报告.xlsx")
 
 
 # 共享域相关路径定义
@@ -78,6 +75,10 @@ def get_serial_hyperlink():
 def get_last_log_hyperlink():
     return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", get_date(), "last_log")
 
+# sdrv_logs路径
+def get_sdrv_logs_hyperlink():
+    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", get_date(), "sdrv_logs")
+
 
 
 
@@ -89,6 +90,7 @@ def get_last_log_hyperlink():
 
 
 # 输入error文件夹名提取其中包名
+# 暂时没用上
 def get_app_name(file_name):
     if 'native_crash' in file_name:
         app_name_rear = file_name.index("202")

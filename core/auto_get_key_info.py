@@ -14,7 +14,7 @@ def list_error():
     for file_name in file_name_list:
         a = file_name.strip()
         #app_name = get_app_name(a)
-        key_info_path = os.path.join(get_path.get_key_info_dir_path(), a + ".log")
+        key_info_path = os.path.join(get_path.get_tmp_dir_path(), a + ".log")
         if 'native_crash_' in file_name:
             with open(get_path.get_native_crash_list_path(), "a", encoding="UTF_8") as f:
                 f.write(file_name+"\n")
@@ -27,7 +27,7 @@ def list_error():
         elif 'exceptionRecord.txt' in file_name:
             pass
         else:
-            with open(get_path.get_key_info_dir_path()+"\\others.txt", "a") as f:
+            with open(get_path.get_tmp_dir_path()+"\\others.txt", "a") as f:
                 f.write(file_name+"\n")
         
         #一个app只选一个文件
@@ -38,8 +38,8 @@ def list_error():
             #print(app_name)
 
 
-def create_key_info_dir():
-    key_info_dir_path = get_path.get_key_info_dir_path()
+def create_tmp_dir():
+    key_info_dir_path = get_path.get_tmp_dir_path()
     if os.path.exists(key_info_dir_path):
         # 删除key_info文件夹
         import shutil
@@ -53,7 +53,7 @@ def create_key_info_dir():
 
 
 def auto_get_key_log():
-    create_key_info_dir()
+    create_tmp_dir()
     list_error()
     create_xlsx.create_xlsx()
     print("正在提取......")
@@ -64,7 +64,6 @@ def auto_get_key_log():
     print("key_info提取完成\n")
     # crash.get_crash_key_info()
     # native.get_native_crash_key_info()
-    os.system("pause")
     os.system("pause")
 
 

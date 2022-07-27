@@ -14,7 +14,7 @@ def get_crash_key_info():
     
 def write_crash_key_info(file):
     # 写log
-    #with open(os.path.join(get_path.get_key_info_dir_path(), "all_crash.log"), "a", encoding="UTF_8") as wf:
+    #with open(os.path.join(get_path.get_tmp_dir_path(), "all_crash.log"), "a", encoding="UTF_8") as wf:
     #    wf.writelines(file)
     
     # 写xlsx

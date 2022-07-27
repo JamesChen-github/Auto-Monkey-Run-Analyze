@@ -58,6 +58,10 @@ def create_xlsx():
     make_hyperlink(cell, get_path.get_monkey_error_hyperlink())
     #cell.value = '=HYPERLINK("{}", "{}")'.format("\\\\192.168.0.195\\RND Share\\SW\\Android\\05_Log\\monkey_test_Jiahao\\2022-07-19\\logcat.log", "\\\\192.168.0.195\\RND Share\\SW\\Android\\05_Log\\monkey_test_Jiahao\\2022-07-19\\logcat.log")
     
+    sheet.append(["sdrv_logs", get_path.get_sdrv_logs_hyperlink()])
+    cell = sheet['B9']
+    make_hyperlink(cell, get_path.get_sdrv_logs_hyperlink())
+    
     sheet.append([])
     sheet.append(["测试报告概要:"])
     
