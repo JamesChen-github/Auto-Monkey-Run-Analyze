@@ -21,16 +21,6 @@ if exist %filename% (
 )
 
 
-
-echo **********************************************************************************************
-echo 开始执行Monkey Test
-echo 测试开始时间：
-echo %date%  %time%
-echo **********************************************************************************************
-echo "Monkey_Test"
-echo monkey_test_all_packeages_except_settings
-
-
 echo "adb root"
 .\adb root
 
@@ -43,9 +33,33 @@ echo "adb remount"
 echo "adb shell sleep 2"
 .\adb shell sleep 2
 
-::清理现有logcat日志
+
+::清理现有日志
 echo "adb logcat -c"
 .\adb logcat -c
+echo "adb shell rm -rf /data/sdrv_logs/*"
+.\adb shell rm -rf /data/sdrv_logs/*
+echo "adb shell rm -rf /data/misc/bluetooth/*"
+.\adb shell rm -rf /data/misc/bluetooth/*
+echo "adb shell rm -rf /data/sdrv_deviceinfo/*"
+.\adb shell rm -rf /data/sdrv_deviceinfo/*
+echo "adb shell rm -rf /data/anr/*"
+.\adb shell rm -rf /data/anr/*
+echo "adb shell rm -rf /data/sde/*"
+.\adb shell rm -rf /data/sde/*
+echo "adb shell rm -rf /data/tombstones/*"
+.\adb shell rm -rf /data/tombstones/*
+
+
+echo **********************************************************************************************
+echo 开始执行Monkey Test
+echo 测试开始时间：
+echo %date%  %time%
+echo **********************************************************************************************
+echo "Monkey_Test"
+echo monkey_test_all_packeages_except_settings
+
+
 
 @REM ::开始记录logcat
 @REM echo "adb logcat"
@@ -128,9 +142,9 @@ echo "adb pull DB"
 .\adb pull data/system/users/0 %filename%
 
 
-::拉取logcat
-echo "adb logcat"
-.\adb logcat -d -v time > .\Logs\logcat.log
+@REM ::拉取logcat
+@REM echo "adb logcat"
+@REM .\adb logcat -d -v time > .\Logs\logcat.log
 
 echo **********************************************************************************************
 echo 报告下载完成：

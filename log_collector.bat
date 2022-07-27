@@ -75,9 +75,9 @@ echo "adb pull DB"
 .\adb pull data/system/users/0 %filename%
 
 
-::拉取logcat
-echo "adb logcat"
-.\adb logcat -d -v time > .\Logs\logcat.log
+@REM ::拉取logcat
+@REM echo "adb logcat"
+@REM .\adb logcat -d -v time > .\Logs\logcat.log
 
 echo **********************************************************************************************
 echo 报告下载完成：
