@@ -2,10 +2,10 @@ version:20220722
 revised by cjh
 ---
 ## 使用步骤
-1. 连接设备，试一下adb root和adb remount能否成功
+1. 连接设备，试一下adb root和adb remount能否成功  
 
 
-2. 打开串口并记录数据（与本脚本无关，可选）
+2. 打开串口并记录数据（与本脚本无关，可选）   
 
 
 3. 运行sdrv_logs.bat，运行完关掉即可
