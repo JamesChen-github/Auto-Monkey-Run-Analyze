@@ -58,9 +58,7 @@ if exist Resources (
 	echo 传输开始时间：
 	echo %date%  %time%
 	echo **********************************************************************************************
-	.\adb push .\Resources\07_Video\. /sdcard/
-	.\adb push .\Resources\08_Image\. /sdcard/
-	.\adb push .\Resources\09_Music\. /sdcard/
+	.\adb push .\resources /sdcard/
 	echo 传输结束
 	echo **********************************************************************************************
 )
