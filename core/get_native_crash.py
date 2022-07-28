@@ -6,6 +6,7 @@ def abc():
     pass
 def get_native_crash_key_info():
     if not os.path.exists(get_path.get_native_crash_list_path()):
+        write_none()
         return
     
     native_crash_times = {}
@@ -46,6 +47,15 @@ def get_native_crash_key_info():
             sheet.append(["", line.strip()])
 
     workbook.save(xlsx_path)
+
+
+def write_none():
+    xlsx_path = get_path.get_xlsx_path()
+    workbook = xl.load_workbook(xlsx_path)
+    sheet = workbook.active
+    sheet.append(["native_crash", "未出现"])
+    workbook.save(xlsx_path)
+    
 
 def get_native_crash_key(native_crash_tombstone_path):
     with open(native_crash_tombstone_path, "r", encoding='UTF-8') as rf:

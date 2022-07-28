@@ -4,6 +4,7 @@ import openpyxl as xl
 
 def get_anr_key_info():
     if not os.path.exists(get_path.get_anr_list_path()):
+        write_none()
         return
     with open(get_path.get_anr_list_path(), "r", encoding="UTF_8") as rf:
         for line in rf:
@@ -17,6 +18,13 @@ def get_anr_key_info():
                     if 'I am_anr' in line:
                         write_anr_key_info(line)
 
+
+def write_none():
+    xlsx_path = get_path.get_xlsx_path()
+    workbook = xl.load_workbook(xlsx_path)
+    sheet = workbook.active
+    sheet.append(["anr", "未出现"])
+    workbook.save(xlsx_path)
     
     
 def write_anr_key_info(line):

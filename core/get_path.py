@@ -15,7 +15,7 @@ def get_date():
 
 # date_dir_path
 def get_date_dir_path():
-    return os.path.join(os.getcwd(), "Logs", get_date())
+    return os.path.join(os.getcwd(), "logs", get_date())
 
 
 # 获取last_log文件夹路径
@@ -24,8 +24,12 @@ def get_last_log_path():
 # 获取logcat路径
 def get_logcat_path():
     return os.path.join(get_date_dir_path(), "logcat.log")
-def get_version_path():
-    return os.path.join(get_date_dir_path(), "测试版本.txt")
+def get_monkey_info_path():
+    return os.path.join(get_date_dir_path(), "monkey_info_log.log")
+def get_monkey_error_path():
+    return os.path.join(get_date_dir_path(), "monkey_error_log.log")
+def get_test_info_path():
+    return os.path.join(get_date_dir_path(), "测试信息.txt")
 # tmp提取到哪个文件夹
 def get_tmp_dir_path():
     return os.path.join(get_date_dir_path(), "tmp")
@@ -50,34 +54,38 @@ def get_anr_list_path():
 # 获取sde文件夹路径
 def get_sde_path():
     return os.path.join(get_last_log_path(), "sde")
-
+# sdrv_logs_path
+def get_sdrv_logs_path():
+    return os.path.join(get_last_log_path(), "sdrv_logs")
 
 
 
 # 共享域相关路径定义
+def log_share_path():
+    return r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao"
 # logcat路径
 def get_logcat_hyperlink():
-    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", get_date(), "logcat.log")
+    return os.path.join(log_share_path(), get_date(), "logcat.log")
 
 # monkey_info路径
 def get_monkey_info_hyperlink():
-    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", get_date(), "monkey_info_log.log")
+    return os.path.join(log_share_path(), get_date(), "monkey_info_log.log")
 
 # monkey_error路径
 def get_monkey_error_hyperlink():
-    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", get_date(), "monkey_error_log.log")
+    return os.path.join(log_share_path(), get_date(), "monkey_error_log.log")
 
 # 串口信息路径
 def get_serial_hyperlink():
-    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", get_date())
+    return os.path.join(log_share_path(), get_date())
 
 # last_log文件夹路径
 def get_last_log_hyperlink():
-    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", get_date(), "last_log")
+    return os.path.join(log_share_path(), get_date(), "last_log")
 
 # sdrv_logs路径
 def get_sdrv_logs_hyperlink():
-    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", get_date(), "sdrv_logs")
+    return os.path.join(log_share_path(), get_date(), "sde", "sdrv_logs")
 
 
 

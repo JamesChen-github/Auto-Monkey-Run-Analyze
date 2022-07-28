@@ -4,14 +4,25 @@ import get_path
 import openpyxl as xl
 
 def get_crash_key_info():
+    if not os.path.exists(get_path.get_crash_list_path()):
+        write_none()
+        return
     crash_log_path = find_last_crash_log()
     with open(crash_log_path, "r", encoding='UTF-8') as rf:
         file = []
         for line in rf:
             file.append(line.strip())
         write_crash_key_info(file)
-    
-    
+
+
+def write_none():
+    xlsx_path = get_path.get_xlsx_path()
+    workbook = xl.load_workbook(xlsx_path)
+    sheet = workbook.active
+    sheet.append(["java_crash", "未出现"])
+    workbook.save(xlsx_path)
+
+
 def write_crash_key_info(file):
     # 写log
     #with open(os.path.join(get_path.get_tmp_dir_path(), "all_crash.log"), "a", encoding="UTF_8") as wf:
@@ -63,8 +74,6 @@ def write_crash_key_info(file):
 
 
 def find_last_crash_log():
-    if not os.path.exists(get_path.get_crash_list_path()):
-        return
     crash_logs = {}
     with open(get_path.get_crash_list_path(), "r", encoding="UTF_8") as rf:
         for line in rf:
