@@ -8,14 +8,20 @@
 chcp 65001
 
 
-set filename=last_log
-if exist %filename% (
-	echo last_log already exists!!!
-	echo please delete the last_log first!!!
-    echo 请删除当前目录的last_log文件夹，记得保存上一次的log哦
-	pause
-	exit
+@REM 存放目录
+echo "mkdirs"
+@REM 不同编码%date%不同
+set datedir=logs\%date:~3,4%-%date:~8,2%-%date:~11,2%
+if exist %datedir% (
+	echo dir already exists!!!
+	echo %datedir%已存在,本次将存放在%datedir%-1文件夹中
+	set datedir=logs\%date:~3,4%-%date:~8,2%-%date:~11,2%-1
 )
+echo %datedir%
+md %datedir%
+set filename=%datedir%\last_log
+echo %filename%
+md %filename%
 
 echo **********************************************************************************************
 echo 开始下载LOG报告
@@ -24,10 +30,13 @@ echo ***************************************************************************
 
 echo "Log_Collect"
 
-set filename=Logs\last_log
+echo "sync"
+.\adb shell sync
 
-echo "mkdir %filename%"
-md %filename%
+echo "sync"
+.\adb shell sync
+
+
 echo "adb root"
 .\adb root
 echo "adb shell sleep 2"
@@ -73,6 +82,8 @@ echo "screenshot"
 .\adb pull /sdcard/screenshot.png %filename%
 echo "adb pull DB"
 .\adb pull data/system/users/0 %filename%
+echo ".\adb bugreport %datedir%"
+.\adb bugreport %datedir%
 
 
 @REM ::拉取logcat
