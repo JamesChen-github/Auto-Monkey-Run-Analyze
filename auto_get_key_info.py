@@ -1,6 +1,6 @@
 import time
 import os
-
+import datetime
 import openpyxl as xl
 
 # 以下包含有可能要修改的路径信息
@@ -15,6 +15,7 @@ def is_release():
 def get_date():
     today = time.strftime('%Y-%m-%d',time.localtime(time.time()))
     # return "2000-01-01"
+    return getYesterday()
     return today
 
 # 这是本次last_log所在的文件夹，不同版本需要根据情况修改date_dir_path
@@ -49,7 +50,7 @@ def get_tmp_dir_path():
 # 根据情况修改报告生成路径
 # 压测报告存放的地址
 def get_xlsx_path():
-    return os.path.join(get_date_dir_path(), "测试关键信息.xlsx")
+    return os.path.join(get_date_dir_path(), "测试报告.xlsx")
 
 
 # 这三个文件存放sde文件夹下的所有异常名称
@@ -99,11 +100,18 @@ def get_last_log_hyperlink():
 # sdrv_logs路径
 def get_sdrv_logs_hyperlink():
     return os.path.join(get_last_log_hyperlink(), "sdrv_logs")
+# bugreport路径
+def get_bugreport_hyperlink():
+    return os.path.join(today_log_share_path(), "bugreport.zip")
 
 
 
 # 其它通用函数
-
+def getYesterday(): 
+    today=datetime.date.today() 
+    oneday=datetime.timedelta(days=1) 
+    yesterday=today-oneday  
+    return str(yesterday)
 
 # 输入error文件夹名提取其中包名
 # 暂时没用上
@@ -193,15 +201,14 @@ def auto_get_key_log():
         create_tmp_dir()
         list_error()
         create_xlsx()
-        print("正在提取测试关键信息......")
+        print("正在提取测试报告......")
         get_native_crash_key_info()
         get_crash_key_info()
         get_anr_key_info()
         delete_tmp_dir()
-        print("测试关键信息提取完成。\n")
+        print("测试报告提取完成。\n")
         # get_crash_key_info()
         # get_native_crash_key_info()
-    os.system("pause")
 
 
 
@@ -230,7 +237,7 @@ def create_xlsx():
     xlsx_path = get_xlsx_path()
     if os.path.exists(xlsx_path):
         os.remove(xlsx_path)
-        print("正在删除文件夹下原有关键信息报告......")
+        print("正在删除文件夹下原有测试报告......")
     #print(xlsx_path)
     #print('***** 开始写入excel文件 ' + xlsx_path + ' ***** \n')
     # if os.path.exists(xlsx_path):
@@ -279,7 +286,6 @@ def create_xlsx():
         if "com com" in filename.lower() or "com_com" in filename.lower():
             serial_hyperlink = get_serial_hyperlink()
             break
-
     sheet.append(["串口信息", serial_hyperlink])
     cell = sheet['B6']
     make_hyperlink(cell, get_serial_hyperlink())
@@ -308,8 +314,17 @@ def create_xlsx():
     else:
         sheet.append(["sdrv_logs", "无"])
     
+    bugreport_hyperlink =  "无"
+    for filename in os.listdir(get_date_dir_path()):
+        if "bugreport" in filename.lower():
+            bugreport_hyperlink = get_bugreport_hyperlink()
+            break
+    sheet.append(["bugreport", bugreport_hyperlink])
+    cell = sheet['B10']
+    make_hyperlink(cell, get_bugreport_hyperlink())
+    
     sheet.append([])
-    sheet.append(["测试报告概要"])
+    sheet.append(["测试概要"])
     
     workbook.save(xlsx_path)
     #print('***** 生成Excel文件 ' + xlsx_path + ' ***** \n')
@@ -334,7 +349,7 @@ def abc():
     pass
 def get_native_crash_key_info():
     if not os.path.exists(get_native_crash_list_path()):
-        write_none()
+        write_native_none()
         return
     
     native_crash_times = {}
@@ -377,7 +392,7 @@ def get_native_crash_key_info():
     workbook.save(xlsx_path)
 
 
-def write_none():
+def write_native_none():
     xlsx_path = get_xlsx_path()
     workbook = xl.load_workbook(xlsx_path)
     sheet = workbook.active
@@ -418,7 +433,7 @@ def get_native_crash_content(native_crash_tombstone_path):
 
 def get_crash_key_info():
     if not os.path.exists(get_crash_list_path()):
-        write_none()
+        write_crash_none()
         return
     crash_log_path = find_last_crash_log()
     with open(crash_log_path, "r", encoding='UTF-8') as rf:
@@ -428,7 +443,7 @@ def get_crash_key_info():
         write_crash_key_info(file)
 
 
-def write_none():
+def write_crash_none():
     xlsx_path = get_xlsx_path()
     workbook = xl.load_workbook(xlsx_path)
     sheet = workbook.active
@@ -513,7 +528,7 @@ def find_last_crash_log():
 
 def get_anr_key_info():
     if not os.path.exists(get_anr_list_path()):
-        write_none()
+        write_anr_none()
         return
     with open(get_anr_list_path(), "r", encoding="UTF_8") as rf:
         for line in rf:
@@ -528,7 +543,7 @@ def get_anr_key_info():
                         write_anr_key_info(line)
 
 
-def write_none():
+def write_anr_none():
     xlsx_path = get_xlsx_path()
     workbook = xl.load_workbook(xlsx_path)
     sheet = workbook.active

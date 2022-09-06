@@ -1,4 +1,4 @@
-::version 20220715
+::version 20220825
 ::revised by cjh
 
 
@@ -27,34 +27,38 @@ md %filename%
 
 
 echo "adb root"
-.\adb root
+adb root
 
 echo "adb shell sleep 2"
-.\adb shell sleep 2
+adb shell sleep 2
 
 echo "adb remount"
-.\adb remount
+adb remount
 
 echo "adb shell sleep 2"
-.\adb shell sleep 2
+adb shell sleep 2
 
 ::清理现有日志
 echo "adb logcat -c"
-.\adb logcat -c
+adb logcat -c
 echo "adb shell rm -rf /data/sdrv_logs/*"
-.\adb shell rm -rf /data/sdrv_logs/*
+adb shell rm -rf /data/sdrv_logs/*
 echo "adb shell rm -rf /data/misc/bluetooth/*"
-.\adb shell rm -rf /data/misc/bluetooth/*
+adb shell rm -rf /data/misc/bluetooth/*
 echo "adb shell rm -rf /data/sdrv_deviceinfo/*"
-.\adb shell rm -rf /data/sdrv_deviceinfo/*
+adb shell rm -rf /data/sdrv_deviceinfo/*
 echo "adb shell rm -rf /data/anr/*"
-.\adb shell rm -rf /data/anr/*
+adb shell rm -rf /data/anr/*
 echo "adb shell rm -rf /data/sde/*"
-.\adb shell rm -rf /data/sde/*
+adb shell rm -rf /data/sde/*
 echo "adb shell rm -rf /data/tombstones/*"
-.\adb shell rm -rf /data/tombstones/*
+adb shell rm -rf /data/tombstones/*
 
+echo "start logcat save to %datedir%"
+start /min cmd /K "adb logcat -b all > %datedir%\logcat.log"
 
+echo "adb shell sleep 2"
+adb shell sleep 2
 
 if exist Resources (
 	echo **********************************************************************************************
@@ -62,8 +66,8 @@ if exist Resources (
 	echo 传输开始时间：
 	echo %date%  %time%
 	echo **********************************************************************************************
-	.\adb push %~dp0resources /sdcard
-	@REM .\adb push .\resources /sdcard
+	@REM adb push %~dp0resources /sdcard
+	adb push resources /sdcard
 	echo 传输结束
 	echo **********************************************************************************************
 )
@@ -81,29 +85,29 @@ echo monkey_test_all_packeages_except_settings
 
 @REM ::拉取logcat
 @REM echo "adb logcat"
-@REM .\adb logcat -d -v time > .\logs\logcat.log
+@REM adb logcat -d -v time > .\logs\logcat.log
 
 ::打开sdrv_log，即常规日志
-echo ".\adb shell setprop persist.log.start 1"
-.\adb shell setprop persist.log.start 1
+echo "adb shell setprop persist.log.start 1"
+adb shell setprop persist.log.start 1
 
 echo "adb shell sleep 2"
-.\adb shell sleep 2
+adb shell sleep 2
 
 echo "adb push blacklist.txt /data/local/tmp/"
-.\adb push blacklist.txt /data/local/tmp/
+adb push blacklist.txt /data/local/tmp/
 
 echo "sync"
-.\adb shell sync
+adb shell sync
 
 echo "sync"
-.\adb shell sync
+adb shell sync
 
-echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 864000 1>%datedir%\monkey_info_log.log 2>%datedir%\monkey_error_log.log"
-.\adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 864000 1>%datedir%\monkey_info_log.log 2>%datedir%\monkey_error_log.log
+echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 720000TenHour 1>%datedir%\monkey_info_log.log 2>%datedir%\monkey_error_log.log"
+adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 720000 1>%datedir%\monkey_info_log.log 2>%datedir%\monkey_error_log.log
 
-@REM echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 864000 >%datedir%\monkey.txt"
-@REM .\adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 864000 >%datedir%\monkey.txt
+@REM echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 720000 >%datedir%\monkey.txt"
+@REM adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 720000 >%datedir%\monkey.txt
 
 
 
@@ -118,64 +122,64 @@ echo ***************************************************************************
 echo "Log_Collect"
 
 echo "sync"
-.\adb shell sync
+adb shell sync
 
 echo "sync"
-.\adb shell sync
+adb shell sync
 
 
 echo "adb root"
-.\adb root
+adb root
 echo "adb shell sleep 2"
-.\adb shell sleep 2
+adb shell sleep 2
 echo "adb remount"
-.\adb remount
+adb remount
 echo "adb shell sleep 2"
-.\adb shell sleep 2
+adb shell sleep 2
 echo "adb pull /data/sdrv_logs"
-.\adb pull /data/sdrv_logs %filename%
+adb pull /data/sdrv_logs %filename%
 echo "adb pull /data/misc/bluetooth"
-.\adb pull /data/misc/bluetooth %filename%
+adb pull /data/misc/bluetooth %filename%
 echo "adb pull /data/sdrv_deviceinfo"
-.\adb pull /data/sdrv_deviceinfo %filename%
+adb pull /data/sdrv_deviceinfo %filename%
 echo "adb pull /data/anr"
-.\adb pull /data/anr %filename%
+adb pull /data/anr %filename%
 echo "adb pull /data/sde"
-.\adb pull /data/sde %filename%
+adb pull /data/sde %filename%
 echo "adb pull /data/tombstones"
-.\adb pull /data/tombstones %filename%
+adb pull /data/tombstones %filename%
 echo "dumpsys meminfo"
-.\adb shell dumpsys meminfo > %filename%/meminfo.txt
+adb shell dumpsys meminfo > %filename%/meminfo.txt
 echo "cat /proc/meminfo"
-.\adb shell cat /proc/meminfo > %filename%/meminfo2.txt
+adb shell cat /proc/meminfo > %filename%/meminfo2.txt
 echo "dumpsys cpuinfo"
-.\adb shell dumpsys cpuinfo > %filename%/cpuinfo.txt
+adb shell dumpsys cpuinfo > %filename%/cpuinfo.txt
 echo "dumpsys input"
-.\adb shell dumpsys input > %filename%/input.txt
+adb shell dumpsys input > %filename%/input.txt
 echo "dumpsys surfaceflinger"
-.\adb shell dumpsys SurfaceFlinger > %filename%/sf.txt
+adb shell dumpsys SurfaceFlinger > %filename%/sf.txt
 echo "procrank"
-.\adb shell procrank > %filename%/procrank.txt
+adb shell procrank > %filename%/procrank.txt
 echo "getprop"
-.\adb shell getprop > %filename%/build_prop.txt
+adb shell getprop > %filename%/build_prop.txt
 echo "ps -elf"
-.\adb shell ps -elf > %filename%/ps.txt
+adb shell ps -elf > %filename%/ps.txt
 echo "adb pull binder"
-.\adb pull /sys/kernel/debug/binder %filename%
+adb pull /sys/kernel/debug/binder %filename%
 echo "df"
-.\adb shell df > %filename%/df.txt
+adb shell df > %filename%/df.txt
 echo "screenshot"
-.\adb shell screencap -p /sdcard/screenshot.png
-.\adb pull /sdcard/screenshot.png %filename%
+adb shell screencap -p /sdcard/screenshot.png
+adb pull /sdcard/screenshot.png %filename%
 echo "adb pull DB"
-.\adb pull data/system/users/0 %filename%
-echo ".\adb bugreport %datedir%"
-.\adb bugreport %datedir%
+adb pull data/system/users/0 %filename%
+echo "adb bugreport %datedir%"
+adb bugreport %datedir%
 
 
 @REM ::拉取logcat
 @REM echo "adb logcat"
-@REM .\adb logcat -d -v time > .\logs\logcat.log
+@REM adb logcat -d -v time > .\logs\logcat.log
 
 echo **********************************************************************************************
 echo 报告下载完成：
