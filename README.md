@@ -1,5 +1,5 @@
 # 使用步骤
-version:20220824
+version:20220906
 revised by cjh
 ---
 1. 连接设备，试一下adb root和adb remount能否成功
