@@ -11,4 +11,4 @@ revised by cjh
 
 4. monkey运行结束后会自动下载log，如果monkey过程中卡住，要按Ctrl+C退出并输入"N"不要退出脚本，脚本会继续运行
 
-5. 在当前文件夹运行auto_get_key_info.py，将自动生成xlsx报告到logs\2022-07-22\目录下
+5. 在当前文件夹运行run_auto_get_key_info.py，将自动生成xlsx报告到logs\2022-07-22\目录下
