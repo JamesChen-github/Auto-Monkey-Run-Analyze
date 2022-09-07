@@ -71,7 +71,7 @@ echo monkey_test_all_packeages_except_settings
 @REM echo "adb logcat"
 @REM adb logcat -d -v time > .\logs\logcat.log
 
-::打开sdrv_log，即常规日志
+::打开sdrv_log
 echo "adb shell setprop persist.log.start 1"
 adb shell setprop persist.log.start 1
 

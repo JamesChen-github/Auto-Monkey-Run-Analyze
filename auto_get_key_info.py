@@ -2,12 +2,24 @@ import time
 import os
 import datetime
 import openpyxl as xl
+import sys
+        
+def get_dirname():
+    args = sys.argv[1:]
+    if len(args) != 1:
+        raise ValueError("usage: python %s {dir_name}" % sys.argv[0])
+        # print('usage: python auto_get_key_info.py {dir_name}')
+        # sys.exit(-1)
+    dir_name = args[0]
+    if not os.path.exists(dir_name):
+        raise IOError("directory: %s does not exit!" % dir_name)
+    return dir_name
 
 # 以下包含有可能要修改的路径信息
 # 和测试过程中常改的信息
 
 def is_release():
-    #return True
+    # return True
     return False
 
 # 本地相关路径
@@ -18,39 +30,35 @@ def get_date():
     return getYesterday()
     return today
 
-# 这是本次last_log所在的文件夹，不同版本需要根据情况修改date_dir_path
-def get_date_dir_path():
+# 这是本次last_log所在的文件夹，不同版本需要根据情况修改base_dir_path
+def get_base_dir_path():
     if is_release():
-        return os.path.join(os.getcwd())
+        return get_dirname()
     else:
         return os.path.join(os.getcwd(), "logs", get_date())
-
-# # date_dir_path
-# def get_date_dir_path():
-#     return os.path.join(os.getcwd())
 
 
 # 获取last_log文件夹路径
 def get_last_log_path():
-    return os.path.join(get_date_dir_path(), "last_log")
+    return os.path.join(get_base_dir_path(), "last_log")
 # 获取logcat路径
 def get_logcat_path():
-    return os.path.join(get_date_dir_path(), "logcat.log")
+    return os.path.join(get_base_dir_path(), "logcat.log")
 def get_monkey_path():
-    return os.path.join(get_date_dir_path(), "monkey.txt")
+    return os.path.join(get_base_dir_path(), "monkey.txt")
 def get_monkey_info_path():
-    return os.path.join(get_date_dir_path(), "monkey_info_log.log")
+    return os.path.join(get_base_dir_path(), "monkey_info_log.log")
 def get_monkey_error_path():
-    return os.path.join(get_date_dir_path(), "monkey_error_log.log")
+    return os.path.join(get_base_dir_path(), "monkey_error_log.log")
 def get_test_info_path():
-    return os.path.join(get_date_dir_path(), "测试信息.txt")
+    return os.path.join(get_base_dir_path(), "测试信息.txt")
 # tmp提取到哪个文件夹
 def get_tmp_dir_path():
-    return os.path.join(get_date_dir_path(), "tmp")
+    return os.path.join(get_base_dir_path(), "tmp")
 # 根据情况修改报告生成路径
 # 压测报告存放的地址
 def get_xlsx_path():
-    return os.path.join(get_date_dir_path(), "测试报告.xlsx")
+    return os.path.join(get_base_dir_path(), "测试报告.xlsx")
 
 
 # 这三个文件存放sde文件夹下的所有异常名称
@@ -194,21 +202,24 @@ def delete_tmp_dir():
             print("Error: %s - %s." % (e.filename, e.strerror))
 
 
-def auto_get_key_log():
+def check_files():
     if not (os.path.exists(get_last_log_path()) or os.path.exists(get_logcat_path()) or os.path.exists(get_monkey_error_path()) or os.path.exists(get_monkey_path())):
-        print("找不到报告，请检查脚本执行位置！")
-    else:
-        create_tmp_dir()
-        list_error()
-        create_xlsx()
-        print("正在提取测试报告......")
-        get_native_crash_key_info()
-        get_crash_key_info()
-        get_anr_key_info()
-        delete_tmp_dir()
-        print("测试报告提取完成。\n")
-        # get_crash_key_info()
-        # get_native_crash_key_info()
+        raise IOError("找不到报告，请检查脚本运行参数！")
+
+
+def auto_get_key_log():
+    check_files()
+    create_tmp_dir()
+    list_error()
+    create_xlsx()
+    print("正在提取测试报告......")
+    get_native_crash_key_info()
+    get_crash_key_info()
+    get_anr_key_info()
+    delete_tmp_dir()
+    print("测试报告提取完成。\n")
+    # get_crash_key_info()
+    # get_native_crash_key_info()
 
 
 
@@ -262,7 +273,10 @@ def create_xlsx():
         for list in test_info:
             sheet.append(list)
     else:
-        sheet.append(["测试信息", "无"])
+        sheet.append(["测试信息"])
+        sheet.append(["测试版本", "Android12Userdebug DB"])
+        sheet.append(["测试内容", "Monkey"])
+        sheet.append(["测试时间", "10小时"])
     
     
     sheet.append([])
@@ -282,7 +296,7 @@ def create_xlsx():
         sheet.append(["logcat", "无"])
     
     serial_hyperlink =  "无"
-    for filename in os.listdir(get_date_dir_path()):
+    for filename in os.listdir(get_base_dir_path()):
         if "com com" in filename.lower() or "com_com" in filename.lower():
             serial_hyperlink = get_serial_hyperlink()
             break
@@ -315,7 +329,7 @@ def create_xlsx():
         sheet.append(["sdrv_logs", "无"])
     
     bugreport_hyperlink =  "无"
-    for filename in os.listdir(get_date_dir_path()):
+    for filename in os.listdir(get_base_dir_path()):
         if "bugreport" in filename.lower():
             bugreport_hyperlink = get_bugreport_hyperlink()
             break
@@ -345,8 +359,6 @@ def make_hyperlink(cell, link):
 
 
 
-def abc():
-    pass
 def get_native_crash_key_info():
     if not os.path.exists(get_native_crash_list_path()):
         write_native_none()
@@ -360,16 +372,8 @@ def get_native_crash_key_info():
         for line in rf:
             native_crash_tombstone_path = os.path.join(get_sde_path(), line.strip(), "tombstone")
             if not os.path.exists(native_crash_tombstone_path):
-                print("WARNING: %s 文件不存在" % native_crash_tombstone_path)
+                print("WARNING: line %d, %s 文件不存在" % (sys._getframe().f_lineno, native_crash_tombstone_path))
                 continue
-            
-            # # xlsx标题
-            # xlsx_path = get_xlsx_path()
-            # workbook = xl.load_workbook(xlsx_path)
-            # sheet = workbook.active
-            # sheet.append(["native_crash"])
-            # workbook.save(xlsx_path)
-            
             native_crash_key = get_native_crash_key(native_crash_tombstone_path)
             if native_crash_key in native_crash_times:
                 native_crash_times[native_crash_key] += 1
@@ -507,7 +511,7 @@ def find_last_crash_log():
         for line in rf:
             crash_log_path = os.path.join(get_sde_path(), line.strip(), "crash.log")
             if not os.path.exists(crash_log_path):
-                print("WARNING: %s 文件不存在" % crash_log_path)
+                print("WARNING: line %d, %s 文件不存在" % (sys._getframe().f_lineno, crash_log_path))
                 continue
             crash_logs[crash_log_path] = os.path.getsize(crash_log_path)
             #print(os.path.getsize(crash_log_path))
@@ -526,21 +530,83 @@ def find_last_crash_log():
 
 
 
+# def get_anr_key_info():
+#     if not os.path.exists(get_anr_list_path()):
+#         write_anr_none()
+#         return
+#     with open(get_anr_list_path(), "r", encoding="UTF_8") as rf:
+#         for line in rf:
+#             anr_event_log_path = os.path.join(get_sde_path(), line.strip(), "event.log")
+#             if not os.path.exists(anr_event_log_path):
+#                 print("WARNING: line %d, %s 文件不存在" % (sys._getframe().f_lineno, anr_event_log_path))
+#                 continue
+
+#             with open(anr_event_log_path, "r", encoding='UTF-8') as rf:
+#                 for line in rf:
+#                     if 'I am_anr' in line:
+#                         write_anr_key_info(line)
+
+
+# def write_anr_none():
+#     xlsx_path = get_xlsx_path()
+#     workbook = xl.load_workbook(xlsx_path)
+#     sheet = workbook.active
+#     sheet.append(["anr", "未出现"])
+#     workbook.save(xlsx_path)
+    
+    
+# def write_anr_key_info(line):
+#     # 写log
+#     #with open(os.path.join(get_key_info_dir_path(), "all_anr.log"), "a", encoding="UTF_8") as wf:
+#     #    wf.write(line)
+    
+#     # 写xlsx
+#     xlsx_path = get_xlsx_path()
+#     workbook = xl.load_workbook(xlsx_path)
+#     sheet = workbook.active
+#     sheet.append(["anr", line.strip()])
+#     workbook.save(xlsx_path)
+    
+
+
+
 def get_anr_key_info():
     if not os.path.exists(get_anr_list_path()):
-        write_anr_none()
+        write_native_none()
         return
+    
+    anr_times = {}
+    anr_content = {}
+    anr_key = ""
+    
     with open(get_anr_list_path(), "r", encoding="UTF_8") as rf:
         for line in rf:
             anr_event_log_path = os.path.join(get_sde_path(), line.strip(), "event.log")
             if not os.path.exists(anr_event_log_path):
-                print("WARNING: %s 文件不存在" % anr_event_log_path)
+                print("WARNING: line %d, %s 文件不存在" % (sys._getframe().f_lineno, anr_event_log_path))
                 continue
 
-            with open(anr_event_log_path, "r", encoding='UTF-8') as rf:
-                for line in rf:
-                    if 'I am_anr' in line:
-                        write_anr_key_info(line)
+            with open(anr_event_log_path, "r", encoding='UTF-8') as evtf:
+                for row in evtf:
+                    if 'I am_anr' in row:
+                        anr_key = row[40:65]
+                        if anr_key in anr_times:
+                            if row.strip() == anr_content[anr_key]:
+                                continue
+                            else:
+                                anr_times[anr_key] += 1
+                        else:
+                            anr_times[anr_key] = 1
+                            anr_content[anr_key] = row.strip()
+    
+    xlsx_path = get_xlsx_path()
+    workbook = xl.load_workbook(xlsx_path)
+    sheet = workbook.active
+    for key in anr_times:
+        sheet.append(["anr(发生%d次)" % anr_times[key], anr_content[key]])
+        # print(anr_content[key])
+
+    workbook.save(xlsx_path)
 
 
 def write_anr_none():
@@ -548,19 +614,6 @@ def write_anr_none():
     workbook = xl.load_workbook(xlsx_path)
     sheet = workbook.active
     sheet.append(["anr", "未出现"])
-    workbook.save(xlsx_path)
-    
-    
-def write_anr_key_info(line):
-    # 写log
-    #with open(os.path.join(get_key_info_dir_path(), "all_anr.log"), "a", encoding="UTF_8") as wf:
-    #    wf.write(line)
-    
-    # 写xlsx
-    xlsx_path = get_xlsx_path()
-    workbook = xl.load_workbook(xlsx_path)
-    sheet = workbook.active
-    sheet.append(["anr", line.strip()])
     workbook.save(xlsx_path)
     
 
