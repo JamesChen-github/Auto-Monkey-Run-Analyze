@@ -1,0 +1,33 @@
+print("start run_monkey_test.ipy")
+
+import os
+import subprocess
+from time import sleep
+
+config_path = os.path.join(os.path.dirname(__file__), 'ts_config.ini')
+
+%ts_unset
+
+# %ts_load_set ts_config.ini
+%ts_load_set {config_path}
+
+%ts_setup
+
+%ts_step_power_on flash
+
+%ts_step_flash --emmc1 emmc1
+
+%ts_step_power_on normal
+
+%ts_teardown
+
+sleep(180)
+
+# subprocess.Popen('adb.exe logcat -b all > .\\logs\\logcat.log', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test')
+subprocess.Popen(r'start /min cmd /K monkey_test_with_resources.bat', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test')
+# sleep(60)
+# subprocess.Popen(r'start /min cmd /K logcat.bat', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test')
+# subprocess.Popen(r'start cmd /K monkey_test_with_resources.bat', shell=True, cwd=r'D:\files\test\daily_test')
+
+# print('end the test')
+
