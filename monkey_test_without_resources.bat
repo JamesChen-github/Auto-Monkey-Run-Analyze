@@ -38,21 +38,21 @@ adb remount
 echo "adb shell sleep 2"
 adb shell sleep 2
 
-::清理现有日志
-echo "adb logcat -c"
-adb logcat -c
-echo "adb shell rm -rf /data/sdrv_logs/*"
-adb shell rm -rf /data/sdrv_logs/*
-echo "adb shell rm -rf /data/misc/bluetooth/*"
-adb shell rm -rf /data/misc/bluetooth/*
-echo "adb shell rm -rf /data/sdrv_deviceinfo/*"
-adb shell rm -rf /data/sdrv_deviceinfo/*
-echo "adb shell rm -rf /data/anr/*"
-adb shell rm -rf /data/anr/*
-echo "adb shell rm -rf /data/sde/*"
-adb shell rm -rf /data/sde/*
-echo "adb shell rm -rf /data/tombstones/*"
-adb shell rm -rf /data/tombstones/*
+@REM ::清理现有日志
+@REM echo "adb logcat -c"
+@REM adb logcat -c
+@REM echo "adb shell rm -rf /data/sdrv_logs/*"
+@REM adb shell rm -rf /data/sdrv_logs/*
+@REM echo "adb shell rm -rf /data/misc/bluetooth/*"
+@REM adb shell rm -rf /data/misc/bluetooth/*
+@REM echo "adb shell rm -rf /data/sdrv_deviceinfo/*"
+@REM adb shell rm -rf /data/sdrv_deviceinfo/*
+@REM echo "adb shell rm -rf /data/anr/*"
+@REM adb shell rm -rf /data/anr/*
+@REM echo "adb shell rm -rf /data/sde/*"
+@REM adb shell rm -rf /data/sde/*
+@REM echo "adb shell rm -rf /data/tombstones/*"
+@REM adb shell rm -rf /data/tombstones/*
 
 echo "start logcat save to %datedir%"
 start /min cmd /K "adb logcat -b all > %datedir%\logcat.log"
@@ -87,7 +87,7 @@ adb shell sync
 echo "sync"
 adb shell sync
 
-echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 720000TenHour 1>%datedir%\monkey_info_log.log 2>%datedir%\monkey_error_log.log"
+echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 720000TwelveHour 1>%datedir%\monkey_info_log.log 2>%datedir%\monkey_error_log.log"
 adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 720000 1>%datedir%\monkey_info_log.log 2>%datedir%\monkey_error_log.log
 
 @REM echo "adb shell monkey --pkg-blacklist-file /data/local/tmp/blacklist.txt --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --pct-syskeys 0 --throttle 200 -v -v -v 720000 >%datedir%\monkey.txt"

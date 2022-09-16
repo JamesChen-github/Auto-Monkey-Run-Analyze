@@ -51,7 +51,7 @@ def get_monkey_info_path():
 def get_monkey_error_path():
     return os.path.join(get_base_dir_path(), "monkey_error_log.log")
 def get_test_info_path():
-    return os.path.join(get_base_dir_path(), "测试信息.txt")
+    return os.path.join(get_base_dir_path(), "test_info.txt")
 # tmp提取到哪个文件夹
 def get_tmp_dir_path():
     return os.path.join(get_base_dir_path(), "tmp")
@@ -266,17 +266,16 @@ def create_xlsx():
         sheet.row_dimensions[i].height = 13.5
     
     # 写内容
-    sheet.append(["日期", get_date()])
+    sheet.append(["测试日期", get_date()])
     test_info = get_test_info()
     if not len(test_info) == 0:
         sheet.append(["测试信息"])
         for list in test_info:
             sheet.append(list)
     else:
-        sheet.append(["测试信息"])
         sheet.append(["测试版本", "Android12Userdebug DB"])
         sheet.append(["测试内容", "Monkey"])
-        sheet.append(["测试时间", "10小时"])
+        sheet.append(["测试时间", "12小时"])
     
     
     sheet.append([])
