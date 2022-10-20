@@ -8,4 +8,4 @@ revised by chenjiahao
 
 3. 修改monkey脚本（monkey_test.bat），然后双击脚本运行
 
-4. monkey停止后在当前文件夹运行auto_get_key_info.py {last_log存放的目录}，将自动生成xlsx报告
+4. monkey停止后，用script里的Log_Collector抓取log，然后运行auto_get_key_info.py {last_log所在文件夹}，将自动生成xlsx报告
