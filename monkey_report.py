@@ -36,7 +36,7 @@ def get_xlsx_path():
 
 # 根据情况更改共享信息路径
 def today_log_share_path():
-    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao", getYesterday(), get_base_dir_name())
+    return os.path.join(r"\\192.168.0.195\RND Share\SW\Android\05_Log\monkey_test_Jiahao")
 
 native_crash_bluetooth = {}
 
@@ -110,7 +110,7 @@ def get_sdrv_logs_hyperlink():
     return os.path.join(get_last_log_hyperlink(), "sdrv_logs")
 # bugreport路径
 def get_bugreport_hyperlink():
-    return os.path.join(today_log_share_path(), "bugreport.zip")
+    return os.path.join(get_last_log_hyperlink(), "bugreport.zip")
 
 # 其它通用函数
 def get_date():
