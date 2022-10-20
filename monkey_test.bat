@@ -1,32 +1,27 @@
 @REM version 20221020
+echo off
 
 @REM 编码=UTF-8
 chcp 65001
 
-@ECHO OFF
-
 set monkey_times=10800000
 set monkey_throttle=200
-set adb_device_id=
+set adb_device_id=%1
 set resources_path=D:\files\test\daily_test\resources
 set apks_path=
 
-echo "adb %adb_device_id% root"
 adb %adb_device_id% root
-echo "adb %adb_device_id% remount"
 adb %adb_device_id% remount
 
-start /min cmd /K "adb %adb_device_id% logcat -b all > .\monkey_logcat.log"
+@REM start /min cmd /K "adb %adb_device_id% logcat -b all > .\monkey_logcat.log"
 
 if not "%resources_path%"=="" (
-	echo "adb %adb_device_id% push %resources_path% /sdcard"
 	@REM adb %adb_device_id% push %~dp0resources /sdcard
 	adb %adb_device_id% push %resources_path% /sdcard
 )
 
 if not "%apks_path%"=="" (
 	for %%i in (%apks_path%\*.apk) do (
-			echo "adb %adb_device_id% install %%i"
 			adb %adb_device_id% install %%i
 		)
 )
@@ -38,12 +33,9 @@ echo "%date%  %time%"
 echo "**********************************************************************************************"
 
 @REM 打开sdrv_log
-echo "adb %adb_device_id% shell setprop persist.log.start 1"
 adb %adb_device_id% shell setprop persist.log.start 1
 
-echo "adb %adb_device_id% push blacklist.txt /data/local/tmp/"
 adb %adb_device_id% push blacklist.txt /data/local/tmp/
-echo "adb %adb_device_id% push whitelist.txt /data/local/tmp/"
 adb %adb_device_id% push whitelist.txt /data/local/tmp/
 adb %adb_device_id% shell sync
 adb %adb_device_id% shell sync
