@@ -14,10 +14,6 @@ args_dict['JOB_BASE_NAME'] = job_base_name
 args_dict['BUILD_ID'] = build_id
 args_dict['BUILD_DIR'] = 'image_' + build_json_name.rsplit('.', 1)[0]
 
-print("JOB_BASE_NAME = %s" % args_dict['JOB_BASE_NAME'])
-print("BUILD_ID = %s" % args_dict['BUILD_ID'])
-print("BUILD_DIR = %s" % args_dict['BUILD_DIR'])
-
 cur_path = Path(__file__).parent
 conf = configparser.ConfigParser()
 conf.read(cur_path / 'ts_config_template.ini')

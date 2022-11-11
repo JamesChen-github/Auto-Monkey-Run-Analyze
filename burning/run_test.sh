@@ -6,11 +6,12 @@
 # . ~/ipythonrc
 echo $PATH
 
-echo 'run_test.sh::here start'
+# echo $1 $2 $3
+echo 'run_test.sh: start prepare_case.py'
 python.exe D:/files/test/daily_test/burning/prepare_case.py $1 $2 $3
-echo 'run_test.sh::here start1'
+echo 'run_test.sh: start run_monkey_test.ipy'
 ipython.exe D:/files/test/daily_test/burning/run_monkey_test.ipy
-echo 'run_test.sh::here start2'
+echo 'run_test.sh: finish'
 
 # echo 'end python script'
 # exit 0

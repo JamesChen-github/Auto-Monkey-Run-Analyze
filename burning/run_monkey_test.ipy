@@ -34,6 +34,7 @@ print("wait for devices boot")
 sleep(120)
 print("devices booted")
 
+# 下面是烧录完开机完之后做的动作
 def cmd(cmd):
     p = subprocess.Popen(cmd,
                         shell=True,
@@ -45,7 +46,7 @@ def cmd(cmd):
     reply = p.communicate()[0]
     return reply
 
-# 读adb序列号，判断是ms板还是ref板
+# 读adb序列号，判断是ms板还是ref板(主要还是记录一下adb serial号码)
 devices_dict = {}
 
 devices_list = cmd("adb devices -l").split("List of devices attached\n")[1].split("\n")[0:-2]
@@ -62,12 +63,11 @@ for device_info in devices_list:
 print("devices_dict: ")
 print(devices_dict)
 
-# subprocess.Popen('adb.exe logcat -b all > .\\logs\\logcat.log', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test')
-# 多个板子的时候，板子全部开机之后分别给每个板子跑monkey
+# 多个板子的时候，会分别给每个板子跑monkey
 for device in devices_dict.keys():
     if device == '':
         continue
-    # subprocess.Popen('start /min cmd /K test.bat %s' % device, shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test') # 每个板子跑test
+    # subprocess.Popen('start /min cmd /K test.bat %s' % device, shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test') # 每个板子跑别的test
     # subprocess.Popen('start /min cmd /K monkey_test.bat %s' % device, shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test') # 每个板子都跑monkey
     subprocess.Popen('start /min cmd /K monkey_test.bat', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test') # 只插一个板子跑monkey
     sleep(30)
