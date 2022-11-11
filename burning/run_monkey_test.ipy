@@ -7,27 +7,67 @@ from time import sleep
 config_path = os.path.join(os.path.dirname(__file__), 'ts_config.ini')
 
 %ts_unset
-
 # %ts_load_set ts_config.ini
 %ts_load_set {config_path}
-
 %ts_setup
 
-%ts_step_power_on flash
-
+# 烧录
+# 板子1：开关14分别接继电器12
+%ts_step_power_on flash_12
 %ts_step_flash --emmc1 emmc1
+sleep(1)
 
-%ts_step_power_on normal
+# 板子2：开关14分别接继电器34
+# # %ts_step_power_on flash_34
+# # %ts_step_flash --emmc1 emmc1
+# # sleep(1)
 
+# 板子3：开关14分别接继电器56
+# # %ts_step_power_on flash_78
+# # %ts_step_flash --emmc1 emmc1
+# # sleep(1)
+
+%ts_step_power_on normal_99
 %ts_teardown
+# 等开机
+print("wait for devices boot")
+sleep(120)
+print("devices booted")
 
-sleep(180)
+def cmd(cmd):
+    p = subprocess.Popen(cmd,
+                        shell=True,
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.STDOUT,
+                        encoding='gb2312',
+                        )
+    # 输出stdout
+    reply = p.communicate()[0]
+    return reply
+
+# 读adb序列号，判断是ms板还是ref板
+devices_dict = {}
+
+devices_list = cmd("adb devices -l").split("List of devices attached\n")[1].split("\n")[0:-2]
+for device_info in devices_list:
+    device_id = device_info[0:20].strip()
+    if 'ref' in device_info.lower():
+        devices_dict[device_id] = 'ref'
+    elif 'ms' in device_info.lower():
+        devices_dict[device_id] = 'ms'
+    else:
+        print("Device %s is neither ref nor ms!" % device_id)
+        devices_dict[device_id] = 'others'
+
+print("devices_dict: ")
+print(devices_dict)
 
 # subprocess.Popen('adb.exe logcat -b all > .\\logs\\logcat.log', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test')
-subprocess.Popen(r'start /min cmd /K monkey_test_with_resources.bat', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test')
-# sleep(60)
-# subprocess.Popen(r'start /min cmd /K logcat.bat', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test')
-# subprocess.Popen(r'start cmd /K monkey_test_with_resources.bat', shell=True, cwd=r'D:\files\test\daily_test')
-
-# print('end the test')
-
+# 多个板子的时候，板子全部开机之后分别给每个板子跑monkey
+for device in devices_dict.keys():
+    if device == '':
+        continue
+    # subprocess.Popen('start /min cmd /K test.bat %s' % device, shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test') # 每个板子跑test
+    # subprocess.Popen('start /min cmd /K monkey_test.bat %s' % device, shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test') # 每个板子都跑monkey
+    subprocess.Popen('start /min cmd /K monkey_test.bat', shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE, cwd=r'D:\files\test\daily_test') # 只插一个板子跑monkey
+    sleep(30)
